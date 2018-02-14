@@ -1,0 +1,17 @@
+D:\developer\DifMod\DifMod\bin\Release\DifMod.exe
+D:\developer\DifMod\DifMod\bin\Release\DifMod.pdb
+D:\developer\DifMod\DifMod\bin\Release\Excel.dll
+D:\developer\DifMod\DifMod\bin\Release\ICSharpCode.SharpZipLib.dll
+D:\developer\DifMod\DifMod\obj\x86\Release\ResolveAssemblyReference.cache
+D:\developer\DifMod\DifMod\obj\x86\Release\DifMod.AdvancedOptionsUI.resources
+D:\developer\DifMod\DifMod\obj\x86\Release\DifMod.AdvModelOptionsUI.resources
+D:\developer\DifMod\DifMod\obj\x86\Release\DifMod.MainWindow.resources
+D:\developer\DifMod\DifMod\obj\x86\Release\DifMod.Properties.Resources.resources
+D:\developer\DifMod\DifMod\obj\x86\Release\DifMod.ModelOptionsUI.resources
+D:\developer\DifMod\DifMod\obj\x86\Release\DifMod.OptimizationDetailsUI.resources
+D:\developer\DifMod\DifMod\obj\x86\Release\DifMod.ParamMatrixUI.resources
+D:\developer\DifMod\DifMod\obj\x86\Release\DifMod.ViewDescriptivesUI.resources
+D:\developer\DifMod\DifMod\obj\x86\Release\ResGen.read.1.tlog
+D:\developer\DifMod\DifMod\obj\x86\Release\ResGen.write.1.tlog
+D:\developer\DifMod\DifMod\obj\x86\Release\DifMod.exe
+D:\developer\DifMod\DifMod\obj\x86\Release\DifMod.pdb

@@ -1,0 +1,17 @@
+D:\developer\RatcliffDiffusionModel\RdmGui\bin\Debug\RatcliffDiffusionModel.exe
+D:\developer\RatcliffDiffusionModel\RdmGui\bin\Debug\RatcliffDiffusionModel.pdb
+D:\developer\RatcliffDiffusionModel\RdmGui\bin\Debug\Excel.dll
+D:\developer\RatcliffDiffusionModel\RdmGui\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\developer\RatcliffDiffusionModel\RdmGui\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\developer\RatcliffDiffusionModel\RdmGui\obj\x86\Debug\RatcliffDiffusionModel.AdvancedOptionsUI.resources
+D:\developer\RatcliffDiffusionModel\RdmGui\obj\x86\Debug\RatcliffDiffusionModel.AdvModelOptionsUI.resources
+D:\developer\RatcliffDiffusionModel\RdmGui\obj\x86\Debug\RatcliffDiffusionModel.MainWindow.resources
+D:\developer\RatcliffDiffusionModel\RdmGui\obj\x86\Debug\RatcliffDiffusionModel.Properties.Resources.resources
+D:\developer\RatcliffDiffusionModel\RdmGui\obj\x86\Debug\RatcliffDiffusionModel.ModelOptionsUI.resources
+D:\developer\RatcliffDiffusionModel\RdmGui\obj\x86\Debug\RatcliffDiffusionModel.ParamMatrixUI.resources
+D:\developer\RatcliffDiffusionModel\RdmGui\obj\x86\Debug\ResGen.read.1.tlog
+D:\developer\RatcliffDiffusionModel\RdmGui\obj\x86\Debug\ResGen.write.1.tlog
+D:\developer\RatcliffDiffusionModel\RdmGui\obj\x86\Debug\RatcliffDiffusionModel.exe
+D:\developer\RatcliffDiffusionModel\RdmGui\obj\x86\Debug\RatcliffDiffusionModel.pdb
+D:\developer\RatcliffDiffusionModel\RdmGui\obj\x86\Debug\RatcliffDiffusionModel.ViewDescriptivesUI.resources
+D:\developer\RatcliffDiffusionModel\RdmGui\obj\x86\Debug\RatcliffDiffusionModel.OptimizationDetailsUI.resources
