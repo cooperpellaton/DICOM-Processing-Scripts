@@ -11,6 +11,7 @@ import argparse
 import json
 import logging
 import os
+import pydicom
 import pprint
 
 ___author__ = "Cooper Pellaton"
@@ -33,12 +34,28 @@ args = parser.parse_args()
 # - Subject ID.
 # - Raw Data Directory
 # - Target Atlas
-# - MP RAGE or T1 Structural
+# - MP RAGE or T1 Structural -- Can be discerned from the file name in the raw directory.
 # - T2 Weighted Structural
-# - Functional Series Numbers and Labels
+# - Functional Series Numbers and Labels -- Can be discerned from the file numbers in the raw directory.
 # - Image Dimensions
 # - Skip and Evict
 # - Normalization
+
+
+"""
+/home/mw/wheeler_shared/elyse/FHWord/S201/raw/localizer_1/
+
+/home/mw/wheeler_shared/elyse/FHWord/S201/raw/fMRI_physio_1_localizer_8/
+
+/home/mw/wheeler_shared/elyse/FHWord/S201/raw/fMRI_physio_2_14/
+
+
+Series 1 is the Siemens localizer, which is just 3 images, one in each 
+plane. We don't use these images, they are for the MR tech.
+
+Series 8 is the first acquisition of Elyse's functional localizer. 
+Series 14 is the first run of Elyse's functional task.
+"""
 
 # Constants.
 path = ""
