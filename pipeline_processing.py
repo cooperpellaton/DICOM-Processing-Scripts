@@ -21,7 +21,7 @@ __license__ = "MIT"
 __version__ = "0.0.0"
 __maintainer__ = "Cooper Pellaton"
 __email__ = "pellaton@gatech.edu"
-__status__ "Alpha"
+__status__ = "Alpha"
 
 # Parser setup.
 parser = argparse.ArgumentParser(description='DCM processing utility.')
@@ -62,6 +62,7 @@ path = ""
 subj_id = ""
 atlas = ""
 default_vals = []
+vals = []
 
 # Step 1. Create a vars file by taking information from the user.
 # Step 2. Carry out preprocessing.
@@ -77,7 +78,7 @@ def main():
     if args == '.':
         path = os.getcwd()
     else:
-        path = args
+        path = os.path.abspath(args)
     # now delegate the work
     pre_process()
     update_defaults()
@@ -98,21 +99,42 @@ def pre_process():
 def get_dir_name():
     path = os.path.dirname(path)
 
-
-def get_image_dimensions():
+def get_image_dimensions(dataset):
+    # still need to figure out slice thickness
+    ###########################################
     # walk through the dicoms to find the image dimensions listed inside
-
-
+    # need to find TR and slices for functional
+    #   default dimensions = 64x64
+    #   default number slices for functionals = 38
+    #   default TR = 2.0
+    #   EX: Reptition time 2250?
+    #   repitition time is in milliseconds: http://mriquestions.com/tr-and-te.html
+    for element in dataset:
+        if element.VR == "SQ":
+            for sequence_item in element.value:
+                if sequence_item == "Rows":
+                    vals.insert("X Dimension", sequence_item)
+                elif sequence_item == "Columns":
+                    vals.insert("Y Dimension", sequence_item)
+                elif sequence_item == "Repetition Time":
+                    # now we have the TR time
+                    vals.insert("TR", sequence_item)
+                elif sequence_item == "Slice Location":
+                    # this is TR per slice, should be 0.
+                    vals.insert("TR_spacing", sequence_item)
+                    # assert error here
+                    raise
+                
 def find_atlas():
+    # check if in path
+    # if not then use default from vars file
 
 
 def create_defaults():
         # assemble all constants into a default struct
 
-
 def update_defaults():
         # check the defaults with the user and update as appropriate
-
 
 if __name__ == "__main__":
     # execute only if run as a script
