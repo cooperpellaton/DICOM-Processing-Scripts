@@ -37,7 +37,7 @@ args = parser.parse_args()
 # - MP RAGE or T1 Structural -- Can be discerned from the file name in the raw directory.
 # - T2 Weighted Structural
 # - Functional Series Numbers and Labels -- Can be discerned from the file numbers in the raw directory.
-# - Image Dimensions
+# - DONE Image Dimensions
 # - Skip and Evict
 # - Normalization
 
@@ -61,7 +61,7 @@ Series 14 is the first run of Elyse's functional task.
 path = ""
 subj_id = ""
 atlas = ""
-default_vals = []
+default_vals = {}
 vals = []
 
 # Step 1. Create a vars file by taking information from the user.
@@ -100,8 +100,9 @@ def get_dir_name():
     path = os.path.dirname(path)
 
 def get_image_dimensions(dataset):
-    # still need to figure out slice thickness
-    ###########################################
+    ############################################
+    # still need to figure out slice thickness #
+    ############################################
     # walk through the dicoms to find the image dimensions listed inside
     # need to find TR and slices for functional
     #   default dimensions = 64x64
@@ -125,13 +126,22 @@ def get_image_dimensions(dataset):
                     # assert error here
                     raise
                 
-def find_atlas():
+def find_atlas():   
     # check if in path
     # if not then use default from vars file
 
-
 def create_defaults():
         # assemble all constants into a default struct
+        default_vals = {
+            "study_directory" : "",
+            "subject_id" : "",
+            "raw_data_directory" : "",
+            "target_atlas" : "",
+            "X Dimension" : 64,
+            "Y Dimension" : 64,
+            "TR" : 2000,
+            "TR_spacing" : 0
+        }
 
 def update_defaults():
         # check the defaults with the user and update as appropriate
