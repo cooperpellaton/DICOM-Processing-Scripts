@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 """Script to process DCMs.
 
-This script is intended to take a series of raw dicom files as obtained from a scanner and produce
+This script is intended to take a series of raw dicom files as 
+obtained from a scanner and produce
 4DFP images that can then be processed in software like FIDL and BOB.
 
 This will be elaborated on in later time.
@@ -14,7 +15,7 @@ import os
 import pydicom
 import pprint
 
-___author__ = "Cooper Pellaton"
+__author__ = "Cooper Pellaton"
 __copyright__ = "Copyright 2018, Georgia Institute of Technology"
 __credits__ = "Wheeler Lab"
 __license__ = "MIT"
@@ -34,9 +35,11 @@ args = parser.parse_args()
 # - Subject ID.
 # - Raw Data Directory
 # - Target Atlas
-# - MP RAGE or T1 Structural -- Can be discerned from the file name in the raw directory.
+# - MP RAGE or T1 Structural -- Can be discerned from the file name in the raw
+#       directory.
 # - T2 Weighted Structural
-# - Functional Series Numbers and Labels -- Can be discerned from the file numbers in the raw directory.
+# - Functional Series Numbers and Labels -- Can be discerned from the file
+#       numbers in the raw directory.
 # - DONE Image Dimensions
 # - Skip and Evict
 # - Normalization
@@ -62,7 +65,7 @@ path = ""
 subj_id = ""
 atlas = ""
 default_vals = {}
-vals = []
+vals = {}
 
 # Step 1. Create a vars file by taking information from the user.
 # Step 2. Carry out preprocessing.
@@ -81,7 +84,8 @@ def main():
         path = os.path.abspath(args)
     # now delegate the work
     pre_process()
-    update_defaults()
+    to_write = update_defaults()
+    write_out(to_write)
 
 
 def pre_process():
@@ -99,6 +103,7 @@ def pre_process():
 def get_dir_name():
     path = os.path.dirname(path)
 
+
 def get_image_dimensions(dataset):
     ############################################
     # still need to figure out slice thickness #
@@ -109,7 +114,8 @@ def get_image_dimensions(dataset):
     #   default number slices for functionals = 38
     #   default TR = 2.0
     #   EX: Reptition time 2250?
-    #   repitition time is in milliseconds: http://mriquestions.com/tr-and-te.html
+    #   repitition time is in milliseconds:
+    #       http://mriquestions.com/tr-and-te.html
     for element in dataset:
         if element.VR == "SQ":
             for sequence_item in element.value:
@@ -125,26 +131,56 @@ def get_image_dimensions(dataset):
                     vals.insert("TR_spacing", sequence_item)
                     # assert error here
                     raise
-                
-def find_atlas():   
+
+
+def find_atlas():
     # check if in path
     # if not then use default from vars file
+    # --------------------------------------------------------------------------
+    # fidl = '/usr/local/washu/fidl_2.64/scripts/fidl vm'
+    # Atlas path = /usr/local/washu/fidl/bin_linux
+    # Necessary arguments:
+    # -bold_files: 4dfp stacks to be transformed to atlas space.
+    # -xform_file: 2A or 2B t4 file defining the transform to atlas space.
+    # -atlas:      Either 111, 222 or 333. Default is 222.
+    # -conc_name:  Conc file will be created with this name.
+    # -directory:  Specify directory for output files.
+    #       Include backslash at end.
+    # --------------------------------------------------------------------------
+    target_atlas = ""
+    for fname in os.listdir('.'):
+        if fname.endswith('.t4'):
+            target_atlas = os.path.abspath(fname)
+            break
+    else:
+        default_atlas = ("711-2B", "711-2C")
+        target_atlas = default_atlas("711-2B")
+    vals.insert("target_atlas", target_atlas)
+
 
 def create_defaults():
         # assemble all constants into a default struct
-        default_vals = {
-            "study_directory" : "",
-            "subject_id" : "",
-            "raw_data_directory" : "",
-            "target_atlas" : "",
-            "X Dimension" : 64,
-            "Y Dimension" : 64,
-            "TR" : 2000,
-            "TR_spacing" : 0
-        }
+    default_vals = {
+        "study_directory": "",
+        "subject_id": "",
+        "raw_data_directory": "",
+        "target_atlas": "",
+        "X Dimension": 64,
+        "Y Dimension": 64,
+        "TR": 2000,
+        "TR_spacing": 0
+    }
+
 
 def update_defaults():
-        # check the defaults with the user and update as appropriate
+    # check the defaults with the user and update as appropriate
+    return {**default_vals, **vals}
+
+
+def write_out(values):
+    with open('%sid.vars' % subject_id, 'w') as file:
+        file.write(json.dumps(values))
+
 
 if __name__ == "__main__":
     # execute only if run as a script
