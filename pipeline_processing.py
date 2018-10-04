@@ -12,6 +12,7 @@ import argparse
 import json
 import logging
 import os
+import sys
 import pydicom
 import pprint
 
@@ -69,7 +70,7 @@ Vars:
 path = ""
 subj_id = ""
 atlas = ""
-default_vals = {}
+default_vals = create_defaults()
 vals = {}
 medcon = "/usr/local/xmedcon/bin/medcon"
 
@@ -92,25 +93,27 @@ def main():
     else:
         path = os.path.abspath(args)
     # now delegate the work
-    pre_process()
+    pre_process(path)
     to_write = update_defaults()
     write_out(to_write)
 
 
-def pre_process():
+def pre_process(path):
     try:
-        get_dir_name()
+        vals.update("subj_id", subj_id)
+        true_path = get_dir_name(path)
+        # Need to get the dataset based on valid path here.
         get_image_dimensions()
         find_atlas()
         '''do the rest'''
-        create_defaults()
+        update_defaults()
     except:
-        logging.info("Error: ", sys.exc_info()[0])
+        logging.info("Error: %s" % sys.exc_info()[0])
         raise
 
 
-def get_dir_name():
-    path = os.path.dirname(path)
+def get_dir_name(path):
+    return os.path.dirname(path)
 
 
 def get_image_dimensions(dataset):
@@ -129,17 +132,19 @@ def get_image_dimensions(dataset):
         if element.VR == "SQ":
             for sequence_item in element.value:
                 if sequence_item == "Rows":
-                    vals.insert("X Dimension", sequence_item)
+                    vals.update("X Dimension", sequence_item)
                 elif sequence_item == "Columns":
-                    vals.insert("Y Dimension", sequence_item)
+                    vals.update("Y Dimension", sequence_item)
                 elif sequence_item == "Repetition Time":
                     # now we have the TR time
-                    vals.insert("TR", sequence_item)
+                    vals.update("TR", sequence_item)
                 elif sequence_item == "Slice Location":
-                    # this is TR per slice, should be 0.
-                    vals.insert("TR_spacing", sequence_item)
-                    # assert error here
-                    raise
+                    try:
+                        # this is TR per slice, should be 0.
+                        vals.update("TR_spacing", sequence_item)
+                    except:
+                        # assert error here
+                        raise "The slice spacing was a non-zero integer. Invalid."
 
 
 def find_atlas():
@@ -167,13 +172,13 @@ def find_atlas():
             break
     else:
         default_atlas = ("711-2B", "711-2C")
-        target_atlas = default_atlas("711-2B")
-    vals.insert("target_atlas", target_atlas)
+        target_atlas = default_atlas[1]
+    vals.update("target_atlas", target_atlas)
 
 
 def create_defaults():
-        # assemble all constants into a default struct
-    default_vals = {
+    # assemble all constants into a default struct
+    return {
         "study_directory": "",
         "subject_id": "",
         "raw_data_directory": "",
@@ -191,7 +196,7 @@ def update_defaults():
 
 
 def write_out(values):
-    with open('%sid.vars' % subject_id, 'w') as file:
+    with open('%sid.vars' % values["subject_id"], 'w') as file:
         file.write(json.dumps(values))
 
 

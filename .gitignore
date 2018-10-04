@@ -1,4 +1,7 @@
+# Repo Specific
 .vscode
+facehouse_dev/
+preproc_backup_072817/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
