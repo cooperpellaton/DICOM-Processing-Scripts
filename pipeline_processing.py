@@ -19,7 +19,7 @@ __author__ = "Cooper Pellaton"
 __copyright__ = "Copyright 2018, Georgia Institute of Technology"
 __credits__ = "Wheeler Lab"
 __license__ = "MIT"
-__version__ = "0.0.0"
+__version__ = "0.0.1"
 __maintainer__ = "Cooper Pellaton"
 __email__ = "pellaton@gatech.edu"
 __status__ = "Alpha"
@@ -30,26 +30,10 @@ parser.add_argument('path', metavar='S', type=str,
                     help='the path of the directory to process')
 args = parser.parse_args()
 
-# Vars:
-# - Study Directory
-# - Subject ID.
-# - Raw Data Directory
-# - Target Atlas
-# - MP RAGE or T1 Structural -- Can be discerned from the file name in the raw
-#       directory.
-# - T2 Weighted Structural
-# - Functional Series Numbers and Labels -- Can be discerned from the file
-#       numbers in the raw directory.
-# - DONE Image Dimensions
-# - Skip and Evict
-# - Normalization
-
-
 """
+Sample data:
 /home/mw/wheeler_shared/elyse/FHWord/S201/raw/localizer_1/
-
 /home/mw/wheeler_shared/elyse/FHWord/S201/raw/fMRI_physio_1_localizer_8/
-
 /home/mw/wheeler_shared/elyse/FHWord/S201/raw/fMRI_physio_2_14/
 
 
@@ -60,24 +44,49 @@ Series 8 is the first acquisition of Elyse's functional localizer.
 Series 14 is the first run of Elyse's functional task.
 """
 
+
+"""
+A list of the values that need to be accounted for in the default, and 
+updated values used to create a `.vars` file.
+
+Vars:
+- Study Directory
+- Subject ID.
+- Raw Data Directory
+- Target Atlas
+- MP RAGE or T1 Structural -- Can be discerned from the file name in the raw
+    directory.
+- T2 Weighted Structural
+- Functional Series Numbers and Labels -- Can be discerned from the file
+    numbers in the raw directory.
+- DONE Image Dimensions
+- Skip and Evict
+- Normalization
+"""
+
+
 # Constants.
 path = ""
 subj_id = ""
 atlas = ""
 default_vals = {}
 vals = {}
-
-# Step 1. Create a vars file by taking information from the user.
-# Step 2. Carry out preprocessing.
-# Step 3. Quality check.
-# Step 4. Concatenation.
-
 medcon = "/usr/local/xmedcon/bin/medcon"
 
-
 def main():
-    # Set the path.
-    # Can be passed as '.' or /path/to/subj/directory
+    '''
+    Our main method for the running of the pipeline.
+
+    Set the path.
+    Can be passed as '.' or /path/to/subj/directory
+    
+
+    Process Steps:
+    Step 1. Create a vars file by taking information from the user.
+    Step 2. Carry out preprocessing. (COMPLETED)
+    Step 3. Quality check.
+    Step 4. Concatenation.
+    '''
     if args == '.':
         path = os.getcwd()
     else:
@@ -134,19 +143,23 @@ def get_image_dimensions(dataset):
 
 
 def find_atlas():
-    # check if in path
-    # if not then use default from vars file
-    # --------------------------------------------------------------------------
-    # fidl = '/usr/local/washu/fidl_2.64/scripts/fidl vm'
-    # Atlas path = /usr/local/washu/fidl/bin_linux
-    # Necessary arguments:
-    # -bold_files: 4dfp stacks to be transformed to atlas space.
-    # -xform_file: 2A or 2B t4 file defining the transform to atlas space.
-    # -atlas:      Either 111, 222 or 333. Default is 222.
-    # -conc_name:  Conc file will be created with this name.
-    # -directory:  Specify directory for output files.
-    #       Include backslash at end.
-    # --------------------------------------------------------------------------
+    """
+    Check if Atlas is in the path.
+    if not then use default from vars file
+
+    This is the information about fidl on our default image.
+    --------------------------------------------------------------------------
+    fidl = '/usr/local/washu/fidl_2.64/scripts/fidl vm'
+    Atlas path = /usr/local/washu/fidl/bin_linux
+    Necessary arguments:
+    -bold_files: 4dfp stacks to be transformed to atlas space.
+    -xform_file: 2A or 2B t4 file defining the transform to atlas space.
+    -atlas:      Either 111, 222 or 333. Default is 222.
+    -conc_name:  Conc file will be created with this name.
+    -directory:  Specify directory for output files.
+          Include backslash at end.
+    --------------------------------------------------------------------------
+    """
     target_atlas = ""
     for fname in os.listdir('.'):
         if fname.endswith('.t4'):
