@@ -23,6 +23,17 @@ def read_data_per_file(input_file):
 				if not "Keypress: t" in row and "DATA " in row:
 					fname_data.append(row)
 
+def count_images_per_file(input_file):
+	with open(r"%s"%input_file) as file:
+    num_images = 0
+    reader = csv.reader(file, delimiter='\t')
+    for row in reader:
+        if "New trial " in row[2]:
+            print(row)
+            print(num_images)					
+            num_images+=1
+    print("Final # images: %s" % num_images)
+
 def main():
 	to_do = read_file()
 	for file in to_do:
