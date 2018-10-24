@@ -1,0 +1,2796 @@
+7.1668 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([ 0.,  0.,  0.]), colorSpace='rgb', fullscr=UNKNOWN, gamma=None, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x115101710>, name='window1', pos=[0, 0], screen=0, size=array([1440,  900]), stereo=False, units=u'norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.1668 	EXP 	window1: recordFrameIntervals = False
+7.3326 	EXP 	window1: recordFrameIntervals = True
+7.5160 	EXP 	window1: recordFrameIntervals = False
+7.6258 	EXP 	Created Recall_Phase_Instructions = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.09, italic=False, name='Recall_Phase_Instructions', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=unicode(...), units=u'norm', win=Window(...), wrapWidth=2)
+7.6485 	EXP 	Created Countdown_Text = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=1.0, italic=False, name='Countdown_Text', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 1.,  1.,  1.]), text=u'default text', units=u'norm', win=Window(...), wrapWidth=1)
+7.6520 	EXP 	Created ShortFixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.6, italic=False, name='ShortFixation', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1)
+7.6621 	EXP 	Created Jitter_Text = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.6, italic=False, name='Jitter_Text', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u'default text', units=u'norm', win=Window(...), wrapWidth=1)
+7.6686 	EXP 	Created Recall_Words = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Recall_Words', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u'default text', units=u'norm', win=Window(...), wrapWidth=1)
+7.6829 	EXP 	Created Recall_Key = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.08, italic=False, name='Recall_Key', opacity=1.0, ori=0, pos=array([ 0. , -0.7]), rgb=array([ 255.,  255.,  255.]), text=u'"LEFT" = BUILDING, "RIGHT" = FACE', units=u'norm', win=Window(...), wrapWidth=1)
+7.6854 	EXP 	Created Recall_Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='aqua', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.6, italic=False, name='Recall_Fixation', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([   0.,  255.,  255.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1)
+7.6874 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.6, italic=False, name='Fixation', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1)
+7.7109 	EXP 	Created Break = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.09, italic=False, name='Break', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=unicode(...), units=u'norm', win=Window(...), wrapWidth=1)
+7.7169 	EXP 	Created Countdown_Text = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=1.0, italic=False, name='Countdown_Text', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 1.,  1.,  1.]), text=u'default text', units=u'norm', win=Window(...), wrapWidth=1)
+7.7190 	EXP 	Created ShortFixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.6, italic=False, name='ShortFixation', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1)
+7.7249 	EXP 	Created Jitter_Text = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.6, italic=False, name='Jitter_Text', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u'default text', units=u'norm', win=Window(...), wrapWidth=1)
+7.7285 	EXP 	Created Recall_Words = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Recall_Words', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u'default text', units=u'norm', win=Window(...), wrapWidth=1)
+7.7338 	EXP 	Created Recall_Key = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.08, italic=False, name='Recall_Key', opacity=1.0, ori=0, pos=array([ 0. , -0.7]), rgb=array([ 255.,  255.,  255.]), text=u'"LEFT" = BUILDING, "RIGHT" = FACE', units=u'norm', win=Window(...), wrapWidth=1)
+7.7359 	EXP 	Created Recall_Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='aqua', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.6, italic=False, name='Recall_Fixation', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([   0.,  255.,  255.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1)
+7.7379 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.6, italic=False, name='Fixation', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1)
+7.7504 	EXP 	Created Break = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.09, italic=False, name='Break', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=unicode(...), units=u'norm', win=Window(...), wrapWidth=1)
+7.7548 	EXP 	Created Countdown_Text = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=1.0, italic=False, name='Countdown_Text', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 1.,  1.,  1.]), text=u'default text', units=u'norm', win=Window(...), wrapWidth=1)
+7.7569 	EXP 	Created ShortFixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.6, italic=False, name='ShortFixation', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1)
+7.7626 	EXP 	Created Jitter_Text = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.6, italic=False, name='Jitter_Text', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u'default text', units=u'norm', win=Window(...), wrapWidth=1)
+7.7662 	EXP 	Created Recall_Words = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='Recall_Words', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u'default text', units=u'norm', win=Window(...), wrapWidth=1)
+7.7717 	EXP 	Created Recall_Key = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.08, italic=False, name='Recall_Key', opacity=1.0, ori=0, pos=array([ 0. , -0.7]), rgb=array([ 255.,  255.,  255.]), text=u'"LEFT" = BUILDING, "RIGHT" = FACE', units=u'norm', win=Window(...), wrapWidth=1)
+7.7737 	EXP 	Created Recall_Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='aqua', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.6, italic=False, name='Recall_Fixation', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([   0.,  255.,  255.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1)
+7.7758 	EXP 	Created Fixation = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.6, italic=False, name='Fixation', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1)
+7.7878 	EXP 	Created Break = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.09, italic=False, name='Break', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=unicode(...), units=u'norm', win=Window(...), wrapWidth=1)
+7.7960 	EXP 	Created text = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.09, italic=False, name='text', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=unicode(...), units=u'norm', win=Window(...), wrapWidth=2)
+7.8047 	EXP 	Recall_Phase_Instructions: autoDraw = True
+20.4400 	DATA 	Keypress: t
+20.4456 	EXP 	Imported CountDown.xlsx as conditions, 3 conditions, 1 params
+20.4459 	EXP 	Created sequence: sequential, trialTypes=3, nReps=1, seed=None
+20.4462 	EXP 	New trial (rep=0, index=0): {u'CountDown': 3L}
+20.4674 	EXP 	Recall_Phase_Instructions: autoDraw = False
+20.4674 	EXP 	Countdown_Text: color = 'white (named)'
+20.4674 	EXP 	Countdown_Text: text = 3L
+20.4674 	EXP 	Countdown_Text: pos = array([ 0.,  0.])
+20.4674 	EXP 	Countdown_Text: font = 'Arial'
+20.4674 	EXP 	Countdown_Text: height = 0.2
+20.4674 	EXP 	Countdown_Text: autoDraw = True
+20.4674 	EXP 	Countdown_Text: text = u'3'
+21.9382 	DATA 	Keypress: t
+21.9390 	EXP 	New trial (rep=0, index=1): {u'CountDown': 2L}
+21.9648 	EXP 	Countdown_Text: autoDraw = False
+21.9648 	EXP 	Countdown_Text: color = 'white (named)'
+21.9648 	EXP 	Countdown_Text: text = 2L
+21.9648 	EXP 	Countdown_Text: pos = array([ 0.,  0.])
+21.9648 	EXP 	Countdown_Text: font = 'Arial'
+21.9648 	EXP 	Countdown_Text: height = 0.2
+21.9648 	EXP 	Countdown_Text: autoDraw = True
+21.9648 	EXP 	Countdown_Text: text = u'2'
+23.4378 	DATA 	Keypress: t
+23.4387 	EXP 	New trial (rep=0, index=2): {u'CountDown': 1L}
+23.4564 	EXP 	Countdown_Text: autoDraw = False
+23.4564 	EXP 	Countdown_Text: color = 'white (named)'
+23.4564 	EXP 	Countdown_Text: text = 1L
+23.4564 	EXP 	Countdown_Text: pos = array([ 0.,  0.])
+23.4564 	EXP 	Countdown_Text: font = 'Arial'
+23.4564 	EXP 	Countdown_Text: height = 0.2
+23.4564 	EXP 	Countdown_Text: autoDraw = True
+23.4564 	EXP 	Countdown_Text: text = u'1'
+24.9383 	DATA 	Keypress: t
+24.9513 	EXP 	Countdown_Text: autoDraw = False
+24.9513 	EXP 	ShortFixation: autoDraw = True
+26.4384 	DATA 	Keypress: t
+27.9389 	DATA 	Keypress: t
+27.9728 	EXP 	Imported Stim/StimLists/StimListTest205.xlsx as conditions, 40 conditions, 9 params
+27.9732 	EXP 	Created sequence: sequential, trialTypes=40, nReps=1, seed=None
+27.9736 	EXP 	New trial (rep=0, index=0): {u'RAND': 0.8950786159489623, u'WN_LD': u'White', u'NOUN': u'PENCIL', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 118L, u'YO_OM': u'Old', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TMWfemale64neutral.jpg'}
+27.9830 	EXP 	ShortFixation: autoDraw = False
+27.9830 	EXP 	ShortFixation: autoDraw = False
+27.9830 	EXP 	Jitter_Text: text = '+'
+27.9830 	EXP 	Jitter_Text: autoDraw = True
+29.4383 	DATA 	Keypress: t
+30.9386 	DATA 	Keypress: t
+32.4387 	DATA 	Keypress: t
+32.4834 	EXP 	Jitter_Text: autoDraw = False
+32.4834 	EXP 	Jitter_Text: autoDraw = False
+32.4834 	EXP 	Recall_Words: text = u'PENCIL'
+32.4834 	EXP 	Recall_Words: autoDraw = True
+32.4834 	EXP 	Recall_Key: autoDraw = True
+33.9388 	DATA 	Keypress: t
+35.4393 	DATA 	Keypress: t
+35.4857 	EXP 	Recall_Words: autoDraw = False
+35.5025 	EXP 	Recall_Fixation: autoDraw = True
+36.4726 	DATA 	Keypress: 9
+36.9394 	DATA 	Keypress: t
+38.4398 	DATA 	Keypress: t
+38.4414 	EXP 	New trial (rep=0, index=1): {u'RAND': 0.3904803661793098, u'WN_LD': u'light', u'NOUN': u'COAL', u'ASSOCIATE': u'House', u'JITTER_donotuse': 90L, u'YO_OM': u'multistory', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim78.bmp'}
+38.4528 	EXP 	Recall_Words: autoDraw = False
+38.4528 	EXP 	Recall_Key: autoDraw = False
+38.4528 	EXP 	Recall_Fixation: autoDraw = False
+38.4528 	EXP 	Jitter_Text: text = '+'
+38.4528 	EXP 	Jitter_Text: autoDraw = True
+39.9402 	DATA 	Keypress: t
+39.9692 	EXP 	Jitter_Text: autoDraw = False
+39.9692 	EXP 	Jitter_Text: autoDraw = False
+39.9692 	EXP 	Recall_Words: text = u'COAL'
+39.9692 	EXP 	Recall_Words: autoDraw = True
+39.9692 	EXP 	Recall_Key: autoDraw = True
+41.4402 	DATA 	Keypress: t
+42.3235 	DATA 	Keypress: 4
+42.9405 	DATA 	Keypress: t
+42.9538 	EXP 	Recall_Words: autoDraw = False
+42.9707 	EXP 	Recall_Fixation: autoDraw = True
+44.4405 	DATA 	Keypress: t
+45.9408 	DATA 	Keypress: t
+45.9420 	EXP 	New trial (rep=0, index=2): {u'RAND': 0.3595151497728588, u'WN_LD': u'White', u'NOUN': u'BLANKET', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 88L, u'YO_OM': u'Young', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/JWfemale24neutral.jpg'}
+45.9535 	EXP 	Recall_Key: autoDraw = False
+45.9535 	EXP 	Recall_Fixation: autoDraw = False
+45.9535 	EXP 	Recall_Words: autoDraw = False
+45.9535 	EXP 	Recall_Key: autoDraw = False
+45.9535 	EXP 	Recall_Fixation: autoDraw = False
+45.9535 	EXP 	Jitter_Text: text = '+'
+45.9535 	EXP 	Jitter_Text: autoDraw = True
+47.4408 	DATA 	Keypress: t
+48.9407 	DATA 	Keypress: t
+48.9712 	EXP 	Jitter_Text: autoDraw = False
+48.9712 	EXP 	Jitter_Text: autoDraw = False
+48.9712 	EXP 	Recall_Words: text = u'BLANKET'
+48.9712 	EXP 	Recall_Words: autoDraw = True
+48.9712 	EXP 	Recall_Key: autoDraw = True
+50.4407 	DATA 	Keypress: t
+50.4911 	DATA 	Keypress: 9
+51.9410 	DATA 	Keypress: t
+51.9549 	EXP 	Recall_Words: autoDraw = False
+51.9716 	EXP 	Recall_Fixation: autoDraw = True
+53.4410 	DATA 	Keypress: t
+54.9412 	DATA 	Keypress: t
+54.9424 	EXP 	New trial (rep=0, index=3): {u'RAND': 0.13288484553803803, u'WN_LD': u'White', u'NOUN': u'TABLE', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 92L, u'YO_OM': u'Old', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TSFWmale70neutral.jpg'}
+54.9535 	EXP 	Recall_Key: autoDraw = False
+54.9535 	EXP 	Recall_Fixation: autoDraw = False
+54.9535 	EXP 	Recall_Words: autoDraw = False
+54.9535 	EXP 	Recall_Key: autoDraw = False
+54.9535 	EXP 	Recall_Fixation: autoDraw = False
+54.9535 	EXP 	Jitter_Text: text = '+'
+54.9535 	EXP 	Jitter_Text: autoDraw = True
+54.9535 	EXP 	Jitter_Text: autoDraw = False
+54.9535 	EXP 	Jitter_Text: autoDraw = False
+54.9535 	EXP 	Recall_Words: text = u'TABLE'
+54.9535 	EXP 	Recall_Words: autoDraw = True
+54.9535 	EXP 	Recall_Key: autoDraw = True
+56.4424 	DATA 	Keypress: t
+56.5920 	DATA 	Keypress: 4
+57.9425 	DATA 	Keypress: t
+57.9555 	EXP 	Recall_Words: autoDraw = False
+57.9726 	EXP 	Recall_Fixation: autoDraw = True
+59.4425 	DATA 	Keypress: t
+60.9425 	DATA 	Keypress: t
+60.9438 	EXP 	New trial (rep=0, index=4): {u'RAND': 0.3783635016407977, u'WN_LD': u'light', u'NOUN': u'SACK', u'ASSOCIATE': u'House', u'JITTER_donotuse': 14L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim73.bmp'}
+60.9559 	EXP 	Recall_Key: autoDraw = False
+60.9559 	EXP 	Recall_Fixation: autoDraw = False
+60.9559 	EXP 	Recall_Words: autoDraw = False
+60.9559 	EXP 	Recall_Key: autoDraw = False
+60.9559 	EXP 	Recall_Fixation: autoDraw = False
+60.9559 	EXP 	Jitter_Text: text = '+'
+60.9559 	EXP 	Jitter_Text: autoDraw = True
+62.4427 	DATA 	Keypress: t
+63.9433 	DATA 	Keypress: t
+65.4426 	DATA 	Keypress: t
+66.9427 	DATA 	Keypress: t
+66.9543 	EXP 	Jitter_Text: autoDraw = False
+66.9543 	EXP 	Jitter_Text: autoDraw = False
+66.9543 	EXP 	Recall_Words: text = u'SACK'
+66.9543 	EXP 	Recall_Words: autoDraw = True
+66.9543 	EXP 	Recall_Key: autoDraw = True
+68.4439 	DATA 	Keypress: t
+68.6437 	DATA 	Keypress: 9
+69.9440 	DATA 	Keypress: t
+69.9572 	EXP 	Recall_Words: autoDraw = False
+69.9743 	EXP 	Recall_Fixation: autoDraw = True
+71.4439 	DATA 	Keypress: t
+72.9432 	DATA 	Keypress: t
+72.9442 	EXP 	New trial (rep=0, index=5): {u'RAND': 0.867476905760159, u'WN_LD': u'White', u'NOUN': u'CASH', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 45L, u'YO_OM': u'Old', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TSFWfemale65-2neutral.jpg'}
+72.9555 	EXP 	Recall_Key: autoDraw = False
+72.9555 	EXP 	Recall_Fixation: autoDraw = False
+72.9555 	EXP 	Recall_Words: autoDraw = False
+72.9555 	EXP 	Recall_Key: autoDraw = False
+72.9555 	EXP 	Recall_Fixation: autoDraw = False
+72.9555 	EXP 	Jitter_Text: text = '+'
+72.9555 	EXP 	Jitter_Text: autoDraw = True
+72.9555 	EXP 	Jitter_Text: autoDraw = False
+72.9555 	EXP 	Jitter_Text: autoDraw = False
+72.9555 	EXP 	Recall_Words: text = u'CASH'
+72.9555 	EXP 	Recall_Words: autoDraw = True
+72.9555 	EXP 	Recall_Key: autoDraw = True
+74.4438 	DATA 	Keypress: t
+74.5618 	DATA 	Keypress: 9
+75.9450 	DATA 	Keypress: t
+75.9581 	EXP 	Recall_Words: autoDraw = False
+75.9745 	EXP 	Recall_Fixation: autoDraw = True
+77.4450 	DATA 	Keypress: t
+78.9449 	DATA 	Keypress: t
+78.9462 	EXP 	New trial (rep=0, index=6): {u'RAND': 0.010137090555179085, u'WN_LD': u'White', u'NOUN': u'CUBE', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 18L, u'YO_OM': u'Young ', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/EMWmale22-3neutral.jpg'}
+78.9581 	EXP 	Recall_Key: autoDraw = False
+78.9581 	EXP 	Recall_Fixation: autoDraw = False
+78.9581 	EXP 	Recall_Words: autoDraw = False
+78.9581 	EXP 	Recall_Key: autoDraw = False
+78.9581 	EXP 	Recall_Fixation: autoDraw = False
+78.9581 	EXP 	Jitter_Text: text = '+'
+78.9581 	EXP 	Jitter_Text: autoDraw = True
+80.4456 	DATA 	Keypress: t
+80.4710 	EXP 	Jitter_Text: autoDraw = False
+80.4710 	EXP 	Jitter_Text: autoDraw = False
+80.4710 	EXP 	Recall_Words: text = u'CUBE'
+80.4710 	EXP 	Recall_Words: autoDraw = True
+80.4710 	EXP 	Recall_Key: autoDraw = True
+81.7453 	DATA 	Keypress: 9
+81.9441 	DATA 	Keypress: t
+83.4458 	DATA 	Keypress: t
+83.4594 	EXP 	Recall_Words: autoDraw = False
+83.4763 	EXP 	Recall_Fixation: autoDraw = True
+84.9460 	DATA 	Keypress: t
+86.4455 	DATA 	Keypress: t
+86.4467 	EXP 	New trial (rep=0, index=7): {u'RAND': 0.046861148122199325, u'WN_LD': u'dark', u'NOUN': u'MENU', u'ASSOCIATE': u'House', u'JITTER_donotuse': 107L, u'YO_OM': u'multistory', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim31.bmp'}
+86.4589 	EXP 	Recall_Key: autoDraw = False
+86.4589 	EXP 	Recall_Fixation: autoDraw = False
+86.4589 	EXP 	Recall_Words: autoDraw = False
+86.4589 	EXP 	Recall_Key: autoDraw = False
+86.4589 	EXP 	Recall_Fixation: autoDraw = False
+86.4589 	EXP 	Jitter_Text: text = '+'
+86.4589 	EXP 	Jitter_Text: autoDraw = True
+87.9457 	DATA 	Keypress: t
+87.9577 	EXP 	Jitter_Text: autoDraw = False
+87.9577 	EXP 	Jitter_Text: autoDraw = False
+87.9577 	EXP 	Recall_Words: text = u'MENU'
+87.9577 	EXP 	Recall_Words: autoDraw = True
+87.9577 	EXP 	Recall_Key: autoDraw = True
+89.4466 	DATA 	Keypress: t
+90.9470 	DATA 	Keypress: t
+90.9606 	EXP 	Recall_Words: autoDraw = False
+90.9772 	EXP 	Recall_Fixation: autoDraw = True
+91.5803 	DATA 	Keypress: 9
+92.4464 	DATA 	Keypress: t
+93.9472 	DATA 	Keypress: t
+93.9484 	EXP 	New trial (rep=0, index=8): {u'RAND': 0.6895618382218884, u'WN_LD': u'dark', u'NOUN': u'LINEN', u'ASSOCIATE': u'House', u'JITTER_donotuse': 28L, u'YO_OM': u'multistory', u'MF_RC': u'residential ', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim45.bmp'}
+93.9608 	EXP 	Recall_Key: autoDraw = False
+93.9608 	EXP 	Recall_Fixation: autoDraw = False
+93.9608 	EXP 	Recall_Words: autoDraw = False
+93.9608 	EXP 	Recall_Key: autoDraw = False
+93.9608 	EXP 	Recall_Fixation: autoDraw = False
+93.9608 	EXP 	Jitter_Text: text = '+'
+93.9608 	EXP 	Jitter_Text: autoDraw = True
+95.4477 	DATA 	Keypress: t
+96.9475 	DATA 	Keypress: t
+98.4475 	DATA 	Keypress: t
+99.9474 	DATA 	Keypress: t
+101.4482 	DATA 	Keypress: t
+102.9484 	DATA 	Keypress: t
+102.9595 	EXP 	Jitter_Text: autoDraw = False
+102.9595 	EXP 	Jitter_Text: autoDraw = False
+102.9595 	EXP 	Recall_Words: text = u'LINEN'
+102.9595 	EXP 	Recall_Words: autoDraw = True
+102.9595 	EXP 	Recall_Key: autoDraw = True
+104.4483 	DATA 	Keypress: t
+104.5978 	DATA 	Keypress: 4
+105.9487 	DATA 	Keypress: t
+105.9625 	EXP 	Recall_Words: autoDraw = False
+105.9801 	EXP 	Recall_Fixation: autoDraw = True
+107.4495 	DATA 	Keypress: t
+108.9491 	DATA 	Keypress: t
+108.9503 	EXP 	New trial (rep=0, index=9): {u'RAND': 0.10483844975419732, u'WN_LD': u'light', u'NOUN': u'GATE', u'ASSOCIATE': u'House', u'JITTER_donotuse': 30L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim103.bmp'}
+108.9627 	EXP 	Recall_Key: autoDraw = False
+108.9627 	EXP 	Recall_Fixation: autoDraw = False
+108.9627 	EXP 	Recall_Words: autoDraw = False
+108.9627 	EXP 	Recall_Key: autoDraw = False
+108.9627 	EXP 	Recall_Fixation: autoDraw = False
+108.9627 	EXP 	Jitter_Text: text = '+'
+108.9627 	EXP 	Jitter_Text: autoDraw = True
+110.4489 	DATA 	Keypress: t
+111.9479 	DATA 	Keypress: t
+111.9621 	EXP 	Jitter_Text: autoDraw = False
+111.9621 	EXP 	Jitter_Text: autoDraw = False
+111.9621 	EXP 	Recall_Words: text = u'GATE'
+111.9621 	EXP 	Recall_Words: autoDraw = True
+111.9621 	EXP 	Recall_Key: autoDraw = True
+113.3503 	DATA 	Keypress: 9
+113.4359 	DATA 	Keypress: t
+114.9471 	DATA 	Keypress: t
+114.9618 	EXP 	Recall_Words: autoDraw = False
+114.9782 	EXP 	Recall_Fixation: autoDraw = True
+116.4478 	DATA 	Keypress: t
+117.9482 	DATA 	Keypress: t
+117.9495 	EXP 	New trial (rep=0, index=10): {u'RAND': 0.06755434107711156, u'WN_LD': u'Non White', u'NOUN': u'STRING', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 111L, u'YO_OM': u'Old', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/EMBmale55neutral.jpg'}
+117.9617 	EXP 	Recall_Key: autoDraw = False
+117.9617 	EXP 	Recall_Fixation: autoDraw = False
+117.9617 	EXP 	Recall_Words: autoDraw = False
+117.9617 	EXP 	Recall_Key: autoDraw = False
+117.9617 	EXP 	Recall_Fixation: autoDraw = False
+117.9617 	EXP 	Jitter_Text: text = '+'
+117.9617 	EXP 	Jitter_Text: autoDraw = True
+117.9617 	EXP 	Jitter_Text: autoDraw = False
+117.9617 	EXP 	Jitter_Text: autoDraw = False
+117.9617 	EXP 	Recall_Words: text = u'STRING'
+117.9617 	EXP 	Recall_Words: autoDraw = True
+117.9617 	EXP 	Recall_Key: autoDraw = True
+119.4006 	DATA 	Keypress: 4
+119.4506 	DATA 	Keypress: t
+120.9508 	DATA 	Keypress: t
+120.9648 	EXP 	Recall_Words: autoDraw = False
+120.9816 	EXP 	Recall_Fixation: autoDraw = True
+122.4357 	DATA 	Keypress: t
+123.9503 	DATA 	Keypress: t
+123.9517 	EXP 	New trial (rep=0, index=11): {u'RAND': 0.006259987982274118, u'WN_LD': u'White', u'NOUN': u'LIGHT', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 19L, u'YO_OM': u'Young', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/WWfemale21-2neutral.jpg'}
+123.9624 	EXP 	Recall_Key: autoDraw = False
+123.9624 	EXP 	Recall_Fixation: autoDraw = False
+123.9624 	EXP 	Recall_Words: autoDraw = False
+123.9624 	EXP 	Recall_Key: autoDraw = False
+123.9624 	EXP 	Recall_Fixation: autoDraw = False
+123.9624 	EXP 	Jitter_Text: text = '+'
+123.9624 	EXP 	Jitter_Text: autoDraw = True
+123.9624 	EXP 	Jitter_Text: autoDraw = False
+123.9624 	EXP 	Jitter_Text: autoDraw = False
+123.9624 	EXP 	Recall_Words: text = u'LIGHT'
+123.9624 	EXP 	Recall_Words: autoDraw = True
+123.9624 	EXP 	Recall_Key: autoDraw = True
+125.4518 	DATA 	Keypress: t
+126.9518 	DATA 	Keypress: t
+126.9656 	EXP 	Recall_Words: autoDraw = False
+126.9823 	EXP 	Recall_Fixation: autoDraw = True
+127.2849 	DATA 	Keypress: 9
+128.4514 	DATA 	Keypress: t
+129.9522 	DATA 	Keypress: t
+129.9535 	EXP 	New trial (rep=0, index=12): {u'RAND': 0.392652652274198, u'WN_LD': u'Non White', u'NOUN': u'TRAIN', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 89L, u'YO_OM': u'Young ', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/EMBfemale22-3neutral.jpg'}
+129.9753 	EXP 	Recall_Key: autoDraw = False
+129.9753 	EXP 	Recall_Fixation: autoDraw = False
+129.9753 	EXP 	Recall_Words: autoDraw = False
+129.9753 	EXP 	Recall_Key: autoDraw = False
+129.9753 	EXP 	Recall_Fixation: autoDraw = False
+129.9753 	EXP 	Jitter_Text: text = '+'
+129.9753 	EXP 	Jitter_Text: autoDraw = True
+129.9753 	EXP 	Jitter_Text: autoDraw = False
+129.9753 	EXP 	Jitter_Text: autoDraw = False
+129.9753 	EXP 	Recall_Words: text = u'TRAIN'
+129.9753 	EXP 	Recall_Words: autoDraw = True
+129.9753 	EXP 	Recall_Key: autoDraw = True
+131.3517 	DATA 	Keypress: 9
+131.4372 	DATA 	Keypress: t
+132.9371 	DATA 	Keypress: t
+132.9664 	EXP 	Recall_Words: autoDraw = False
+132.9832 	EXP 	Recall_Fixation: autoDraw = True
+134.4373 	DATA 	Keypress: t
+135.9376 	DATA 	Keypress: t
+135.9516 	EXP 	New trial (rep=0, index=13): {u'RAND': 0.8582871437410802, u'WN_LD': u'Non White', u'NOUN': u'RUBBER', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 4L, u'YO_OM': u'Young ', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TMBmale30neutral.jpg'}
+135.9668 	EXP 	Recall_Key: autoDraw = False
+135.9668 	EXP 	Recall_Fixation: autoDraw = False
+135.9668 	EXP 	Recall_Words: autoDraw = False
+135.9668 	EXP 	Recall_Key: autoDraw = False
+135.9668 	EXP 	Recall_Fixation: autoDraw = False
+135.9668 	EXP 	Jitter_Text: text = '+'
+135.9668 	EXP 	Jitter_Text: autoDraw = True
+137.4372 	DATA 	Keypress: t
+138.9375 	DATA 	Keypress: t
+140.4379 	DATA 	Keypress: t
+141.9378 	DATA 	Keypress: t
+141.9674 	EXP 	Jitter_Text: autoDraw = False
+141.9674 	EXP 	Jitter_Text: autoDraw = False
+141.9674 	EXP 	Recall_Words: text = u'RUBBER'
+141.9674 	EXP 	Recall_Words: autoDraw = True
+141.9674 	EXP 	Recall_Key: autoDraw = True
+143.4369 	DATA 	Keypress: t
+143.4705 	DATA 	Keypress: 9
+144.9383 	DATA 	Keypress: t
+144.9682 	EXP 	Recall_Words: autoDraw = False
+144.9682 	EXP 	Recall_Fixation: autoDraw = True
+146.4387 	DATA 	Keypress: t
+147.9383 	DATA 	Keypress: t
+147.9396 	EXP 	New trial (rep=0, index=14): {u'RAND': 0.28833257071380514, u'WN_LD': u'White', u'NOUN': u'KETTLE', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 100L, u'YO_OM': u'Old', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TSFWmale61neutral.jpg'}
+147.9505 	EXP 	Recall_Words: autoDraw = False
+147.9505 	EXP 	Recall_Key: autoDraw = False
+147.9505 	EXP 	Recall_Fixation: autoDraw = False
+147.9505 	EXP 	Jitter_Text: text = '+'
+147.9505 	EXP 	Jitter_Text: autoDraw = True
+149.4387 	DATA 	Keypress: t
+149.4561 	EXP 	Jitter_Text: autoDraw = False
+149.4561 	EXP 	Jitter_Text: autoDraw = False
+149.4561 	EXP 	Recall_Words: text = u'KETTLE'
+149.4561 	EXP 	Recall_Words: autoDraw = True
+149.4561 	EXP 	Recall_Key: autoDraw = True
+150.9385 	DATA 	Keypress: t
+151.2385 	DATA 	Keypress: 9
+152.4393 	DATA 	Keypress: t
+152.4522 	EXP 	Recall_Words: autoDraw = False
+152.4682 	EXP 	Recall_Fixation: autoDraw = True
+153.9392 	DATA 	Keypress: t
+155.4395 	DATA 	Keypress: t
+155.4410 	EXP 	New trial (rep=0, index=15): {u'RAND': 0.030785304481473874, u'WN_LD': u'light', u'NOUN': u'CROSS', u'ASSOCIATE': u'House', u'JITTER_donotuse': 1L, u'YO_OM': u'multistory', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim52.bmp'}
+155.4517 	EXP 	Recall_Key: autoDraw = False
+155.4517 	EXP 	Recall_Fixation: autoDraw = False
+155.4517 	EXP 	Recall_Words: autoDraw = False
+155.4517 	EXP 	Recall_Key: autoDraw = False
+155.4517 	EXP 	Recall_Fixation: autoDraw = False
+155.4517 	EXP 	Jitter_Text: text = '+'
+155.4517 	EXP 	Jitter_Text: autoDraw = True
+156.9393 	DATA 	Keypress: t
+158.4396 	DATA 	Keypress: t
+158.4502 	EXP 	Jitter_Text: autoDraw = False
+158.4502 	EXP 	Jitter_Text: autoDraw = False
+158.4502 	EXP 	Recall_Words: text = u'CROSS'
+158.4502 	EXP 	Recall_Words: autoDraw = True
+158.4502 	EXP 	Recall_Key: autoDraw = True
+159.9398 	DATA 	Keypress: t
+160.0227 	DATA 	Keypress: 9
+161.4402 	DATA 	Keypress: t
+161.4530 	EXP 	Recall_Words: autoDraw = False
+161.4701 	EXP 	Recall_Fixation: autoDraw = True
+162.9402 	DATA 	Keypress: t
+164.4411 	DATA 	Keypress: t
+164.4423 	EXP 	New trial (rep=0, index=16): {u'RAND': 0.34976879581369746, u'WN_LD': u'White', u'NOUN': u'RICE', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 51L, u'YO_OM': u'Old', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/JWfemale75neutral.jpg'}
+164.4535 	EXP 	Recall_Key: autoDraw = False
+164.4535 	EXP 	Recall_Fixation: autoDraw = False
+164.4535 	EXP 	Recall_Words: autoDraw = False
+164.4535 	EXP 	Recall_Key: autoDraw = False
+164.4535 	EXP 	Recall_Fixation: autoDraw = False
+164.4535 	EXP 	Jitter_Text: text = '+'
+164.4535 	EXP 	Jitter_Text: autoDraw = True
+165.9414 	DATA 	Keypress: t
+165.9682 	EXP 	Jitter_Text: autoDraw = False
+165.9682 	EXP 	Jitter_Text: autoDraw = False
+165.9682 	EXP 	Recall_Words: text = u'RICE'
+165.9682 	EXP 	Recall_Words: autoDraw = True
+165.9682 	EXP 	Recall_Key: autoDraw = True
+167.4409 	DATA 	Keypress: t
+167.6566 	DATA 	Keypress: 9
+168.9410 	DATA 	Keypress: t
+168.9545 	EXP 	Recall_Words: autoDraw = False
+168.9713 	EXP 	Recall_Fixation: autoDraw = True
+170.4411 	DATA 	Keypress: t
+171.9415 	DATA 	Keypress: t
+171.9427 	EXP 	New trial (rep=0, index=17): {u'RAND': 0.5151611814473429, u'WN_LD': u'light', u'NOUN': u'HORSE', u'ASSOCIATE': u'House', u'JITTER_donotuse': 98L, u'YO_OM': u'multistory', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim32.bmp'}
+171.9546 	EXP 	Recall_Key: autoDraw = False
+171.9546 	EXP 	Recall_Fixation: autoDraw = False
+171.9546 	EXP 	Recall_Words: autoDraw = False
+171.9546 	EXP 	Recall_Key: autoDraw = False
+171.9546 	EXP 	Recall_Fixation: autoDraw = False
+171.9546 	EXP 	Jitter_Text: text = '+'
+171.9546 	EXP 	Jitter_Text: autoDraw = True
+173.4416 	DATA 	Keypress: t
+173.4525 	EXP 	Jitter_Text: autoDraw = False
+173.4525 	EXP 	Jitter_Text: autoDraw = False
+173.4525 	EXP 	Recall_Words: text = u'HORSE'
+173.4525 	EXP 	Recall_Words: autoDraw = True
+173.4525 	EXP 	Recall_Key: autoDraw = True
+174.9417 	DATA 	Keypress: t
+175.1082 	DATA 	Keypress: 4
+176.4415 	DATA 	Keypress: t
+176.4553 	EXP 	Recall_Words: autoDraw = False
+176.4724 	EXP 	Recall_Fixation: autoDraw = True
+177.9418 	DATA 	Keypress: t
+179.4417 	DATA 	Keypress: t
+179.4431 	EXP 	New trial (rep=0, index=18): {u'RAND': 0.5226390229515754, u'WN_LD': u'light', u'NOUN': u'GOLF', u'ASSOCIATE': u'House', u'JITTER_donotuse': 80L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim125.bmp'}
+179.4632 	EXP 	Recall_Key: autoDraw = False
+179.4632 	EXP 	Recall_Fixation: autoDraw = False
+179.4632 	EXP 	Recall_Words: autoDraw = False
+179.4632 	EXP 	Recall_Key: autoDraw = False
+179.4632 	EXP 	Recall_Fixation: autoDraw = False
+179.4632 	EXP 	Jitter_Text: text = '+'
+179.4632 	EXP 	Jitter_Text: autoDraw = True
+179.4632 	EXP 	Jitter_Text: autoDraw = False
+179.4632 	EXP 	Jitter_Text: autoDraw = False
+179.4632 	EXP 	Recall_Words: text = u'GOLF'
+179.4632 	EXP 	Recall_Words: autoDraw = True
+179.4632 	EXP 	Recall_Key: autoDraw = True
+180.5418 	DATA 	Keypress: 4
+180.9417 	DATA 	Keypress: t
+182.4431 	DATA 	Keypress: t
+182.4557 	EXP 	Recall_Words: autoDraw = False
+182.4733 	EXP 	Recall_Fixation: autoDraw = True
+183.9431 	DATA 	Keypress: t
+185.4429 	DATA 	Keypress: t
+185.4442 	EXP 	New trial (rep=0, index=19): {u'RAND': 0.8718942872278903, u'WN_LD': u'White', u'NOUN': u'PAGE', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 81L, u'YO_OM': u'Young', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/WWfemale21neutral.jpg'}
+185.4567 	EXP 	Recall_Key: autoDraw = False
+185.4567 	EXP 	Recall_Fixation: autoDraw = False
+185.4567 	EXP 	Recall_Words: autoDraw = False
+185.4567 	EXP 	Recall_Key: autoDraw = False
+185.4567 	EXP 	Recall_Fixation: autoDraw = False
+185.4567 	EXP 	Jitter_Text: text = '+'
+185.4567 	EXP 	Jitter_Text: autoDraw = True
+186.9429 	DATA 	Keypress: t
+186.9550 	EXP 	Jitter_Text: autoDraw = False
+186.9550 	EXP 	Jitter_Text: autoDraw = False
+186.9550 	EXP 	Recall_Words: text = u'PAGE'
+186.9550 	EXP 	Recall_Words: autoDraw = True
+186.9550 	EXP 	Recall_Key: autoDraw = True
+188.4428 	DATA 	Keypress: t
+189.9431 	DATA 	Keypress: t
+189.9573 	EXP 	Recall_Words: autoDraw = False
+189.9743 	EXP 	Recall_Fixation: autoDraw = True
+190.8265 	DATA 	Keypress: 9
+191.4434 	DATA 	Keypress: t
+192.9435 	DATA 	Keypress: t
+192.9447 	EXP 	New trial (rep=0, index=20): {u'RAND': 0.9185312194806429, u'WN_LD': u'Non White', u'NOUN': u'FORK', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 84L, u'YO_OM': u'Young ', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/EMIfemale26neutral.jpg'}
+192.9575 	EXP 	Recall_Key: autoDraw = False
+192.9575 	EXP 	Recall_Fixation: autoDraw = False
+192.9575 	EXP 	Recall_Words: autoDraw = False
+192.9575 	EXP 	Recall_Key: autoDraw = False
+192.9575 	EXP 	Recall_Fixation: autoDraw = False
+192.9575 	EXP 	Jitter_Text: text = '+'
+192.9575 	EXP 	Jitter_Text: autoDraw = True
+194.4435 	DATA 	Keypress: t
+195.9447 	DATA 	Keypress: t
+197.4446 	DATA 	Keypress: t
+198.9446 	DATA 	Keypress: t
+200.4445 	DATA 	Keypress: t
+200.4582 	EXP 	Jitter_Text: autoDraw = False
+200.4582 	EXP 	Jitter_Text: autoDraw = False
+200.4582 	EXP 	Recall_Words: text = u'FORK'
+200.4582 	EXP 	Recall_Words: autoDraw = True
+200.4582 	EXP 	Recall_Key: autoDraw = True
+201.9445 	DATA 	Keypress: t
+202.0611 	DATA 	Keypress: 4
+203.4456 	DATA 	Keypress: t
+203.4593 	EXP 	Recall_Words: autoDraw = False
+203.4761 	EXP 	Recall_Fixation: autoDraw = True
+204.9457 	DATA 	Keypress: t
+206.4456 	DATA 	Keypress: t
+206.4468 	EXP 	New trial (rep=0, index=21): {u'RAND': 0.9845929307041816, u'WN_LD': u'light', u'NOUN': u'BANK', u'ASSOCIATE': u'House', u'JITTER_donotuse': 53L, u'YO_OM': u'multistory', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim106.bmp'}
+206.4588 	EXP 	Recall_Key: autoDraw = False
+206.4588 	EXP 	Recall_Fixation: autoDraw = False
+206.4588 	EXP 	Recall_Words: autoDraw = False
+206.4588 	EXP 	Recall_Key: autoDraw = False
+206.4588 	EXP 	Recall_Fixation: autoDraw = False
+206.4588 	EXP 	Jitter_Text: text = '+'
+206.4588 	EXP 	Jitter_Text: autoDraw = True
+207.9451 	DATA 	Keypress: t
+209.4467 	DATA 	Keypress: t
+209.4578 	EXP 	Jitter_Text: autoDraw = False
+209.4578 	EXP 	Jitter_Text: autoDraw = False
+209.4578 	EXP 	Recall_Words: text = u'BANK'
+209.4578 	EXP 	Recall_Words: autoDraw = True
+209.4578 	EXP 	Recall_Key: autoDraw = True
+210.9466 	DATA 	Keypress: t
+212.2298 	DATA 	Keypress: 9
+212.4466 	DATA 	Keypress: t
+212.4603 	EXP 	Recall_Words: autoDraw = False
+212.4774 	EXP 	Recall_Fixation: autoDraw = True
+213.9437 	DATA 	Keypress: t
+215.4440 	DATA 	Keypress: t
+215.4449 	EXP 	New trial (rep=0, index=22): {u'RAND': 0.24425768177015528, u'WN_LD': u'Non White', u'NOUN': u'HILL', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 32L, u'YO_OM': u'Old', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TSFBfemale70-2neutral.jpg'}
+215.4600 	EXP 	Recall_Key: autoDraw = False
+215.4600 	EXP 	Recall_Fixation: autoDraw = False
+215.4600 	EXP 	Recall_Words: autoDraw = False
+215.4600 	EXP 	Recall_Key: autoDraw = False
+215.4600 	EXP 	Recall_Fixation: autoDraw = False
+215.4600 	EXP 	Jitter_Text: text = '+'
+215.4600 	EXP 	Jitter_Text: autoDraw = True
+215.4600 	EXP 	Jitter_Text: autoDraw = False
+215.4600 	EXP 	Jitter_Text: autoDraw = False
+215.4600 	EXP 	Recall_Words: text = u'HILL'
+215.4600 	EXP 	Recall_Words: autoDraw = True
+215.4600 	EXP 	Recall_Key: autoDraw = True
+216.9441 	DATA 	Keypress: t
+217.1103 	DATA 	Keypress: 4
+218.4462 	DATA 	Keypress: t
+218.4591 	EXP 	Recall_Words: autoDraw = False
+218.4758 	EXP 	Recall_Fixation: autoDraw = True
+219.9475 	DATA 	Keypress: t
+221.4446 	DATA 	Keypress: t
+221.4454 	EXP 	New trial (rep=0, index=23): {u'RAND': 0.06355526628494201, u'WN_LD': u'light', u'NOUN': u'WOLF', u'ASSOCIATE': u'House', u'JITTER_donotuse': 110L, u'YO_OM': u'multistory', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim102.bmp'}
+221.4601 	EXP 	Recall_Key: autoDraw = False
+221.4601 	EXP 	Recall_Fixation: autoDraw = False
+221.4601 	EXP 	Recall_Words: autoDraw = False
+221.4601 	EXP 	Recall_Key: autoDraw = False
+221.4601 	EXP 	Recall_Fixation: autoDraw = False
+221.4601 	EXP 	Jitter_Text: text = '+'
+221.4601 	EXP 	Jitter_Text: autoDraw = True
+222.9482 	DATA 	Keypress: t
+224.4452 	DATA 	Keypress: t
+225.9485 	DATA 	Keypress: t
+225.9670 	EXP 	Jitter_Text: autoDraw = False
+225.9670 	EXP 	Jitter_Text: autoDraw = False
+225.9670 	EXP 	Recall_Words: text = u'WOLF'
+225.9670 	EXP 	Recall_Words: autoDraw = True
+225.9670 	EXP 	Recall_Key: autoDraw = True
+227.2817 	DATA 	Keypress: 4
+227.4491 	DATA 	Keypress: t
+228.9455 	DATA 	Keypress: t
+228.9604 	EXP 	Recall_Words: autoDraw = False
+228.9771 	EXP 	Recall_Fixation: autoDraw = True
+230.4460 	DATA 	Keypress: t
+231.9460 	DATA 	Keypress: t
+231.9468 	EXP 	New trial (rep=0, index=24): {u'RAND': 0.07591532144645208, u'WN_LD': u'light', u'NOUN': u'PIPE', u'ASSOCIATE': u'House', u'JITTER_donotuse': 5L, u'YO_OM': u'multistory', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim89.bmp'}
+231.9607 	EXP 	Recall_Key: autoDraw = False
+231.9607 	EXP 	Recall_Fixation: autoDraw = False
+231.9607 	EXP 	Recall_Words: autoDraw = False
+231.9607 	EXP 	Recall_Key: autoDraw = False
+231.9607 	EXP 	Recall_Fixation: autoDraw = False
+231.9607 	EXP 	Jitter_Text: text = '+'
+231.9607 	EXP 	Jitter_Text: autoDraw = True
+231.9607 	EXP 	Jitter_Text: autoDraw = False
+231.9607 	EXP 	Jitter_Text: autoDraw = False
+231.9607 	EXP 	Recall_Words: text = u'PIPE'
+231.9607 	EXP 	Recall_Words: autoDraw = True
+231.9607 	EXP 	Recall_Key: autoDraw = True
+233.2792 	DATA 	Keypress: 9
+233.4457 	DATA 	Keypress: t
+234.9464 	DATA 	Keypress: t
+234.9617 	EXP 	Recall_Words: autoDraw = False
+234.9783 	EXP 	Recall_Fixation: autoDraw = True
+236.4501 	DATA 	Keypress: t
+237.9506 	DATA 	Keypress: t
+237.9519 	EXP 	New trial (rep=0, index=25): {u'RAND': 0.8135090654179811, u'WN_LD': u'dark', u'NOUN': u'WOOL', u'ASSOCIATE': u'House', u'JITTER_donotuse': 24L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim122.bmp'}
+237.9642 	EXP 	Recall_Key: autoDraw = False
+237.9642 	EXP 	Recall_Fixation: autoDraw = False
+237.9642 	EXP 	Recall_Words: autoDraw = False
+237.9642 	EXP 	Recall_Key: autoDraw = False
+237.9642 	EXP 	Recall_Fixation: autoDraw = False
+237.9642 	EXP 	Jitter_Text: text = '+'
+237.9642 	EXP 	Jitter_Text: autoDraw = True
+239.4497 	DATA 	Keypress: t
+240.9514 	DATA 	Keypress: t
+242.4508 	DATA 	Keypress: t
+243.9519 	DATA 	Keypress: t
+243.9717 	EXP 	Jitter_Text: autoDraw = False
+243.9717 	EXP 	Jitter_Text: autoDraw = False
+243.9717 	EXP 	Recall_Words: text = u'WOOL'
+243.9717 	EXP 	Recall_Words: autoDraw = True
+243.9717 	EXP 	Recall_Key: autoDraw = True
+245.4517 	DATA 	Keypress: t
+246.1815 	DATA 	Keypress: 9
+246.9363 	DATA 	Keypress: t
+246.9655 	EXP 	Recall_Words: autoDraw = False
+246.9827 	EXP 	Recall_Fixation: autoDraw = True
+248.4363 	DATA 	Keypress: t
+249.9369 	DATA 	Keypress: t
+249.9491 	EXP 	New trial (rep=0, index=26): {u'RAND': 0.8766074037195031, u'WN_LD': u'dark', u'NOUN': u'MOUSE', u'ASSOCIATE': u'House', u'JITTER_donotuse': 57L, u'YO_OM': u'multistory', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim70.bmp'}
+249.9654 	EXP 	Recall_Key: autoDraw = False
+249.9654 	EXP 	Recall_Fixation: autoDraw = False
+249.9654 	EXP 	Recall_Words: autoDraw = False
+249.9654 	EXP 	Recall_Key: autoDraw = False
+249.9654 	EXP 	Recall_Fixation: autoDraw = False
+249.9654 	EXP 	Jitter_Text: text = '+'
+249.9654 	EXP 	Jitter_Text: autoDraw = True
+251.4366 	DATA 	Keypress: t
+252.9367 	DATA 	Keypress: t
+254.4374 	DATA 	Keypress: t
+254.4645 	EXP 	Jitter_Text: autoDraw = False
+254.4645 	EXP 	Jitter_Text: autoDraw = False
+254.4645 	EXP 	Recall_Words: text = u'MOUSE'
+254.4645 	EXP 	Recall_Words: autoDraw = True
+254.4645 	EXP 	Recall_Key: autoDraw = True
+255.6192 	DATA 	Keypress: 4
+255.9521 	DATA 	Keypress: t
+257.4532 	DATA 	Keypress: t
+257.4667 	EXP 	Recall_Words: autoDraw = False
+257.4667 	EXP 	Recall_Fixation: autoDraw = True
+258.9530 	DATA 	Keypress: t
+260.4380 	DATA 	Keypress: t
+260.4524 	EXP 	New trial (rep=0, index=27): {u'RAND': 0.8943350824022084, u'WN_LD': u'light', u'NOUN': u'BRIDGE', u'ASSOCIATE': u'House', u'JITTER_donotuse': 12L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim62.bmp'}
+260.4659 	EXP 	Recall_Key: autoDraw = False
+260.4659 	EXP 	Recall_Fixation: autoDraw = False
+260.4659 	EXP 	Recall_Words: autoDraw = False
+260.4659 	EXP 	Recall_Key: autoDraw = False
+260.4659 	EXP 	Recall_Fixation: autoDraw = False
+260.4659 	EXP 	Jitter_Text: text = '+'
+260.4659 	EXP 	Jitter_Text: autoDraw = True
+260.4659 	EXP 	Jitter_Text: autoDraw = False
+260.4659 	EXP 	Jitter_Text: autoDraw = False
+260.4659 	EXP 	Recall_Words: text = u'BRIDGE'
+260.4659 	EXP 	Recall_Words: autoDraw = True
+260.4659 	EXP 	Recall_Key: autoDraw = True
+261.9383 	DATA 	Keypress: t
+261.9695 	DATA 	Keypress: 4
+263.4383 	DATA 	Keypress: t
+263.4670 	EXP 	Recall_Words: autoDraw = False
+263.4848 	EXP 	Recall_Fixation: autoDraw = True
+264.9374 	DATA 	Keypress: t
+266.4380 	DATA 	Keypress: t
+266.4519 	EXP 	New trial (rep=0, index=28): {u'RAND': 0.4829807571831167, u'WN_LD': u'dark', u'NOUN': u'RING', u'ASSOCIATE': u'House', u'JITTER_donotuse': 9L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim74.bmp'}
+266.4672 	EXP 	Recall_Key: autoDraw = False
+266.4672 	EXP 	Recall_Fixation: autoDraw = False
+266.4672 	EXP 	Recall_Words: autoDraw = False
+266.4672 	EXP 	Recall_Key: autoDraw = False
+266.4672 	EXP 	Recall_Fixation: autoDraw = False
+266.4672 	EXP 	Jitter_Text: text = '+'
+266.4672 	EXP 	Jitter_Text: autoDraw = True
+267.9386 	DATA 	Keypress: t
+269.4392 	DATA 	Keypress: t
+270.9397 	DATA 	Keypress: t
+270.9677 	EXP 	Jitter_Text: autoDraw = False
+270.9677 	EXP 	Jitter_Text: autoDraw = False
+270.9677 	EXP 	Recall_Words: text = u'RING'
+270.9677 	EXP 	Recall_Words: autoDraw = True
+270.9677 	EXP 	Recall_Key: autoDraw = True
+272.4372 	DATA 	Keypress: t
+272.9718 	DATA 	Keypress: 9
+273.9396 	DATA 	Keypress: t
+273.9691 	EXP 	Recall_Words: autoDraw = False
+273.9867 	EXP 	Recall_Fixation: autoDraw = True
+275.4395 	DATA 	Keypress: t
+276.9393 	DATA 	Keypress: t
+276.9407 	EXP 	New trial (rep=0, index=29): {u'RAND': 0.034261935453378856, u'WN_LD': u'light', u'NOUN': u'TREE', u'ASSOCIATE': u'House', u'JITTER_donotuse': 20L, u'YO_OM': u'multistory', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim79.bmp'}
+276.9515 	EXP 	Recall_Words: autoDraw = False
+276.9515 	EXP 	Recall_Key: autoDraw = False
+276.9515 	EXP 	Recall_Fixation: autoDraw = False
+276.9515 	EXP 	Jitter_Text: text = '+'
+276.9515 	EXP 	Jitter_Text: autoDraw = True
+278.4399 	DATA 	Keypress: t
+279.9401 	DATA 	Keypress: t
+281.4401 	DATA 	Keypress: t
+282.9403 	DATA 	Keypress: t
+284.4398 	DATA 	Keypress: t
+284.4529 	EXP 	Jitter_Text: autoDraw = False
+284.4529 	EXP 	Jitter_Text: autoDraw = False
+284.4529 	EXP 	Recall_Words: text = u'TREE'
+284.4529 	EXP 	Recall_Words: autoDraw = True
+284.4529 	EXP 	Recall_Key: autoDraw = True
+285.9404 	DATA 	Keypress: t
+287.4406 	DATA 	Keypress: t
+287.4537 	EXP 	Recall_Words: autoDraw = False
+287.4711 	EXP 	Recall_Fixation: autoDraw = True
+288.3572 	DATA 	Keypress: 4
+288.9409 	DATA 	Keypress: t
+290.4412 	DATA 	Keypress: t
+290.4424 	EXP 	New trial (rep=0, index=30): {u'RAND': 0.6372179777068183, u'WN_LD': u'Non White', u'NOUN': u'BALL', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 108L, u'YO_OM': u'Young', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/WBmale31neutral.jpg'}
+290.4544 	EXP 	Recall_Key: autoDraw = False
+290.4544 	EXP 	Recall_Fixation: autoDraw = False
+290.4544 	EXP 	Recall_Words: autoDraw = False
+290.4544 	EXP 	Recall_Key: autoDraw = False
+290.4544 	EXP 	Recall_Fixation: autoDraw = False
+290.4544 	EXP 	Jitter_Text: text = '+'
+290.4544 	EXP 	Jitter_Text: autoDraw = True
+291.9413 	DATA 	Keypress: t
+293.4420 	DATA 	Keypress: t
+294.9418 	DATA 	Keypress: t
+296.4421 	DATA 	Keypress: t
+296.4526 	EXP 	Jitter_Text: autoDraw = False
+296.4526 	EXP 	Jitter_Text: autoDraw = False
+296.4526 	EXP 	Recall_Words: text = u'BALL'
+296.4526 	EXP 	Recall_Words: autoDraw = True
+296.4526 	EXP 	Recall_Key: autoDraw = True
+297.9095 	DATA 	Keypress: 4
+297.9423 	DATA 	Keypress: t
+299.4417 	DATA 	Keypress: t
+299.4560 	EXP 	Recall_Words: autoDraw = False
+299.4724 	EXP 	Recall_Fixation: autoDraw = True
+300.9424 	DATA 	Keypress: t
+302.4426 	DATA 	Keypress: t
+302.4438 	EXP 	New trial (rep=0, index=31): {u'RAND': 0.8381071195206347, u'WN_LD': u'dark', u'NOUN': u'TENNIS', u'ASSOCIATE': u'House', u'JITTER_donotuse': 58L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim4.bmp'}
+302.4615 	EXP 	Recall_Key: autoDraw = False
+302.4615 	EXP 	Recall_Fixation: autoDraw = False
+302.4615 	EXP 	Recall_Words: autoDraw = False
+302.4615 	EXP 	Recall_Key: autoDraw = False
+302.4615 	EXP 	Recall_Fixation: autoDraw = False
+302.4615 	EXP 	Jitter_Text: text = '+'
+302.4615 	EXP 	Jitter_Text: autoDraw = True
+302.4615 	EXP 	Jitter_Text: autoDraw = False
+302.4615 	EXP 	Jitter_Text: autoDraw = False
+302.4615 	EXP 	Recall_Words: text = u'TENNIS'
+302.4615 	EXP 	Recall_Words: autoDraw = True
+302.4615 	EXP 	Recall_Key: autoDraw = True
+303.7764 	DATA 	Keypress: 4
+303.9423 	DATA 	Keypress: t
+305.4426 	DATA 	Keypress: t
+305.4564 	EXP 	Recall_Words: autoDraw = False
+305.4734 	EXP 	Recall_Fixation: autoDraw = True
+306.9426 	DATA 	Keypress: t
+308.4426 	DATA 	Keypress: t
+308.4439 	EXP 	New trial (rep=0, index=32): {u'RAND': 0.01735202529645785, u'WN_LD': u'light', u'NOUN': u'CHAIR', u'ASSOCIATE': u'House', u'JITTER_donotuse': 99L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim96.bmp'}
+308.4571 	EXP 	Recall_Key: autoDraw = False
+308.4571 	EXP 	Recall_Fixation: autoDraw = False
+308.4571 	EXP 	Recall_Words: autoDraw = False
+308.4571 	EXP 	Recall_Key: autoDraw = False
+308.4571 	EXP 	Recall_Fixation: autoDraw = False
+308.4571 	EXP 	Jitter_Text: text = '+'
+308.4571 	EXP 	Jitter_Text: autoDraw = True
+309.9439 	DATA 	Keypress: t
+311.4439 	DATA 	Keypress: t
+311.4640 	EXP 	Jitter_Text: autoDraw = False
+311.4640 	EXP 	Jitter_Text: autoDraw = False
+311.4640 	EXP 	Recall_Words: text = u'CHAIR'
+311.4640 	EXP 	Recall_Words: autoDraw = True
+311.4640 	EXP 	Recall_Key: autoDraw = True
+312.5107 	DATA 	Keypress: 4
+312.9437 	DATA 	Keypress: t
+314.4437 	DATA 	Keypress: t
+314.4572 	EXP 	Recall_Words: autoDraw = False
+314.4746 	EXP 	Recall_Fixation: autoDraw = True
+315.9436 	DATA 	Keypress: t
+317.4448 	DATA 	Keypress: t
+317.4461 	EXP 	New trial (rep=0, index=33): {u'RAND': 0.572289091389543, u'WN_LD': u'Non White', u'NOUN': u'FOREST', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 69L, u'YO_OM': u'Young', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TMBmale24neutral.jpg'}
+317.4583 	EXP 	Recall_Key: autoDraw = False
+317.4583 	EXP 	Recall_Fixation: autoDraw = False
+317.4583 	EXP 	Recall_Words: autoDraw = False
+317.4583 	EXP 	Recall_Key: autoDraw = False
+317.4583 	EXP 	Recall_Fixation: autoDraw = False
+317.4583 	EXP 	Jitter_Text: text = '+'
+317.4583 	EXP 	Jitter_Text: autoDraw = True
+318.9451 	DATA 	Keypress: t
+320.4448 	DATA 	Keypress: t
+321.9445 	DATA 	Keypress: t
+321.9563 	EXP 	Jitter_Text: autoDraw = False
+321.9563 	EXP 	Jitter_Text: autoDraw = False
+321.9563 	EXP 	Recall_Words: text = u'FOREST'
+321.9563 	EXP 	Recall_Words: autoDraw = True
+321.9563 	EXP 	Recall_Key: autoDraw = True
+323.4456 	DATA 	Keypress: t
+324.9136 	DATA 	Keypress: 4
+324.9455 	DATA 	Keypress: t
+324.9585 	EXP 	Recall_Words: autoDraw = False
+324.9763 	EXP 	Recall_Fixation: autoDraw = True
+326.4454 	DATA 	Keypress: t
+327.9455 	DATA 	Keypress: t
+327.9467 	EXP 	New trial (rep=0, index=34): {u'RAND': 0.9308441900615538, u'WN_LD': u'White', u'NOUN': u'BRICK', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 29L, u'YO_OM': u'Old', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/JWmale67neutral.jpg'}
+327.9591 	EXP 	Recall_Key: autoDraw = False
+327.9591 	EXP 	Recall_Fixation: autoDraw = False
+327.9591 	EXP 	Recall_Words: autoDraw = False
+327.9591 	EXP 	Recall_Key: autoDraw = False
+327.9591 	EXP 	Recall_Fixation: autoDraw = False
+327.9591 	EXP 	Jitter_Text: text = '+'
+327.9591 	EXP 	Jitter_Text: autoDraw = True
+329.4467 	DATA 	Keypress: t
+330.9465 	DATA 	Keypress: t
+330.9577 	EXP 	Jitter_Text: autoDraw = False
+330.9577 	EXP 	Jitter_Text: autoDraw = False
+330.9577 	EXP 	Recall_Words: text = u'BRICK'
+330.9577 	EXP 	Recall_Words: autoDraw = True
+330.9577 	EXP 	Recall_Key: autoDraw = True
+332.1976 	DATA 	Keypress: 4
+332.4466 	DATA 	Keypress: t
+333.9465 	DATA 	Keypress: t
+333.9593 	EXP 	Recall_Words: autoDraw = False
+333.9773 	EXP 	Recall_Fixation: autoDraw = True
+335.4474 	DATA 	Keypress: t
+336.9475 	DATA 	Keypress: t
+336.9488 	EXP 	New trial (rep=0, index=35): {u'RAND': 0.39871524841631767, u'WN_LD': u'dark', u'NOUN': u'WHISTLE', u'ASSOCIATE': u'House', u'JITTER_donotuse': 27L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim113.bmp'}
+336.9615 	EXP 	Recall_Key: autoDraw = False
+336.9615 	EXP 	Recall_Fixation: autoDraw = False
+336.9615 	EXP 	Recall_Words: autoDraw = False
+336.9615 	EXP 	Recall_Key: autoDraw = False
+336.9615 	EXP 	Recall_Fixation: autoDraw = False
+336.9615 	EXP 	Jitter_Text: text = '+'
+336.9615 	EXP 	Jitter_Text: autoDraw = True
+338.4473 	DATA 	Keypress: t
+338.4717 	EXP 	Jitter_Text: autoDraw = False
+338.4717 	EXP 	Jitter_Text: autoDraw = False
+338.4717 	EXP 	Recall_Words: text = u'WHISTLE'
+338.4717 	EXP 	Recall_Words: autoDraw = True
+338.4717 	EXP 	Recall_Key: autoDraw = True
+339.9473 	DATA 	Keypress: t
+340.8153 	DATA 	Keypress: 9
+341.4483 	DATA 	Keypress: t
+341.4612 	EXP 	Recall_Words: autoDraw = False
+341.4784 	EXP 	Recall_Fixation: autoDraw = True
+342.9482 	DATA 	Keypress: t
+344.4483 	DATA 	Keypress: t
+344.4496 	EXP 	New trial (rep=0, index=36): {u'RAND': 0.46648035369709673, u'WN_LD': u'light', u'NOUN': u'PLANT', u'ASSOCIATE': u'House', u'JITTER_donotuse': 7L, u'YO_OM': u'multistory', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim26.bmp'}
+344.4619 	EXP 	Recall_Key: autoDraw = False
+344.4619 	EXP 	Recall_Fixation: autoDraw = False
+344.4619 	EXP 	Recall_Words: autoDraw = False
+344.4619 	EXP 	Recall_Key: autoDraw = False
+344.4619 	EXP 	Recall_Fixation: autoDraw = False
+344.4619 	EXP 	Jitter_Text: text = '+'
+344.4619 	EXP 	Jitter_Text: autoDraw = True
+345.9480 	DATA 	Keypress: t
+345.9600 	EXP 	Jitter_Text: autoDraw = False
+345.9600 	EXP 	Jitter_Text: autoDraw = False
+345.9600 	EXP 	Recall_Words: text = u'PLANT'
+345.9600 	EXP 	Recall_Words: autoDraw = True
+345.9600 	EXP 	Recall_Key: autoDraw = True
+347.3989 	DATA 	Keypress: 4
+347.4483 	DATA 	Keypress: t
+348.9490 	DATA 	Keypress: t
+348.9623 	EXP 	Recall_Words: autoDraw = False
+348.9794 	EXP 	Recall_Fixation: autoDraw = True
+350.4490 	DATA 	Keypress: t
+351.9494 	DATA 	Keypress: t
+351.9507 	EXP 	New trial (rep=0, index=37): {u'RAND': 0.9452540666957451, u'WN_LD': u'Non White', u'NOUN': u'COAST', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 43L, u'YO_OM': u'Young', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/WBfemale21neutral.jpg'}
+351.9667 	EXP 	Recall_Key: autoDraw = False
+351.9667 	EXP 	Recall_Fixation: autoDraw = False
+351.9667 	EXP 	Recall_Words: autoDraw = False
+351.9667 	EXP 	Recall_Key: autoDraw = False
+351.9667 	EXP 	Recall_Fixation: autoDraw = False
+351.9667 	EXP 	Jitter_Text: text = '+'
+351.9667 	EXP 	Jitter_Text: autoDraw = True
+351.9667 	EXP 	Jitter_Text: autoDraw = False
+351.9667 	EXP 	Jitter_Text: autoDraw = False
+351.9667 	EXP 	Recall_Words: text = u'COAST'
+351.9667 	EXP 	Recall_Words: autoDraw = True
+351.9667 	EXP 	Recall_Key: autoDraw = True
+353.2002 	DATA 	Keypress: 9
+353.4493 	DATA 	Keypress: t
+354.9499 	DATA 	Keypress: t
+354.9631 	EXP 	Recall_Words: autoDraw = False
+354.9802 	EXP 	Recall_Fixation: autoDraw = True
+356.4500 	DATA 	Keypress: t
+357.9502 	DATA 	Keypress: t
+357.9515 	EXP 	New trial (rep=0, index=38): {u'RAND': 0.030672926478181317, u'WN_LD': u'light', u'NOUN': u'WIRE', u'ASSOCIATE': u'House', u'JITTER_donotuse': 82L, u'YO_OM': u'one story', u'MF_RC': u'residential ', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim47.bmp'}
+357.9637 	EXP 	Recall_Key: autoDraw = False
+357.9637 	EXP 	Recall_Fixation: autoDraw = False
+357.9637 	EXP 	Recall_Words: autoDraw = False
+357.9637 	EXP 	Recall_Key: autoDraw = False
+357.9637 	EXP 	Recall_Fixation: autoDraw = False
+357.9637 	EXP 	Jitter_Text: text = '+'
+357.9637 	EXP 	Jitter_Text: autoDraw = True
+359.4503 	DATA 	Keypress: t
+360.9506 	DATA 	Keypress: t
+360.9624 	EXP 	Jitter_Text: autoDraw = False
+360.9624 	EXP 	Jitter_Text: autoDraw = False
+360.9624 	EXP 	Recall_Words: text = u'WIRE'
+360.9624 	EXP 	Recall_Words: autoDraw = True
+360.9624 	EXP 	Recall_Key: autoDraw = True
+362.4504 	DATA 	Keypress: t
+363.3336 	DATA 	Keypress: 4
+363.9504 	DATA 	Keypress: t
+363.9648 	EXP 	Recall_Words: autoDraw = False
+363.9825 	EXP 	Recall_Fixation: autoDraw = True
+365.4506 	DATA 	Keypress: t
+366.9513 	DATA 	Keypress: t
+366.9527 	EXP 	New trial (rep=0, index=39): {u'RAND': 0.1288729387920161, u'WN_LD': u'Non White', u'NOUN': u'PASTE', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 41L, u'YO_OM': u'Young ', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/EMBfemale33neutral.jpg'}
+366.9697 	EXP 	Recall_Key: autoDraw = False
+366.9697 	EXP 	Recall_Fixation: autoDraw = False
+366.9697 	EXP 	Recall_Words: autoDraw = False
+366.9697 	EXP 	Recall_Key: autoDraw = False
+366.9697 	EXP 	Recall_Fixation: autoDraw = False
+366.9697 	EXP 	Jitter_Text: text = '+'
+366.9697 	EXP 	Jitter_Text: autoDraw = True
+366.9697 	EXP 	Jitter_Text: autoDraw = False
+366.9697 	EXP 	Jitter_Text: autoDraw = False
+366.9697 	EXP 	Recall_Words: text = u'PASTE'
+366.9697 	EXP 	Recall_Words: autoDraw = True
+366.9697 	EXP 	Recall_Key: autoDraw = True
+367.9178 	DATA 	Keypress: 4
+368.4517 	DATA 	Keypress: t
+369.9514 	DATA 	Keypress: t
+369.9656 	EXP 	Recall_Words: autoDraw = False
+369.9825 	EXP 	Recall_Fixation: autoDraw = True
+371.4523 	DATA 	Keypress: t
+372.9370 	DATA 	Keypress: t
+372.9662 	EXP 	Recall_Key: autoDraw = False
+372.9662 	EXP 	Recall_Fixation: autoDraw = False
+372.9662 	EXP 	Recall_Words: autoDraw = False
+372.9662 	EXP 	Recall_Key: autoDraw = False
+372.9662 	EXP 	Recall_Fixation: autoDraw = False
+372.9662 	EXP 	Fixation: autoDraw = True
+374.4525 	DATA 	Keypress: t
+375.9528 	DATA 	Keypress: t
+377.4531 	DATA 	Keypress: t
+378.9531 	DATA 	Keypress: t
+380.4373 	DATA 	Keypress: t
+381.9375 	DATA 	Keypress: t
+383.4374 	DATA 	Keypress: t
+384.9376 	DATA 	Keypress: t
+386.4380 	DATA 	Keypress: t
+387.9387 	DATA 	Keypress: t
+389.4545 	DATA 	Keypress: t
+390.9686 	EXP 	Fixation: autoDraw = False
+390.9686 	EXP 	Break: autoDraw = True
+420.6927 	DATA 	Keypress: space
+420.7132 	EXP 	Imported CountDown.xlsx as conditions, 3 conditions, 1 params
+420.7135 	EXP 	Created sequence: sequential, trialTypes=3, nReps=1, seed=None
+420.7138 	EXP 	New trial (rep=0, index=0): {u'CountDown': 3L}
+420.7365 	EXP 	Fixation: autoDraw = False
+420.7365 	EXP 	Break: autoDraw = False
+420.7365 	EXP 	Countdown_Text: color = 'white (named)'
+420.7365 	EXP 	Countdown_Text: text = 3L
+420.7365 	EXP 	Countdown_Text: pos = array([ 0.,  0.])
+420.7365 	EXP 	Countdown_Text: font = 'Arial'
+420.7365 	EXP 	Countdown_Text: height = 0.2
+420.7365 	EXP 	Countdown_Text: autoDraw = True
+420.7365 	EXP 	Countdown_Text: text = u'3'
+428.9105 	DATA 	Keypress: t
+428.9113 	EXP 	New trial (rep=0, index=1): {u'CountDown': 2L}
+428.9233 	EXP 	Countdown_Text: autoDraw = False
+428.9233 	EXP 	Countdown_Text: color = 'white (named)'
+428.9233 	EXP 	Countdown_Text: text = 2L
+428.9233 	EXP 	Countdown_Text: pos = array([ 0.,  0.])
+428.9233 	EXP 	Countdown_Text: font = 'Arial'
+428.9233 	EXP 	Countdown_Text: height = 0.2
+428.9233 	EXP 	Countdown_Text: autoDraw = True
+428.9233 	EXP 	Countdown_Text: text = u'2'
+430.4108 	DATA 	Keypress: t
+430.4117 	EXP 	New trial (rep=0, index=2): {u'CountDown': 1L}
+430.4344 	EXP 	Countdown_Text: autoDraw = False
+430.4344 	EXP 	Countdown_Text: color = 'white (named)'
+430.4344 	EXP 	Countdown_Text: text = 1L
+430.4344 	EXP 	Countdown_Text: pos = array([ 0.,  0.])
+430.4344 	EXP 	Countdown_Text: font = 'Arial'
+430.4344 	EXP 	Countdown_Text: height = 0.2
+430.4344 	EXP 	Countdown_Text: autoDraw = True
+430.4344 	EXP 	Countdown_Text: text = u'1'
+431.9114 	DATA 	Keypress: t
+431.9229 	EXP 	Countdown_Text: autoDraw = False
+431.9229 	EXP 	ShortFixation: autoDraw = True
+433.4111 	DATA 	Keypress: t
+434.9116 	DATA 	Keypress: t
+434.9448 	EXP 	Imported Stim/StimLists/StimListTest205.xlsx as conditions, 40 conditions, 9 params
+434.9451 	EXP 	Created sequence: sequential, trialTypes=40, nReps=1, seed=None
+434.9455 	EXP 	New trial (rep=0, index=0): {u'RAND': 0.3926090982509671, u'WN_LD': u'light', u'NOUN': u'FENCE', u'ASSOCIATE': u'House', u'JITTER_donotuse': 68L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim92.bmp'}
+434.9579 	EXP 	ShortFixation: autoDraw = False
+434.9579 	EXP 	ShortFixation: autoDraw = False
+434.9579 	EXP 	Jitter_Text: text = '+'
+434.9579 	EXP 	Jitter_Text: autoDraw = True
+436.4116 	DATA 	Keypress: t
+436.4566 	EXP 	Jitter_Text: autoDraw = False
+436.4566 	EXP 	Jitter_Text: autoDraw = False
+436.4566 	EXP 	Recall_Words: text = u'FENCE'
+436.4566 	EXP 	Recall_Words: autoDraw = True
+436.4566 	EXP 	Recall_Key: autoDraw = True
+437.9114 	DATA 	Keypress: t
+438.0293 	DATA 	Keypress: 9
+439.4113 	DATA 	Keypress: t
+439.4580 	EXP 	Recall_Words: autoDraw = False
+439.4580 	EXP 	Recall_Fixation: autoDraw = True
+440.9117 	DATA 	Keypress: t
+442.4119 	DATA 	Keypress: t
+442.4135 	EXP 	New trial (rep=0, index=1): {u'RAND': 0.8846560081075665, u'WN_LD': u'White', u'NOUN': u'MAIL', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 63L, u'YO_OM': u'Young', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/EMWmale33neutral.jpg'}
+442.4237 	EXP 	Recall_Words: autoDraw = False
+442.4237 	EXP 	Recall_Key: autoDraw = False
+442.4237 	EXP 	Recall_Fixation: autoDraw = False
+442.4237 	EXP 	Jitter_Text: text = '+'
+442.4237 	EXP 	Jitter_Text: autoDraw = True
+443.9121 	DATA 	Keypress: t
+445.4124 	DATA 	Keypress: t
+446.9127 	DATA 	Keypress: t
+446.9243 	EXP 	Jitter_Text: autoDraw = False
+446.9243 	EXP 	Jitter_Text: autoDraw = False
+446.9243 	EXP 	Recall_Words: text = u'MAIL'
+446.9243 	EXP 	Recall_Words: autoDraw = True
+446.9243 	EXP 	Recall_Key: autoDraw = True
+448.4130 	DATA 	Keypress: t
+448.7124 	DATA 	Keypress: 9
+449.9130 	DATA 	Keypress: t
+449.9262 	EXP 	Recall_Words: autoDraw = False
+449.9434 	EXP 	Recall_Fixation: autoDraw = True
+451.4133 	DATA 	Keypress: t
+452.9138 	DATA 	Keypress: t
+452.9149 	EXP 	New trial (rep=0, index=2): {u'RAND': 0.8441410489335982, u'WN_LD': u'White', u'NOUN': u'PILLOW', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 22L, u'YO_OM': u'Old', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/JWmale69-3neutral.jpg'}
+452.9241 	EXP 	Recall_Key: autoDraw = False
+452.9241 	EXP 	Recall_Fixation: autoDraw = False
+452.9241 	EXP 	Recall_Words: autoDraw = False
+452.9241 	EXP 	Recall_Key: autoDraw = False
+452.9241 	EXP 	Recall_Fixation: autoDraw = False
+452.9241 	EXP 	Jitter_Text: text = '+'
+452.9241 	EXP 	Jitter_Text: autoDraw = True
+454.4136 	DATA 	Keypress: t
+454.4404 	EXP 	Jitter_Text: autoDraw = False
+454.4404 	EXP 	Jitter_Text: autoDraw = False
+454.4404 	EXP 	Recall_Words: text = u'PILLOW'
+454.4404 	EXP 	Recall_Words: autoDraw = True
+454.4404 	EXP 	Recall_Key: autoDraw = True
+455.9141 	DATA 	Keypress: t
+455.9804 	DATA 	Keypress: 4
+457.4142 	DATA 	Keypress: t
+457.4273 	EXP 	Recall_Words: autoDraw = False
+457.4443 	EXP 	Recall_Fixation: autoDraw = True
+458.9143 	DATA 	Keypress: t
+460.4146 	DATA 	Keypress: t
+460.4161 	EXP 	New trial (rep=0, index=3): {u'RAND': 0.29621048898827995, u'WN_LD': u'dark', u'NOUN': u'STAR', u'ASSOCIATE': u'House', u'JITTER_donotuse': 104L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim72.bmp'}
+460.4274 	EXP 	Recall_Key: autoDraw = False
+460.4274 	EXP 	Recall_Fixation: autoDraw = False
+460.4274 	EXP 	Recall_Words: autoDraw = False
+460.4274 	EXP 	Recall_Key: autoDraw = False
+460.4274 	EXP 	Recall_Fixation: autoDraw = False
+460.4274 	EXP 	Jitter_Text: text = '+'
+460.4274 	EXP 	Jitter_Text: autoDraw = True
+461.9148 	DATA 	Keypress: t
+463.4159 	DATA 	Keypress: t
+464.9152 	DATA 	Keypress: t
+466.4154 	DATA 	Keypress: t
+467.9156 	DATA 	Keypress: t
+469.4157 	DATA 	Keypress: t
+469.4266 	EXP 	Jitter_Text: autoDraw = False
+469.4266 	EXP 	Jitter_Text: autoDraw = False
+469.4266 	EXP 	Recall_Words: text = u'STAR'
+469.4266 	EXP 	Recall_Words: autoDraw = True
+469.4266 	EXP 	Recall_Key: autoDraw = True
+470.5988 	DATA 	Keypress: 4
+470.9160 	DATA 	Keypress: t
+472.4155 	DATA 	Keypress: t
+472.4295 	EXP 	Recall_Words: autoDraw = False
+472.4468 	EXP 	Recall_Fixation: autoDraw = True
+473.9162 	DATA 	Keypress: t
+475.4160 	DATA 	Keypress: t
+475.4173 	EXP 	New trial (rep=0, index=4): {u'RAND': 0.27622300233343944, u'WN_LD': u'light', u'NOUN': u'SALT', u'ASSOCIATE': u'House', u'JITTER_donotuse': 34L, u'YO_OM': u'multistory', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim18.bmp'}
+475.4300 	EXP 	Recall_Key: autoDraw = False
+475.4300 	EXP 	Recall_Fixation: autoDraw = False
+475.4300 	EXP 	Recall_Words: autoDraw = False
+475.4300 	EXP 	Recall_Key: autoDraw = False
+475.4300 	EXP 	Recall_Fixation: autoDraw = False
+475.4300 	EXP 	Jitter_Text: text = '+'
+475.4300 	EXP 	Jitter_Text: autoDraw = True
+476.9167 	DATA 	Keypress: t
+478.4164 	DATA 	Keypress: t
+478.4287 	EXP 	Jitter_Text: autoDraw = False
+478.4287 	EXP 	Jitter_Text: autoDraw = False
+478.4287 	EXP 	Recall_Words: text = u'SALT'
+478.4287 	EXP 	Recall_Words: autoDraw = True
+478.4287 	EXP 	Recall_Key: autoDraw = True
+479.7836 	DATA 	Keypress: 9
+479.9167 	DATA 	Keypress: t
+481.4181 	DATA 	Keypress: t
+481.4308 	EXP 	Recall_Words: autoDraw = False
+481.4476 	EXP 	Recall_Fixation: autoDraw = True
+482.9175 	DATA 	Keypress: t
+484.4175 	DATA 	Keypress: t
+484.4188 	EXP 	New trial (rep=0, index=5): {u'RAND': 0.14992287549473893, u'WN_LD': u'Non White', u'NOUN': u'ROOT', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 74L, u'YO_OM': u'Young ', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/EMImale28neutral.jpg'}
+484.4314 	EXP 	Recall_Key: autoDraw = False
+484.4314 	EXP 	Recall_Fixation: autoDraw = False
+484.4314 	EXP 	Recall_Words: autoDraw = False
+484.4314 	EXP 	Recall_Key: autoDraw = False
+484.4314 	EXP 	Recall_Fixation: autoDraw = False
+484.4314 	EXP 	Jitter_Text: text = '+'
+484.4314 	EXP 	Jitter_Text: autoDraw = True
+485.9176 	DATA 	Keypress: t
+487.4173 	DATA 	Keypress: t
+488.9186 	DATA 	Keypress: t
+490.4189 	DATA 	Keypress: t
+490.4300 	EXP 	Jitter_Text: autoDraw = False
+490.4300 	EXP 	Jitter_Text: autoDraw = False
+490.4300 	EXP 	Recall_Words: text = u'ROOT'
+490.4300 	EXP 	Recall_Words: autoDraw = True
+490.4300 	EXP 	Recall_Key: autoDraw = True
+491.1681 	DATA 	Keypress: 4
+491.9183 	DATA 	Keypress: t
+493.4185 	DATA 	Keypress: t
+493.4323 	EXP 	Recall_Words: autoDraw = False
+493.4493 	EXP 	Recall_Fixation: autoDraw = True
+494.9195 	DATA 	Keypress: t
+496.4195 	DATA 	Keypress: t
+496.4208 	EXP 	New trial (rep=0, index=6): {u'RAND': 0.6228648101947032, u'WN_LD': u'light', u'NOUN': u'BEAR', u'ASSOCIATE': u'House', u'JITTER_donotuse': 46L, u'YO_OM': u'multistory', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim12.bmp'}
+496.4329 	EXP 	Recall_Key: autoDraw = False
+496.4329 	EXP 	Recall_Fixation: autoDraw = False
+496.4329 	EXP 	Recall_Words: autoDraw = False
+496.4329 	EXP 	Recall_Key: autoDraw = False
+496.4329 	EXP 	Recall_Fixation: autoDraw = False
+496.4329 	EXP 	Jitter_Text: text = '+'
+496.4329 	EXP 	Jitter_Text: autoDraw = True
+496.4329 	EXP 	Jitter_Text: autoDraw = False
+496.4329 	EXP 	Jitter_Text: autoDraw = False
+496.4329 	EXP 	Recall_Words: text = u'BEAR'
+496.4329 	EXP 	Recall_Words: autoDraw = True
+496.4329 	EXP 	Recall_Key: autoDraw = True
+497.6194 	DATA 	Keypress: 4
+497.9192 	DATA 	Keypress: t
+499.4192 	DATA 	Keypress: t
+499.4335 	EXP 	Recall_Words: autoDraw = False
+499.4500 	EXP 	Recall_Fixation: autoDraw = True
+500.9192 	DATA 	Keypress: t
+502.4202 	DATA 	Keypress: t
+502.4214 	EXP 	New trial (rep=0, index=7): {u'RAND': 0.6724963620408161, u'WN_LD': u'White', u'NOUN': u'LAND', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 112L, u'YO_OM': u'Young', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/WHmale18neutral.jpg'}
+502.4340 	EXP 	Recall_Key: autoDraw = False
+502.4340 	EXP 	Recall_Fixation: autoDraw = False
+502.4340 	EXP 	Recall_Words: autoDraw = False
+502.4340 	EXP 	Recall_Key: autoDraw = False
+502.4340 	EXP 	Recall_Fixation: autoDraw = False
+502.4340 	EXP 	Jitter_Text: text = '+'
+502.4340 	EXP 	Jitter_Text: autoDraw = True
+503.9202 	DATA 	Keypress: t
+505.4208 	DATA 	Keypress: t
+505.4323 	EXP 	Jitter_Text: autoDraw = False
+505.4323 	EXP 	Jitter_Text: autoDraw = False
+505.4323 	EXP 	Recall_Words: text = u'LAND'
+505.4323 	EXP 	Recall_Words: autoDraw = True
+505.4323 	EXP 	Recall_Key: autoDraw = True
+506.9202 	DATA 	Keypress: t
+507.1041 	DATA 	Keypress: 9
+508.4202 	DATA 	Keypress: t
+508.4345 	EXP 	Recall_Words: autoDraw = False
+508.4526 	EXP 	Recall_Fixation: autoDraw = True
+509.9211 	DATA 	Keypress: t
+511.4209 	DATA 	Keypress: t
+511.4222 	EXP 	New trial (rep=0, index=8): {u'RAND': 0.9871364293569265, u'WN_LD': u'White', u'NOUN': u'CAMP', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 115L, u'YO_OM': u'Young', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TSFWfemale26neutral.jpg'}
+511.4332 	EXP 	Recall_Key: autoDraw = False
+511.4332 	EXP 	Recall_Fixation: autoDraw = False
+511.4332 	EXP 	Recall_Words: autoDraw = False
+511.4332 	EXP 	Recall_Key: autoDraw = False
+511.4332 	EXP 	Recall_Fixation: autoDraw = False
+511.4332 	EXP 	Jitter_Text: text = '+'
+511.4332 	EXP 	Jitter_Text: autoDraw = True
+511.4332 	EXP 	Jitter_Text: autoDraw = False
+511.4332 	EXP 	Jitter_Text: autoDraw = False
+511.4332 	EXP 	Recall_Words: text = u'CAMP'
+511.4332 	EXP 	Recall_Words: autoDraw = True
+511.4332 	EXP 	Recall_Key: autoDraw = True
+512.7548 	DATA 	Keypress: 4
+512.9213 	DATA 	Keypress: t
+514.4212 	DATA 	Keypress: t
+514.4355 	EXP 	Recall_Words: autoDraw = False
+514.4521 	EXP 	Recall_Fixation: autoDraw = True
+515.9217 	DATA 	Keypress: t
+517.4221 	DATA 	Keypress: t
+517.4234 	EXP 	New trial (rep=0, index=9): {u'RAND': 0.7189057785021391, u'WN_LD': u'light', u'NOUN': u'TICKET', u'ASSOCIATE': u'House', u'JITTER_donotuse': 79L, u'YO_OM': u'multistory', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim86.bmp'}
+517.4361 	EXP 	Recall_Key: autoDraw = False
+517.4361 	EXP 	Recall_Fixation: autoDraw = False
+517.4361 	EXP 	Recall_Words: autoDraw = False
+517.4361 	EXP 	Recall_Key: autoDraw = False
+517.4361 	EXP 	Recall_Fixation: autoDraw = False
+517.4361 	EXP 	Jitter_Text: text = '+'
+517.4361 	EXP 	Jitter_Text: autoDraw = True
+518.9223 	DATA 	Keypress: t
+518.9484 	EXP 	Jitter_Text: autoDraw = False
+518.9484 	EXP 	Jitter_Text: autoDraw = False
+518.9484 	EXP 	Recall_Words: text = u'TICKET'
+518.9484 	EXP 	Recall_Words: autoDraw = True
+518.9484 	EXP 	Recall_Key: autoDraw = True
+520.4223 	DATA 	Keypress: t
+520.5060 	DATA 	Keypress: 4
+521.9228 	DATA 	Keypress: t
+521.9365 	EXP 	Recall_Words: autoDraw = False
+521.9540 	EXP 	Recall_Fixation: autoDraw = True
+523.4223 	DATA 	Keypress: t
+524.9226 	DATA 	Keypress: t
+524.9239 	EXP 	New trial (rep=0, index=10): {u'RAND': 0.6763783626994467, u'WN_LD': u'White', u'NOUN': u'TOAST', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 26L, u'YO_OM': u'Young ', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/EMWfemale23neutral.jpg'}
+524.9362 	EXP 	Recall_Key: autoDraw = False
+524.9362 	EXP 	Recall_Fixation: autoDraw = False
+524.9362 	EXP 	Recall_Words: autoDraw = False
+524.9362 	EXP 	Recall_Key: autoDraw = False
+524.9362 	EXP 	Recall_Fixation: autoDraw = False
+524.9362 	EXP 	Jitter_Text: text = '+'
+524.9362 	EXP 	Jitter_Text: autoDraw = True
+526.4234 	DATA 	Keypress: t
+527.9236 	DATA 	Keypress: t
+529.4237 	DATA 	Keypress: t
+530.9239 	DATA 	Keypress: t
+532.4238 	DATA 	Keypress: t
+532.4351 	EXP 	Jitter_Text: autoDraw = False
+532.4351 	EXP 	Jitter_Text: autoDraw = False
+532.4351 	EXP 	Recall_Words: text = u'TOAST'
+532.4351 	EXP 	Recall_Words: autoDraw = True
+532.4351 	EXP 	Recall_Key: autoDraw = True
+533.8237 	DATA 	Keypress: 4
+533.9244 	DATA 	Keypress: t
+535.4247 	DATA 	Keypress: t
+535.4386 	EXP 	Recall_Words: autoDraw = False
+535.4560 	EXP 	Recall_Fixation: autoDraw = True
+536.9254 	DATA 	Keypress: t
+538.4251 	DATA 	Keypress: t
+538.4264 	EXP 	New trial (rep=0, index=11): {u'RAND': 0.9274205100298036, u'WN_LD': u'White', u'NOUN': u'ROCK', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 25L, u'YO_OM': u'Young', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/WWfemale22neutral.jpg'}
+538.4453 	EXP 	Recall_Key: autoDraw = False
+538.4453 	EXP 	Recall_Fixation: autoDraw = False
+538.4453 	EXP 	Recall_Words: autoDraw = False
+538.4453 	EXP 	Recall_Key: autoDraw = False
+538.4453 	EXP 	Recall_Fixation: autoDraw = False
+538.4453 	EXP 	Jitter_Text: text = '+'
+538.4453 	EXP 	Jitter_Text: autoDraw = True
+538.4453 	EXP 	Jitter_Text: autoDraw = False
+538.4453 	EXP 	Jitter_Text: autoDraw = False
+538.4453 	EXP 	Recall_Words: text = u'ROCK'
+538.4453 	EXP 	Recall_Words: autoDraw = True
+538.4453 	EXP 	Recall_Key: autoDraw = True
+539.7600 	DATA 	Keypress: 4
+539.9255 	DATA 	Keypress: t
+541.4254 	DATA 	Keypress: t
+541.4391 	EXP 	Recall_Words: autoDraw = False
+541.4560 	EXP 	Recall_Fixation: autoDraw = True
+542.9251 	DATA 	Keypress: t
+544.4259 	DATA 	Keypress: t
+544.4271 	EXP 	New trial (rep=0, index=12): {u'RAND': 0.09428365694899266, u'WN_LD': u'dark', u'NOUN': u'PURSE', u'ASSOCIATE': u'House', u'JITTER_donotuse': 16L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim53.bmp'}
+544.4390 	EXP 	Recall_Key: autoDraw = False
+544.4390 	EXP 	Recall_Fixation: autoDraw = False
+544.4390 	EXP 	Recall_Words: autoDraw = False
+544.4390 	EXP 	Recall_Key: autoDraw = False
+544.4390 	EXP 	Recall_Fixation: autoDraw = False
+544.4390 	EXP 	Jitter_Text: text = '+'
+544.4390 	EXP 	Jitter_Text: autoDraw = True
+545.9257 	DATA 	Keypress: t
+545.9373 	EXP 	Jitter_Text: autoDraw = False
+545.9373 	EXP 	Jitter_Text: autoDraw = False
+545.9373 	EXP 	Recall_Words: text = u'PURSE'
+545.9373 	EXP 	Recall_Words: autoDraw = True
+545.9373 	EXP 	Recall_Key: autoDraw = True
+547.2433 	DATA 	Keypress: 4
+547.4264 	DATA 	Keypress: t
+548.9110 	DATA 	Keypress: t
+548.9404 	EXP 	Recall_Words: autoDraw = False
+548.9570 	EXP 	Recall_Fixation: autoDraw = True
+550.4113 	DATA 	Keypress: t
+551.9106 	DATA 	Keypress: t
+551.9254 	EXP 	New trial (rep=0, index=13): {u'RAND': 0.7567751853189366, u'WN_LD': u'White', u'NOUN': u'IRON', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 105L, u'YO_OM': u'Young', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/EMWfemale22-2neutral.jpg'}
+551.9400 	EXP 	Recall_Key: autoDraw = False
+551.9400 	EXP 	Recall_Fixation: autoDraw = False
+551.9400 	EXP 	Recall_Words: autoDraw = False
+551.9400 	EXP 	Recall_Key: autoDraw = False
+551.9400 	EXP 	Recall_Fixation: autoDraw = False
+551.9400 	EXP 	Jitter_Text: text = '+'
+551.9400 	EXP 	Jitter_Text: autoDraw = True
+553.4113 	DATA 	Keypress: t
+554.9115 	DATA 	Keypress: t
+556.4121 	DATA 	Keypress: t
+557.9118 	DATA 	Keypress: t
+557.9406 	EXP 	Jitter_Text: autoDraw = False
+557.9406 	EXP 	Jitter_Text: autoDraw = False
+557.9406 	EXP 	Recall_Words: text = u'IRON'
+557.9406 	EXP 	Recall_Words: autoDraw = True
+557.9406 	EXP 	Recall_Key: autoDraw = True
+559.4123 	DATA 	Keypress: t
+559.4778 	DATA 	Keypress: 4
+560.9124 	DATA 	Keypress: t
+560.9422 	EXP 	Recall_Words: autoDraw = False
+560.9588 	EXP 	Recall_Fixation: autoDraw = True
+562.4126 	DATA 	Keypress: t
+563.9125 	DATA 	Keypress: t
+563.9139 	EXP 	New trial (rep=0, index=14): {u'RAND': 0.024997198948725097, u'WN_LD': u'light', u'NOUN': u'BOWL', u'ASSOCIATE': u'House', u'JITTER_donotuse': 93L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim107.bmp'}
+563.9253 	EXP 	Recall_Words: autoDraw = False
+563.9253 	EXP 	Recall_Key: autoDraw = False
+563.9253 	EXP 	Recall_Fixation: autoDraw = False
+563.9253 	EXP 	Jitter_Text: text = '+'
+563.9253 	EXP 	Jitter_Text: autoDraw = True
+565.4124 	DATA 	Keypress: t
+565.4238 	EXP 	Jitter_Text: autoDraw = False
+565.4238 	EXP 	Jitter_Text: autoDraw = False
+565.4238 	EXP 	Recall_Words: text = u'BOWL'
+565.4238 	EXP 	Recall_Words: autoDraw = True
+565.4238 	EXP 	Recall_Key: autoDraw = True
+566.9129 	DATA 	Keypress: t
+568.3286 	DATA 	Keypress: 4
+568.4130 	DATA 	Keypress: t
+568.4255 	EXP 	Recall_Words: autoDraw = False
+568.4432 	EXP 	Recall_Fixation: autoDraw = True
+569.9132 	DATA 	Keypress: t
+571.4133 	DATA 	Keypress: t
+571.4147 	EXP 	New trial (rep=0, index=15): {u'RAND': 0.2547768210165299, u'WN_LD': u'Non White', u'NOUN': u'CELL', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 48L, u'YO_OM': u'Young ', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/EMBfemale25neutral.jpg'}
+571.4262 	EXP 	Recall_Key: autoDraw = False
+571.4262 	EXP 	Recall_Fixation: autoDraw = False
+571.4262 	EXP 	Recall_Words: autoDraw = False
+571.4262 	EXP 	Recall_Key: autoDraw = False
+571.4262 	EXP 	Recall_Fixation: autoDraw = False
+571.4262 	EXP 	Jitter_Text: text = '+'
+571.4262 	EXP 	Jitter_Text: autoDraw = True
+572.9134 	DATA 	Keypress: t
+574.4137 	DATA 	Keypress: t
+575.9136 	DATA 	Keypress: t
+577.4140 	DATA 	Keypress: t
+577.4260 	EXP 	Jitter_Text: autoDraw = False
+577.4260 	EXP 	Jitter_Text: autoDraw = False
+577.4260 	EXP 	Recall_Words: text = u'CELL'
+577.4260 	EXP 	Recall_Words: autoDraw = True
+577.4260 	EXP 	Recall_Key: autoDraw = True
+578.5633 	DATA 	Keypress: 9
+578.9143 	DATA 	Keypress: t
+580.4143 	DATA 	Keypress: t
+580.4279 	EXP 	Recall_Words: autoDraw = False
+580.4448 	EXP 	Recall_Fixation: autoDraw = True
+581.9144 	DATA 	Keypress: t
+583.4145 	DATA 	Keypress: t
+583.4157 	EXP 	New trial (rep=0, index=16): {u'RAND': 0.56170699096458, u'WN_LD': u'light', u'NOUN': u'WOOD', u'ASSOCIATE': u'House', u'JITTER_donotuse': 47L, u'YO_OM': u'multistory', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim117.bmp'}
+583.4408 	EXP 	Recall_Key: autoDraw = False
+583.4408 	EXP 	Recall_Fixation: autoDraw = False
+583.4408 	EXP 	Recall_Words: autoDraw = False
+583.4408 	EXP 	Recall_Key: autoDraw = False
+583.4408 	EXP 	Recall_Fixation: autoDraw = False
+583.4408 	EXP 	Jitter_Text: text = '+'
+583.4408 	EXP 	Jitter_Text: autoDraw = True
+583.4408 	EXP 	Jitter_Text: autoDraw = False
+583.4408 	EXP 	Jitter_Text: autoDraw = False
+583.4408 	EXP 	Recall_Words: text = u'WOOD'
+583.4408 	EXP 	Recall_Words: autoDraw = True
+583.4408 	EXP 	Recall_Key: autoDraw = True
+584.7141 	DATA 	Keypress: 4
+584.9147 	DATA 	Keypress: t
+586.4149 	DATA 	Keypress: t
+586.4287 	EXP 	Recall_Words: autoDraw = False
+586.4455 	EXP 	Recall_Fixation: autoDraw = True
+587.9150 	DATA 	Keypress: t
+589.4148 	DATA 	Keypress: t
+589.4161 	EXP 	New trial (rep=0, index=17): {u'RAND': 0.6110242838565428, u'WN_LD': u'dark', u'NOUN': u'DESK', u'ASSOCIATE': u'House', u'JITTER_donotuse': 64L, u'YO_OM': u'multistory', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim30.bmp'}
+589.4425 	EXP 	Recall_Key: autoDraw = False
+589.4425 	EXP 	Recall_Fixation: autoDraw = False
+589.4425 	EXP 	Recall_Words: autoDraw = False
+589.4425 	EXP 	Recall_Key: autoDraw = False
+589.4425 	EXP 	Recall_Fixation: autoDraw = False
+589.4425 	EXP 	Jitter_Text: text = '+'
+589.4425 	EXP 	Jitter_Text: autoDraw = True
+589.4425 	EXP 	Jitter_Text: autoDraw = False
+589.4425 	EXP 	Jitter_Text: autoDraw = False
+589.4425 	EXP 	Recall_Words: text = u'DESK'
+589.4425 	EXP 	Recall_Words: autoDraw = True
+589.4425 	EXP 	Recall_Key: autoDraw = True
+590.3823 	DATA 	Keypress: 4
+590.9153 	DATA 	Keypress: t
+592.4159 	DATA 	Keypress: t
+592.4298 	EXP 	Recall_Words: autoDraw = False
+592.4464 	EXP 	Recall_Fixation: autoDraw = True
+593.9160 	DATA 	Keypress: t
+595.4165 	DATA 	Keypress: t
+595.4177 	EXP 	New trial (rep=0, index=18): {u'RAND': 0.5319390131972295, u'WN_LD': u'Non White', u'NOUN': u'MUSIC', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 23L, u'YO_OM': u'Old', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TSFBmale77neutral.jpg'}
+595.4432 	EXP 	Recall_Key: autoDraw = False
+595.4432 	EXP 	Recall_Fixation: autoDraw = False
+595.4432 	EXP 	Recall_Words: autoDraw = False
+595.4432 	EXP 	Recall_Key: autoDraw = False
+595.4432 	EXP 	Recall_Fixation: autoDraw = False
+595.4432 	EXP 	Jitter_Text: text = '+'
+595.4432 	EXP 	Jitter_Text: autoDraw = True
+595.4432 	EXP 	Jitter_Text: autoDraw = False
+595.4432 	EXP 	Jitter_Text: autoDraw = False
+595.4432 	EXP 	Recall_Words: text = u'MUSIC'
+595.4432 	EXP 	Recall_Words: autoDraw = True
+595.4432 	EXP 	Recall_Key: autoDraw = True
+596.5500 	DATA 	Keypress: 9
+596.9168 	DATA 	Keypress: t
+598.4172 	DATA 	Keypress: t
+598.4298 	EXP 	Recall_Words: autoDraw = False
+598.4474 	EXP 	Recall_Fixation: autoDraw = True
+599.9168 	DATA 	Keypress: t
+601.4170 	DATA 	Keypress: t
+601.4181 	EXP 	New trial (rep=0, index=19): {u'RAND': 0.17606940985084008, u'WN_LD': u'light', u'NOUN': u'DOME', u'ASSOCIATE': u'House', u'JITTER_donotuse': 101L, u'YO_OM': u'multistory', u'MF_RC': u'commercial', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim82.bmp'}
+601.4300 	EXP 	Recall_Key: autoDraw = False
+601.4300 	EXP 	Recall_Fixation: autoDraw = False
+601.4300 	EXP 	Recall_Words: autoDraw = False
+601.4300 	EXP 	Recall_Key: autoDraw = False
+601.4300 	EXP 	Recall_Fixation: autoDraw = False
+601.4300 	EXP 	Jitter_Text: text = '+'
+601.4300 	EXP 	Jitter_Text: autoDraw = True
+602.9171 	DATA 	Keypress: t
+604.4166 	DATA 	Keypress: t
+605.9169 	DATA 	Keypress: t
+605.9288 	EXP 	Jitter_Text: autoDraw = False
+605.9288 	EXP 	Jitter_Text: autoDraw = False
+605.9288 	EXP 	Recall_Words: text = u'DOME'
+605.9288 	EXP 	Recall_Words: autoDraw = True
+605.9288 	EXP 	Recall_Key: autoDraw = True
+607.2510 	DATA 	Keypress: 9
+607.4170 	DATA 	Keypress: t
+608.9183 	DATA 	Keypress: t
+608.9320 	EXP 	Recall_Words: autoDraw = False
+608.9489 	EXP 	Recall_Fixation: autoDraw = True
+610.4181 	DATA 	Keypress: t
+611.9181 	DATA 	Keypress: t
+611.9193 	EXP 	New trial (rep=0, index=20): {u'RAND': 0.09637578284841031, u'WN_LD': u'light', u'NOUN': u'SQUARE', u'ASSOCIATE': u'House', u'JITTER_donotuse': 96L, u'YO_OM': u'multistory', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim44.bmp'}
+611.9316 	EXP 	Recall_Key: autoDraw = False
+611.9316 	EXP 	Recall_Fixation: autoDraw = False
+611.9316 	EXP 	Recall_Words: autoDraw = False
+611.9316 	EXP 	Recall_Key: autoDraw = False
+611.9316 	EXP 	Recall_Fixation: autoDraw = False
+611.9316 	EXP 	Jitter_Text: text = '+'
+611.9316 	EXP 	Jitter_Text: autoDraw = True
+613.4184 	DATA 	Keypress: t
+613.4489 	EXP 	Jitter_Text: autoDraw = False
+613.4489 	EXP 	Jitter_Text: autoDraw = False
+613.4489 	EXP 	Recall_Words: text = u'SQUARE'
+613.4489 	EXP 	Recall_Words: autoDraw = True
+613.4489 	EXP 	Recall_Key: autoDraw = True
+614.9193 	DATA 	Keypress: t
+615.1030 	DATA 	Keypress: 4
+616.4193 	DATA 	Keypress: t
+616.4326 	EXP 	Recall_Words: autoDraw = False
+616.4495 	EXP 	Recall_Fixation: autoDraw = True
+617.9193 	DATA 	Keypress: t
+619.4192 	DATA 	Keypress: t
+619.4205 	EXP 	New trial (rep=0, index=21): {u'RAND': 0.7554192159629142, u'WN_LD': u'White', u'NOUN': u'LOCK', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 42L, u'YO_OM': u'Old', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TSFWfemale66-3neutral.jpg'}
+619.4328 	EXP 	Recall_Key: autoDraw = False
+619.4328 	EXP 	Recall_Fixation: autoDraw = False
+619.4328 	EXP 	Recall_Words: autoDraw = False
+619.4328 	EXP 	Recall_Key: autoDraw = False
+619.4328 	EXP 	Recall_Fixation: autoDraw = False
+619.4328 	EXP 	Jitter_Text: text = '+'
+619.4328 	EXP 	Jitter_Text: autoDraw = True
+620.9189 	DATA 	Keypress: t
+622.4203 	DATA 	Keypress: t
+622.4316 	EXP 	Jitter_Text: autoDraw = False
+622.4316 	EXP 	Jitter_Text: autoDraw = False
+622.4316 	EXP 	Recall_Words: text = u'LOCK'
+622.4316 	EXP 	Recall_Words: autoDraw = True
+622.4316 	EXP 	Recall_Key: autoDraw = True
+623.9201 	DATA 	Keypress: t
+625.4203 	DATA 	Keypress: t
+625.4340 	EXP 	Recall_Words: autoDraw = False
+625.4509 	EXP 	Recall_Fixation: autoDraw = True
+625.6539 	DATA 	Keypress: 4
+626.9199 	DATA 	Keypress: t
+628.4209 	DATA 	Keypress: t
+628.4222 	EXP 	New trial (rep=0, index=22): {u'RAND': 0.1857260555418626, u'WN_LD': u'dark', u'NOUN': u'FRUIT', u'ASSOCIATE': u'House', u'JITTER_donotuse': 114L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim127.bmp'}
+628.4333 	EXP 	Recall_Key: autoDraw = False
+628.4333 	EXP 	Recall_Fixation: autoDraw = False
+628.4333 	EXP 	Recall_Words: autoDraw = False
+628.4333 	EXP 	Recall_Key: autoDraw = False
+628.4333 	EXP 	Recall_Fixation: autoDraw = False
+628.4333 	EXP 	Jitter_Text: text = '+'
+628.4333 	EXP 	Jitter_Text: autoDraw = True
+628.4333 	EXP 	Jitter_Text: autoDraw = False
+628.4333 	EXP 	Jitter_Text: autoDraw = False
+628.4333 	EXP 	Recall_Words: text = u'FRUIT'
+628.4333 	EXP 	Recall_Words: autoDraw = True
+628.4333 	EXP 	Recall_Key: autoDraw = True
+629.9208 	DATA 	Keypress: t
+629.9716 	DATA 	Keypress: 4
+631.4210 	DATA 	Keypress: t
+631.4339 	EXP 	Recall_Words: autoDraw = False
+631.4516 	EXP 	Recall_Fixation: autoDraw = True
+632.9209 	DATA 	Keypress: t
+634.4210 	DATA 	Keypress: t
+634.4223 	EXP 	New trial (rep=0, index=23): {u'RAND': 0.44419116149977267, u'WN_LD': u'White', u'NOUN': u'OCEAN', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 73L, u'YO_OM': u'Old', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TSFWfemale63-3neutral.jpg'}
+634.4350 	EXP 	Recall_Key: autoDraw = False
+634.4350 	EXP 	Recall_Fixation: autoDraw = False
+634.4350 	EXP 	Recall_Words: autoDraw = False
+634.4350 	EXP 	Recall_Key: autoDraw = False
+634.4350 	EXP 	Recall_Fixation: autoDraw = False
+634.4350 	EXP 	Jitter_Text: text = '+'
+634.4350 	EXP 	Jitter_Text: autoDraw = True
+635.9215 	DATA 	Keypress: t
+635.9335 	EXP 	Jitter_Text: autoDraw = False
+635.9335 	EXP 	Jitter_Text: autoDraw = False
+635.9335 	EXP 	Recall_Words: text = u'OCEAN'
+635.9335 	EXP 	Recall_Words: autoDraw = True
+635.9335 	EXP 	Recall_Key: autoDraw = True
+636.9391 	DATA 	Keypress: 9
+637.4216 	DATA 	Keypress: t
+638.9214 	DATA 	Keypress: t
+638.9361 	EXP 	Recall_Words: autoDraw = False
+638.9526 	EXP 	Recall_Fixation: autoDraw = True
+640.4218 	DATA 	Keypress: t
+641.9225 	DATA 	Keypress: t
+641.9238 	EXP 	New trial (rep=0, index=24): {u'RAND': 0.7540526221392531, u'WN_LD': u'White', u'NOUN': u'STICK', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 3L, u'YO_OM': u'Old', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/JWfemale68neutral.jpg'}
+641.9359 	EXP 	Recall_Key: autoDraw = False
+641.9359 	EXP 	Recall_Fixation: autoDraw = False
+641.9359 	EXP 	Recall_Words: autoDraw = False
+641.9359 	EXP 	Recall_Key: autoDraw = False
+641.9359 	EXP 	Recall_Fixation: autoDraw = False
+641.9359 	EXP 	Jitter_Text: text = '+'
+641.9359 	EXP 	Jitter_Text: autoDraw = True
+643.4226 	DATA 	Keypress: t
+644.9229 	DATA 	Keypress: t
+646.4229 	DATA 	Keypress: t
+646.4342 	EXP 	Jitter_Text: autoDraw = False
+646.4342 	EXP 	Jitter_Text: autoDraw = False
+646.4342 	EXP 	Recall_Words: text = u'STICK'
+646.4342 	EXP 	Recall_Words: autoDraw = True
+646.4342 	EXP 	Recall_Key: autoDraw = True
+647.8905 	DATA 	Keypress: 9
+647.9233 	DATA 	Keypress: t
+649.4237 	DATA 	Keypress: t
+649.4376 	EXP 	Recall_Words: autoDraw = False
+649.4552 	EXP 	Recall_Fixation: autoDraw = True
+650.9238 	DATA 	Keypress: t
+652.4241 	DATA 	Keypress: t
+652.4253 	EXP 	New trial (rep=0, index=25): {u'RAND': 0.03448278406319605, u'WN_LD': u'White', u'NOUN': u'SINK', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 21L, u'YO_OM': u'Young', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TMWmale29neutral.jpg'}
+652.4378 	EXP 	Recall_Key: autoDraw = False
+652.4378 	EXP 	Recall_Fixation: autoDraw = False
+652.4378 	EXP 	Recall_Words: autoDraw = False
+652.4378 	EXP 	Recall_Key: autoDraw = False
+652.4378 	EXP 	Recall_Fixation: autoDraw = False
+652.4378 	EXP 	Jitter_Text: text = '+'
+652.4378 	EXP 	Jitter_Text: autoDraw = True
+653.9243 	DATA 	Keypress: t
+655.4244 	DATA 	Keypress: t
+656.9243 	DATA 	Keypress: t
+658.4244 	DATA 	Keypress: t
+658.4367 	EXP 	Jitter_Text: autoDraw = False
+658.4367 	EXP 	Jitter_Text: autoDraw = False
+658.4367 	EXP 	Recall_Words: text = u'SINK'
+658.4367 	EXP 	Recall_Words: autoDraw = True
+658.4367 	EXP 	Recall_Key: autoDraw = True
+659.9246 	DATA 	Keypress: t
+660.4244 	DATA 	Keypress: 9
+661.4257 	DATA 	Keypress: t
+661.4395 	EXP 	Recall_Words: autoDraw = False
+661.4570 	EXP 	Recall_Fixation: autoDraw = True
+662.9254 	DATA 	Keypress: t
+664.4256 	DATA 	Keypress: t
+664.4269 	EXP 	New trial (rep=0, index=26): {u'RAND': 0.11192975905188285, u'WN_LD': u'White', u'NOUN': u'PHONE', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 35L, u'YO_OM': u'Old', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TSFWfemale69-3neutral.jpg'}
+664.4388 	EXP 	Recall_Key: autoDraw = False
+664.4388 	EXP 	Recall_Fixation: autoDraw = False
+664.4388 	EXP 	Recall_Words: autoDraw = False
+664.4388 	EXP 	Recall_Key: autoDraw = False
+664.4388 	EXP 	Recall_Fixation: autoDraw = False
+664.4388 	EXP 	Jitter_Text: text = '+'
+664.4388 	EXP 	Jitter_Text: autoDraw = True
+665.9261 	DATA 	Keypress: t
+667.4262 	DATA 	Keypress: t
+667.4374 	EXP 	Jitter_Text: autoDraw = False
+667.4374 	EXP 	Jitter_Text: autoDraw = False
+667.4374 	EXP 	Recall_Words: text = u'PHONE'
+667.4374 	EXP 	Recall_Words: autoDraw = True
+667.4374 	EXP 	Recall_Key: autoDraw = True
+668.9257 	DATA 	Keypress: t
+669.5765 	DATA 	Keypress: 9
+670.4267 	DATA 	Keypress: t
+670.4405 	EXP 	Recall_Words: autoDraw = False
+670.4580 	EXP 	Recall_Fixation: autoDraw = True
+671.9265 	DATA 	Keypress: t
+673.4116 	DATA 	Keypress: t
+673.4255 	EXP 	New trial (rep=0, index=27): {u'RAND': 0.5552207100307202, u'WN_LD': u'light', u'NOUN': u'CAMERA', u'ASSOCIATE': u'House', u'JITTER_donotuse': 102L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim66.bmp'}
+673.4409 	EXP 	Recall_Key: autoDraw = False
+673.4409 	EXP 	Recall_Fixation: autoDraw = False
+673.4409 	EXP 	Recall_Words: autoDraw = False
+673.4409 	EXP 	Recall_Key: autoDraw = False
+673.4409 	EXP 	Recall_Fixation: autoDraw = False
+673.4409 	EXP 	Jitter_Text: text = '+'
+673.4409 	EXP 	Jitter_Text: autoDraw = True
+674.9271 	DATA 	Keypress: t
+674.9389 	EXP 	Jitter_Text: autoDraw = False
+674.9389 	EXP 	Jitter_Text: autoDraw = False
+674.9389 	EXP 	Recall_Words: text = u'CAMERA'
+674.9389 	EXP 	Recall_Words: autoDraw = True
+674.9389 	EXP 	Recall_Key: autoDraw = True
+676.4118 	DATA 	Keypress: t
+677.8439 	DATA 	Keypress: 4
+677.9121 	DATA 	Keypress: t
+677.9412 	EXP 	Recall_Words: autoDraw = False
+677.9582 	EXP 	Recall_Fixation: autoDraw = True
+679.4123 	DATA 	Keypress: t
+680.9119 	DATA 	Keypress: t
+680.9131 	EXP 	New trial (rep=0, index=28): {u'RAND': 0.10152120753105953, u'WN_LD': u'Non White', u'NOUN': u'GOLD', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 76L, u'YO_OM': u'Young', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/WBmale26-2neutral.jpg'}
+680.9241 	EXP 	Recall_Words: autoDraw = False
+680.9241 	EXP 	Recall_Key: autoDraw = False
+680.9241 	EXP 	Recall_Fixation: autoDraw = False
+680.9241 	EXP 	Jitter_Text: text = '+'
+680.9241 	EXP 	Jitter_Text: autoDraw = True
+682.4121 	DATA 	Keypress: t
+682.4320 	EXP 	Jitter_Text: autoDraw = False
+682.4320 	EXP 	Jitter_Text: autoDraw = False
+682.4320 	EXP 	Recall_Words: text = u'GOLD'
+682.4320 	EXP 	Recall_Words: autoDraw = True
+682.4320 	EXP 	Recall_Key: autoDraw = True
+683.9121 	DATA 	Keypress: t
+684.3949 	DATA 	Keypress: 4
+685.4132 	DATA 	Keypress: t
+685.4250 	EXP 	Recall_Words: autoDraw = False
+685.4426 	EXP 	Recall_Fixation: autoDraw = True
+686.9131 	DATA 	Keypress: t
+688.4130 	DATA 	Keypress: t
+688.4141 	EXP 	New trial (rep=0, index=29): {u'RAND': 0.3778244061054332, u'WN_LD': u'dark', u'NOUN': u'SNOW', u'ASSOCIATE': u'House', u'JITTER_donotuse': 116L, u'YO_OM': u'multistory', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim130.bmp'}
+688.4255 	EXP 	Recall_Key: autoDraw = False
+688.4255 	EXP 	Recall_Fixation: autoDraw = False
+688.4255 	EXP 	Recall_Words: autoDraw = False
+688.4255 	EXP 	Recall_Key: autoDraw = False
+688.4255 	EXP 	Recall_Fixation: autoDraw = False
+688.4255 	EXP 	Jitter_Text: text = '+'
+688.4255 	EXP 	Jitter_Text: autoDraw = True
+689.9134 	DATA 	Keypress: t
+691.4129 	DATA 	Keypress: t
+692.9132 	DATA 	Keypress: t
+692.9249 	EXP 	Jitter_Text: autoDraw = False
+692.9249 	EXP 	Jitter_Text: autoDraw = False
+692.9249 	EXP 	Recall_Words: text = u'SNOW'
+692.9249 	EXP 	Recall_Words: autoDraw = True
+692.9249 	EXP 	Recall_Key: autoDraw = True
+694.4128 	DATA 	Keypress: t
+694.4799 	DATA 	Keypress: 9
+695.9139 	DATA 	Keypress: t
+695.9271 	EXP 	Recall_Words: autoDraw = False
+695.9437 	EXP 	Recall_Fixation: autoDraw = True
+697.4138 	DATA 	Keypress: t
+698.9144 	DATA 	Keypress: t
+698.9155 	EXP 	New trial (rep=0, index=30): {u'RAND': 0.9474676243459776, u'WN_LD': u'White', u'NOUN': u'CREAM', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 40L, u'YO_OM': u'Young', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/EMWmale21neutral.jpg'}
+698.9437 	EXP 	Recall_Key: autoDraw = False
+698.9437 	EXP 	Recall_Fixation: autoDraw = False
+698.9437 	EXP 	Recall_Words: autoDraw = False
+698.9437 	EXP 	Recall_Key: autoDraw = False
+698.9437 	EXP 	Recall_Fixation: autoDraw = False
+698.9437 	EXP 	Jitter_Text: text = '+'
+698.9437 	EXP 	Jitter_Text: autoDraw = True
+698.9437 	EXP 	Jitter_Text: autoDraw = False
+698.9437 	EXP 	Jitter_Text: autoDraw = False
+698.9437 	EXP 	Recall_Words: text = u'CREAM'
+698.9437 	EXP 	Recall_Words: autoDraw = True
+698.9437 	EXP 	Recall_Key: autoDraw = True
+700.4143 	DATA 	Keypress: t
+701.3645 	DATA 	Keypress: 4
+701.9145 	DATA 	Keypress: t
+701.9280 	EXP 	Recall_Words: autoDraw = False
+701.9437 	EXP 	Recall_Fixation: autoDraw = True
+703.4148 	DATA 	Keypress: t
+704.9113 	DATA 	Keypress: t
+704.9123 	EXP 	New trial (rep=0, index=31): {u'RAND': 0.3160151963672235, u'WN_LD': u'White', u'NOUN': u'RAIN', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 119L, u'YO_OM': u'Young', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/EMWfemale34-2neutral.jpg'}
+704.9275 	EXP 	Recall_Key: autoDraw = False
+704.9275 	EXP 	Recall_Fixation: autoDraw = False
+704.9275 	EXP 	Recall_Words: autoDraw = False
+704.9275 	EXP 	Recall_Key: autoDraw = False
+704.9275 	EXP 	Recall_Fixation: autoDraw = False
+704.9275 	EXP 	Jitter_Text: text = '+'
+704.9275 	EXP 	Jitter_Text: autoDraw = True
+704.9275 	EXP 	Jitter_Text: autoDraw = False
+704.9275 	EXP 	Jitter_Text: autoDraw = False
+704.9275 	EXP 	Recall_Words: text = u'RAIN'
+704.9275 	EXP 	Recall_Words: autoDraw = True
+704.9275 	EXP 	Recall_Key: autoDraw = True
+705.9482 	DATA 	Keypress: 4
+706.4150 	DATA 	Keypress: t
+707.9146 	DATA 	Keypress: t
+707.9286 	EXP 	Recall_Words: autoDraw = False
+707.9455 	EXP 	Recall_Fixation: autoDraw = True
+709.4155 	DATA 	Keypress: t
+710.9157 	DATA 	Keypress: t
+710.9170 	EXP 	New trial (rep=0, index=32): {u'RAND': 0.02491539981707802, u'WN_LD': u'White', u'NOUN': u'BELL', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 106L, u'YO_OM': u'Old', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TSFWfemale75-3neutral.jpg'}
+710.9320 	EXP 	Recall_Key: autoDraw = False
+710.9320 	EXP 	Recall_Fixation: autoDraw = False
+710.9320 	EXP 	Recall_Words: autoDraw = False
+710.9320 	EXP 	Recall_Key: autoDraw = False
+710.9320 	EXP 	Recall_Fixation: autoDraw = False
+710.9320 	EXP 	Jitter_Text: text = '+'
+710.9320 	EXP 	Jitter_Text: autoDraw = True
+710.9320 	EXP 	Jitter_Text: autoDraw = False
+710.9320 	EXP 	Jitter_Text: autoDraw = False
+710.9320 	EXP 	Recall_Words: text = u'BELL'
+710.9320 	EXP 	Recall_Words: autoDraw = True
+710.9320 	EXP 	Recall_Key: autoDraw = True
+712.1168 	DATA 	Keypress: 9
+712.4158 	DATA 	Keypress: t
+713.9160 	DATA 	Keypress: t
+713.9297 	EXP 	Recall_Words: autoDraw = False
+713.9461 	EXP 	Recall_Fixation: autoDraw = True
+715.4162 	DATA 	Keypress: t
+716.9159 	DATA 	Keypress: t
+716.9172 	EXP 	New trial (rep=0, index=33): {u'RAND': 0.03712037456243811, u'WN_LD': u'White', u'NOUN': u'PLATE', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 85L, u'YO_OM': u'Young', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TMWfemale35neutral.jpg'}
+716.9333 	EXP 	Recall_Key: autoDraw = False
+716.9333 	EXP 	Recall_Fixation: autoDraw = False
+716.9333 	EXP 	Recall_Words: autoDraw = False
+716.9333 	EXP 	Recall_Key: autoDraw = False
+716.9333 	EXP 	Recall_Fixation: autoDraw = False
+716.9333 	EXP 	Jitter_Text: text = '+'
+716.9333 	EXP 	Jitter_Text: autoDraw = True
+716.9333 	EXP 	Jitter_Text: autoDraw = False
+716.9333 	EXP 	Jitter_Text: autoDraw = False
+716.9333 	EXP 	Recall_Words: text = u'PLATE'
+716.9333 	EXP 	Recall_Words: autoDraw = True
+716.9333 	EXP 	Recall_Key: autoDraw = True
+717.9838 	DATA 	Keypress: 4
+718.4162 	DATA 	Keypress: t
+719.9160 	DATA 	Keypress: t
+719.9302 	EXP 	Recall_Words: autoDraw = False
+719.9471 	EXP 	Recall_Fixation: autoDraw = True
+721.4162 	DATA 	Keypress: t
+722.9164 	DATA 	Keypress: t
+722.9177 	EXP 	New trial (rep=0, index=34): {u'RAND': 0.6183400031434363, u'WN_LD': u'Non White', u'NOUN': u'CHART', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 36L, u'YO_OM': u'Young', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TMBmale21-4neutral.jpg'}
+722.9298 	EXP 	Recall_Key: autoDraw = False
+722.9298 	EXP 	Recall_Fixation: autoDraw = False
+722.9298 	EXP 	Recall_Words: autoDraw = False
+722.9298 	EXP 	Recall_Key: autoDraw = False
+722.9298 	EXP 	Recall_Fixation: autoDraw = False
+722.9298 	EXP 	Jitter_Text: text = '+'
+722.9298 	EXP 	Jitter_Text: autoDraw = True
+724.4173 	DATA 	Keypress: t
+725.9175 	DATA 	Keypress: t
+725.9283 	EXP 	Jitter_Text: autoDraw = False
+725.9283 	EXP 	Jitter_Text: autoDraw = False
+725.9283 	EXP 	Recall_Words: text = u'CHART'
+725.9283 	EXP 	Recall_Words: autoDraw = True
+725.9283 	EXP 	Recall_Key: autoDraw = True
+727.4179 	DATA 	Keypress: t
+727.6348 	DATA 	Keypress: 4
+728.9179 	DATA 	Keypress: t
+728.9309 	EXP 	Recall_Words: autoDraw = False
+728.9484 	EXP 	Recall_Fixation: autoDraw = True
+730.4179 	DATA 	Keypress: t
+731.9179 	DATA 	Keypress: t
+731.9192 	EXP 	New trial (rep=0, index=35): {u'RAND': 0.008638951221066171, u'WN_LD': u'Non White', u'NOUN': u'NOTE', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 120L, u'YO_OM': u'Young', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TMBmale21-3neutral.jpg'}
+731.9316 	EXP 	Recall_Key: autoDraw = False
+731.9316 	EXP 	Recall_Fixation: autoDraw = False
+731.9316 	EXP 	Recall_Words: autoDraw = False
+731.9316 	EXP 	Recall_Key: autoDraw = False
+731.9316 	EXP 	Recall_Fixation: autoDraw = False
+731.9316 	EXP 	Jitter_Text: text = '+'
+731.9316 	EXP 	Jitter_Text: autoDraw = True
+733.4179 	DATA 	Keypress: t
+734.9191 	DATA 	Keypress: t
+736.4193 	DATA 	Keypress: t
+737.9190 	DATA 	Keypress: t
+739.4191 	DATA 	Keypress: t
+739.4313 	EXP 	Jitter_Text: autoDraw = False
+739.4313 	EXP 	Jitter_Text: autoDraw = False
+739.4313 	EXP 	Recall_Words: text = u'NOTE'
+739.4313 	EXP 	Recall_Words: autoDraw = True
+739.4313 	EXP 	Recall_Key: autoDraw = True
+740.9190 	DATA 	Keypress: t
+741.9198 	DATA 	Keypress: 9
+742.4210 	DATA 	Keypress: t
+742.4325 	EXP 	Recall_Words: autoDraw = False
+742.4503 	EXP 	Recall_Fixation: autoDraw = True
+743.9201 	DATA 	Keypress: t
+745.4202 	DATA 	Keypress: t
+745.4215 	EXP 	New trial (rep=0, index=36): {u'RAND': 0.16485102516685302, u'WN_LD': u'dark', u'NOUN': u'BOTTLE', u'ASSOCIATE': u'House', u'JITTER_donotuse': 6L, u'YO_OM': u'multistory', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim126.bmp'}
+745.4334 	EXP 	Recall_Key: autoDraw = False
+745.4334 	EXP 	Recall_Fixation: autoDraw = False
+745.4334 	EXP 	Recall_Words: autoDraw = False
+745.4334 	EXP 	Recall_Key: autoDraw = False
+745.4334 	EXP 	Recall_Fixation: autoDraw = False
+745.4334 	EXP 	Jitter_Text: text = '+'
+745.4334 	EXP 	Jitter_Text: autoDraw = True
+746.9199 	DATA 	Keypress: t
+748.4200 	DATA 	Keypress: t
+749.9213 	DATA 	Keypress: t
+749.9324 	EXP 	Jitter_Text: autoDraw = False
+749.9324 	EXP 	Jitter_Text: autoDraw = False
+749.9324 	EXP 	Recall_Words: text = u'BOTTLE'
+749.9324 	EXP 	Recall_Words: autoDraw = True
+749.9324 	EXP 	Recall_Key: autoDraw = True
+751.4208 	DATA 	Keypress: t
+751.8214 	DATA 	Keypress: 4
+752.9212 	DATA 	Keypress: t
+752.9348 	EXP 	Recall_Words: autoDraw = False
+752.9514 	EXP 	Recall_Fixation: autoDraw = True
+754.4206 	DATA 	Keypress: t
+755.9217 	DATA 	Keypress: t
+755.9229 	EXP 	New trial (rep=0, index=37): {u'RAND': 0.4127990102223318, u'WN_LD': u'light', u'NOUN': u'VALLEY', u'ASSOCIATE': u'House', u'JITTER_donotuse': 39L, u'YO_OM': u'multistory', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim91.bmp'}
+755.9345 	EXP 	Recall_Key: autoDraw = False
+755.9345 	EXP 	Recall_Fixation: autoDraw = False
+755.9345 	EXP 	Recall_Words: autoDraw = False
+755.9345 	EXP 	Recall_Key: autoDraw = False
+755.9345 	EXP 	Recall_Fixation: autoDraw = False
+755.9345 	EXP 	Jitter_Text: text = '+'
+755.9345 	EXP 	Jitter_Text: autoDraw = True
+757.4220 	DATA 	Keypress: t
+758.9219 	DATA 	Keypress: t
+758.9432 	EXP 	Jitter_Text: autoDraw = False
+758.9432 	EXP 	Jitter_Text: autoDraw = False
+758.9432 	EXP 	Recall_Words: text = u'VALLEY'
+758.9432 	EXP 	Recall_Words: autoDraw = True
+758.9432 	EXP 	Recall_Key: autoDraw = True
+760.4218 	DATA 	Keypress: t
+761.2058 	DATA 	Keypress: 9
+761.9229 	DATA 	Keypress: t
+761.9356 	EXP 	Recall_Words: autoDraw = False
+761.9531 	EXP 	Recall_Fixation: autoDraw = True
+763.4231 	DATA 	Keypress: t
+764.9230 	DATA 	Keypress: t
+764.9243 	EXP 	New trial (rep=0, index=38): {u'RAND': 0.8342898126788812, u'WN_LD': u'Non White', u'NOUN': u'COURT', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 72L, u'YO_OM': u'Young', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TMBfemale26neutral.jpg'}
+764.9366 	EXP 	Recall_Key: autoDraw = False
+764.9366 	EXP 	Recall_Fixation: autoDraw = False
+764.9366 	EXP 	Recall_Words: autoDraw = False
+764.9366 	EXP 	Recall_Key: autoDraw = False
+764.9366 	EXP 	Recall_Fixation: autoDraw = False
+764.9366 	EXP 	Jitter_Text: text = '+'
+764.9366 	EXP 	Jitter_Text: autoDraw = True
+766.4229 	DATA 	Keypress: t
+767.9233 	DATA 	Keypress: t
+767.9342 	EXP 	Jitter_Text: autoDraw = False
+767.9342 	EXP 	Jitter_Text: autoDraw = False
+767.9342 	EXP 	Recall_Words: text = u'COURT'
+767.9342 	EXP 	Recall_Words: autoDraw = True
+767.9342 	EXP 	Recall_Key: autoDraw = True
+769.0899 	DATA 	Keypress: 4
+769.4235 	DATA 	Keypress: t
+770.9238 	DATA 	Keypress: t
+770.9375 	EXP 	Recall_Words: autoDraw = False
+770.9540 	EXP 	Recall_Fixation: autoDraw = True
+772.4238 	DATA 	Keypress: t
+773.9238 	DATA 	Keypress: t
+773.9251 	EXP 	New trial (rep=0, index=39): {u'RAND': 0.7280942138241984, u'WN_LD': u'light', u'NOUN': u'BOAT', u'ASSOCIATE': u'House', u'JITTER_donotuse': 55L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim50.bmp'}
+773.9359 	EXP 	Recall_Key: autoDraw = False
+773.9359 	EXP 	Recall_Fixation: autoDraw = False
+773.9359 	EXP 	Recall_Words: autoDraw = False
+773.9359 	EXP 	Recall_Key: autoDraw = False
+773.9359 	EXP 	Recall_Fixation: autoDraw = False
+773.9359 	EXP 	Jitter_Text: text = '+'
+773.9359 	EXP 	Jitter_Text: autoDraw = True
+773.9359 	EXP 	Jitter_Text: autoDraw = False
+773.9359 	EXP 	Jitter_Text: autoDraw = False
+773.9359 	EXP 	Recall_Words: text = u'BOAT'
+773.9359 	EXP 	Recall_Words: autoDraw = True
+773.9359 	EXP 	Recall_Key: autoDraw = True
+775.1738 	DATA 	Keypress: 9
+775.4243 	DATA 	Keypress: t
+776.9250 	DATA 	Keypress: t
+776.9383 	EXP 	Recall_Words: autoDraw = False
+776.9559 	EXP 	Recall_Fixation: autoDraw = True
+778.4247 	DATA 	Keypress: t
+779.9253 	DATA 	Keypress: t
+779.9383 	EXP 	Recall_Key: autoDraw = False
+779.9383 	EXP 	Recall_Fixation: autoDraw = False
+779.9383 	EXP 	Recall_Words: autoDraw = False
+779.9383 	EXP 	Recall_Key: autoDraw = False
+779.9383 	EXP 	Recall_Fixation: autoDraw = False
+779.9383 	EXP 	Fixation: autoDraw = True
+781.4252 	DATA 	Keypress: t
+782.9252 	DATA 	Keypress: t
+784.4251 	DATA 	Keypress: t
+785.9261 	DATA 	Keypress: t
+787.4260 	DATA 	Keypress: t
+788.9259 	DATA 	Keypress: t
+790.4263 	DATA 	Keypress: t
+791.9105 	DATA 	Keypress: t
+793.4110 	DATA 	Keypress: t
+794.9270 	DATA 	Keypress: t
+796.4266 	DATA 	Keypress: t
+797.9278 	DATA 	Keypress: t
+797.9405 	EXP 	Fixation: autoDraw = False
+797.9581 	EXP 	Break: autoDraw = True
+820.4142 	DATA 	Keypress: space
+820.4228 	EXP 	Imported CountDown.xlsx as conditions, 3 conditions, 1 params
+820.4231 	EXP 	Created sequence: sequential, trialTypes=3, nReps=1, seed=None
+820.4234 	EXP 	New trial (rep=0, index=0): {u'CountDown': 3L}
+820.4327 	EXP 	Fixation: autoDraw = False
+820.4327 	EXP 	Break: autoDraw = False
+820.4327 	EXP 	Countdown_Text: color = 'white (named)'
+820.4327 	EXP 	Countdown_Text: text = 3L
+820.4327 	EXP 	Countdown_Text: pos = array([ 0.,  0.])
+820.4327 	EXP 	Countdown_Text: font = 'Arial'
+820.4327 	EXP 	Countdown_Text: height = 0.2
+820.4327 	EXP 	Countdown_Text: autoDraw = True
+820.4327 	EXP 	Countdown_Text: text = u'3'
+828.0481 	DATA 	Keypress: t
+828.0491 	EXP 	New trial (rep=0, index=1): {u'CountDown': 2L}
+828.0599 	EXP 	Countdown_Text: autoDraw = False
+828.0599 	EXP 	Countdown_Text: color = 'white (named)'
+828.0599 	EXP 	Countdown_Text: text = 2L
+828.0599 	EXP 	Countdown_Text: pos = array([ 0.,  0.])
+828.0599 	EXP 	Countdown_Text: font = 'Arial'
+828.0599 	EXP 	Countdown_Text: height = 0.2
+828.0599 	EXP 	Countdown_Text: autoDraw = True
+828.0599 	EXP 	Countdown_Text: text = u'2'
+829.5488 	DATA 	Keypress: t
+829.5497 	EXP 	New trial (rep=0, index=2): {u'CountDown': 1L}
+829.5689 	EXP 	Countdown_Text: autoDraw = False
+829.5689 	EXP 	Countdown_Text: color = 'white (named)'
+829.5689 	EXP 	Countdown_Text: text = 1L
+829.5689 	EXP 	Countdown_Text: pos = array([ 0.,  0.])
+829.5689 	EXP 	Countdown_Text: font = 'Arial'
+829.5689 	EXP 	Countdown_Text: height = 0.2
+829.5689 	EXP 	Countdown_Text: autoDraw = True
+829.5689 	EXP 	Countdown_Text: text = u'1'
+831.0465 	DATA 	Keypress: t
+831.0607 	EXP 	Countdown_Text: autoDraw = False
+831.0607 	EXP 	ShortFixation: autoDraw = True
+832.5487 	DATA 	Keypress: t
+834.0463 	DATA 	Keypress: t
+834.0832 	EXP 	Imported Stim/StimLists/StimListTest205.xlsx as conditions, 40 conditions, 9 params
+834.0836 	EXP 	Created sequence: sequential, trialTypes=40, nReps=1, seed=None
+834.0840 	EXP 	New trial (rep=0, index=0): {u'RAND': 0.6978606567339909, u'WN_LD': u'dark', u'NOUN': u'GLASS', u'ASSOCIATE': u'House', u'JITTER_donotuse': 15L, u'YO_OM': u'multistory', u'MF_RC': u'commercial', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim68.bmp'}
+834.1123 	EXP 	ShortFixation: autoDraw = False
+834.1123 	EXP 	ShortFixation: autoDraw = False
+834.1123 	EXP 	Jitter_Text: text = '+'
+834.1123 	EXP 	Jitter_Text: autoDraw = True
+834.1123 	EXP 	Jitter_Text: autoDraw = False
+834.1123 	EXP 	Jitter_Text: autoDraw = False
+834.1123 	EXP 	Recall_Words: text = u'GLASS'
+834.1123 	EXP 	Recall_Words: autoDraw = True
+834.1123 	EXP 	Recall_Key: autoDraw = True
+835.4157 	DATA 	Keypress: 4
+835.5484 	DATA 	Keypress: t
+837.0494 	DATA 	Keypress: t
+837.0966 	EXP 	Recall_Words: autoDraw = False
+837.1125 	EXP 	Recall_Fixation: autoDraw = True
+838.5495 	DATA 	Keypress: t
+840.0497 	DATA 	Keypress: t
+840.0514 	EXP 	New trial (rep=0, index=1): {u'RAND': 0.6927892895123939, u'WN_LD': u'light', u'NOUN': u'SIGN', u'ASSOCIATE': u'House', u'JITTER_donotuse': 56L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim128.bmp'}
+840.0804 	EXP 	Recall_Words: autoDraw = False
+840.0804 	EXP 	Recall_Key: autoDraw = False
+840.0804 	EXP 	Recall_Fixation: autoDraw = False
+840.0804 	EXP 	Jitter_Text: text = '+'
+840.0804 	EXP 	Jitter_Text: autoDraw = True
+840.0804 	EXP 	Jitter_Text: autoDraw = False
+840.0804 	EXP 	Jitter_Text: autoDraw = False
+840.0804 	EXP 	Recall_Words: text = u'SIGN'
+840.0804 	EXP 	Recall_Words: autoDraw = True
+840.0804 	EXP 	Recall_Key: autoDraw = True
+841.5508 	DATA 	Keypress: t
+843.0506 	DATA 	Keypress: t
+843.0640 	EXP 	Recall_Words: autoDraw = False
+843.0816 	EXP 	Recall_Fixation: autoDraw = True
+843.1834 	DATA 	Keypress: 9
+844.5509 	DATA 	Keypress: t
+846.0502 	DATA 	Keypress: t
+846.0516 	EXP 	New trial (rep=0, index=2): {u'RAND': 0.3710514176908142, u'WN_LD': u'dark', u'NOUN': u'CIRCLE', u'ASSOCIATE': u'House', u'JITTER_donotuse': 95L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim49.bmp'}
+846.0638 	EXP 	Recall_Key: autoDraw = False
+846.0638 	EXP 	Recall_Fixation: autoDraw = False
+846.0638 	EXP 	Recall_Words: autoDraw = False
+846.0638 	EXP 	Recall_Key: autoDraw = False
+846.0638 	EXP 	Recall_Fixation: autoDraw = False
+846.0638 	EXP 	Jitter_Text: text = '+'
+846.0638 	EXP 	Jitter_Text: autoDraw = True
+847.5514 	DATA 	Keypress: t
+847.5628 	EXP 	Jitter_Text: autoDraw = False
+847.5628 	EXP 	Jitter_Text: autoDraw = False
+847.5628 	EXP 	Recall_Words: text = u'CIRCLE'
+847.5628 	EXP 	Recall_Words: autoDraw = True
+847.5628 	EXP 	Recall_Key: autoDraw = True
+848.6347 	DATA 	Keypress: 9
+849.0503 	DATA 	Keypress: t
+850.5517 	DATA 	Keypress: t
+850.5651 	EXP 	Recall_Words: autoDraw = False
+850.5820 	EXP 	Recall_Fixation: autoDraw = True
+852.0515 	DATA 	Keypress: t
+853.5522 	DATA 	Keypress: t
+853.5535 	EXP 	New trial (rep=0, index=3): {u'RAND': 0.3661187868588749, u'WN_LD': u'Non White', u'NOUN': u'SOUP', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 77L, u'YO_OM': u'Old', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TSFBfemale65-2neutral.jpg'}
+853.5754 	EXP 	Recall_Key: autoDraw = False
+853.5754 	EXP 	Recall_Fixation: autoDraw = False
+853.5754 	EXP 	Recall_Words: autoDraw = False
+853.5754 	EXP 	Recall_Key: autoDraw = False
+853.5754 	EXP 	Recall_Fixation: autoDraw = False
+853.5754 	EXP 	Jitter_Text: text = '+'
+853.5754 	EXP 	Jitter_Text: autoDraw = True
+853.5754 	EXP 	Jitter_Text: autoDraw = False
+853.5754 	EXP 	Jitter_Text: autoDraw = False
+853.5754 	EXP 	Recall_Words: text = u'SOUP'
+853.5754 	EXP 	Recall_Words: autoDraw = True
+853.5754 	EXP 	Recall_Key: autoDraw = True
+855.0522 	DATA 	Keypress: t
+855.8682 	DATA 	Keypress: 4
+856.5522 	DATA 	Keypress: t
+856.5660 	EXP 	Recall_Words: autoDraw = False
+856.5826 	EXP 	Recall_Fixation: autoDraw = True
+858.0523 	DATA 	Keypress: t
+859.5375 	DATA 	Keypress: t
+859.5508 	EXP 	New trial (rep=0, index=4): {u'RAND': 0.15777080227963258, u'WN_LD': u'dark', u'NOUN': u'ISLAND', u'ASSOCIATE': u'House', u'JITTER_donotuse': 10L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim111.bmp'}
+859.5663 	EXP 	Recall_Key: autoDraw = False
+859.5663 	EXP 	Recall_Fixation: autoDraw = False
+859.5663 	EXP 	Recall_Words: autoDraw = False
+859.5663 	EXP 	Recall_Key: autoDraw = False
+859.5663 	EXP 	Recall_Fixation: autoDraw = False
+859.5663 	EXP 	Jitter_Text: text = '+'
+859.5663 	EXP 	Jitter_Text: autoDraw = True
+861.0369 	DATA 	Keypress: t
+862.5528 	DATA 	Keypress: t
+864.0373 	DATA 	Keypress: t
+864.0646 	EXP 	Jitter_Text: autoDraw = False
+864.0646 	EXP 	Jitter_Text: autoDraw = False
+864.0646 	EXP 	Recall_Words: text = u'ISLAND'
+864.0646 	EXP 	Recall_Words: autoDraw = True
+864.0646 	EXP 	Recall_Key: autoDraw = True
+865.0368 	DATA 	Keypress: 9
+865.5371 	DATA 	Keypress: t
+867.0378 	DATA 	Keypress: t
+867.0672 	EXP 	Recall_Words: autoDraw = False
+867.0850 	EXP 	Recall_Fixation: autoDraw = True
+868.5376 	DATA 	Keypress: t
+870.0374 	DATA 	Keypress: t
+870.0388 	EXP 	New trial (rep=0, index=5): {u'RAND': 0.7178263031427283, u'WN_LD': u'light', u'NOUN': u'PLUG', u'ASSOCIATE': u'House', u'JITTER_donotuse': 17L, u'YO_OM': u'multistory', u'MF_RC': u'residential ', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim56.bmp'}
+870.0505 	EXP 	Recall_Words: autoDraw = False
+870.0505 	EXP 	Recall_Key: autoDraw = False
+870.0505 	EXP 	Recall_Fixation: autoDraw = False
+870.0505 	EXP 	Jitter_Text: text = '+'
+870.0505 	EXP 	Jitter_Text: autoDraw = True
+871.5384 	DATA 	Keypress: t
+871.5488 	EXP 	Jitter_Text: autoDraw = False
+871.5488 	EXP 	Jitter_Text: autoDraw = False
+871.5488 	EXP 	Recall_Words: text = u'PLUG'
+871.5488 	EXP 	Recall_Words: autoDraw = True
+871.5488 	EXP 	Recall_Key: autoDraw = True
+873.0387 	DATA 	Keypress: t
+873.6879 	DATA 	Keypress: 9
+874.5384 	DATA 	Keypress: t
+874.5518 	EXP 	Recall_Words: autoDraw = False
+874.5683 	EXP 	Recall_Fixation: autoDraw = True
+876.0384 	DATA 	Keypress: t
+877.5386 	DATA 	Keypress: t
+877.5399 	EXP 	New trial (rep=0, index=6): {u'RAND': 0.5118390797020281, u'WN_LD': u'light', u'NOUN': u'GROUND', u'ASSOCIATE': u'House', u'JITTER_donotuse': 11L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim119.bmp'}
+877.5656 	EXP 	Recall_Key: autoDraw = False
+877.5656 	EXP 	Recall_Fixation: autoDraw = False
+877.5656 	EXP 	Recall_Words: autoDraw = False
+877.5656 	EXP 	Recall_Key: autoDraw = False
+877.5656 	EXP 	Recall_Fixation: autoDraw = False
+877.5656 	EXP 	Jitter_Text: text = '+'
+877.5656 	EXP 	Jitter_Text: autoDraw = True
+877.5656 	EXP 	Jitter_Text: autoDraw = False
+877.5656 	EXP 	Jitter_Text: autoDraw = False
+877.5656 	EXP 	Recall_Words: text = u'GROUND'
+877.5656 	EXP 	Recall_Words: autoDraw = True
+877.5656 	EXP 	Recall_Key: autoDraw = True
+879.0391 	DATA 	Keypress: t
+880.5393 	DATA 	Keypress: t
+880.5527 	EXP 	Recall_Words: autoDraw = False
+880.5693 	EXP 	Recall_Fixation: autoDraw = True
+881.0384 	DATA 	Keypress: 9
+882.0392 	DATA 	Keypress: t
+883.5395 	DATA 	Keypress: t
+883.5407 	EXP 	New trial (rep=0, index=7): {u'RAND': 0.4793080746092754, u'WN_LD': u'dark', u'NOUN': u'BUTTON', u'ASSOCIATE': u'House', u'JITTER_donotuse': 54L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim108.bmp'}
+883.5528 	EXP 	Recall_Key: autoDraw = False
+883.5528 	EXP 	Recall_Fixation: autoDraw = False
+883.5528 	EXP 	Recall_Words: autoDraw = False
+883.5528 	EXP 	Recall_Key: autoDraw = False
+883.5528 	EXP 	Recall_Fixation: autoDraw = False
+883.5528 	EXP 	Jitter_Text: text = '+'
+883.5528 	EXP 	Jitter_Text: autoDraw = True
+885.0398 	DATA 	Keypress: t
+886.5399 	DATA 	Keypress: t
+886.5508 	EXP 	Jitter_Text: autoDraw = False
+886.5508 	EXP 	Jitter_Text: autoDraw = False
+886.5508 	EXP 	Recall_Words: text = u'BUTTON'
+886.5508 	EXP 	Recall_Words: autoDraw = True
+886.5508 	EXP 	Recall_Key: autoDraw = True
+887.9232 	DATA 	Keypress: 9
+888.0399 	DATA 	Keypress: t
+889.5407 	DATA 	Keypress: t
+889.5537 	EXP 	Recall_Words: autoDraw = False
+889.5706 	EXP 	Recall_Fixation: autoDraw = True
+891.0411 	DATA 	Keypress: t
+892.5413 	DATA 	Keypress: t
+892.5425 	EXP 	New trial (rep=0, index=8): {u'RAND': 0.04909674560938615, u'WN_LD': u'dark', u'NOUN': u'ROAD', u'ASSOCIATE': u'House', u'JITTER_donotuse': 70L, u'YO_OM': u'multistory', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim112.bmp'}
+892.5533 	EXP 	Recall_Key: autoDraw = False
+892.5533 	EXP 	Recall_Fixation: autoDraw = False
+892.5533 	EXP 	Recall_Words: autoDraw = False
+892.5533 	EXP 	Recall_Key: autoDraw = False
+892.5533 	EXP 	Recall_Fixation: autoDraw = False
+892.5533 	EXP 	Jitter_Text: text = '+'
+892.5533 	EXP 	Jitter_Text: autoDraw = True
+894.0408 	DATA 	Keypress: t
+895.5408 	DATA 	Keypress: t
+897.0414 	DATA 	Keypress: t
+898.5416 	DATA 	Keypress: t
+898.5523 	EXP 	Jitter_Text: autoDraw = False
+898.5523 	EXP 	Jitter_Text: autoDraw = False
+898.5523 	EXP 	Recall_Words: text = u'ROAD'
+898.5523 	EXP 	Recall_Words: autoDraw = True
+898.5523 	EXP 	Recall_Key: autoDraw = True
+900.0421 	DATA 	Keypress: t
+900.0440 	DATA 	Keypress: 4
+901.5426 	DATA 	Keypress: t
+901.5557 	EXP 	Recall_Words: autoDraw = False
+901.5726 	EXP 	Recall_Fixation: autoDraw = True
+903.0420 	DATA 	Keypress: t
+904.5420 	DATA 	Keypress: t
+904.5432 	EXP 	New trial (rep=0, index=9): {u'RAND': 0.4859282734145659, u'WN_LD': u'White', u'NOUN': u'CROWN', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 83L, u'YO_OM': u'Young', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TMWmale23neutral.jpg'}
+904.5556 	EXP 	Recall_Key: autoDraw = False
+904.5556 	EXP 	Recall_Fixation: autoDraw = False
+904.5556 	EXP 	Recall_Words: autoDraw = False
+904.5556 	EXP 	Recall_Key: autoDraw = False
+904.5556 	EXP 	Recall_Fixation: autoDraw = False
+904.5556 	EXP 	Jitter_Text: text = '+'
+904.5556 	EXP 	Jitter_Text: autoDraw = True
+906.0424 	DATA 	Keypress: t
+907.5422 	DATA 	Keypress: t
+909.0430 	DATA 	Keypress: t
+909.0646 	EXP 	Jitter_Text: autoDraw = False
+909.0646 	EXP 	Jitter_Text: autoDraw = False
+909.0646 	EXP 	Recall_Words: text = u'CROWN'
+909.0646 	EXP 	Recall_Words: autoDraw = True
+909.0646 	EXP 	Recall_Key: autoDraw = True
+910.5430 	DATA 	Keypress: t
+910.6269 	DATA 	Keypress: 9
+912.0432 	DATA 	Keypress: t
+912.0568 	EXP 	Recall_Words: autoDraw = False
+912.0736 	EXP 	Recall_Fixation: autoDraw = True
+913.5436 	DATA 	Keypress: t
+915.0430 	DATA 	Keypress: t
+915.0442 	EXP 	New trial (rep=0, index=10): {u'RAND': 0.22480874718271215, u'WN_LD': u'White', u'NOUN': u'SPRING', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 87L, u'YO_OM': u'Old', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/JWmale71neutral.jpg'}
+915.0672 	EXP 	Recall_Key: autoDraw = False
+915.0672 	EXP 	Recall_Fixation: autoDraw = False
+915.0672 	EXP 	Recall_Words: autoDraw = False
+915.0672 	EXP 	Recall_Key: autoDraw = False
+915.0672 	EXP 	Recall_Fixation: autoDraw = False
+915.0672 	EXP 	Jitter_Text: text = '+'
+915.0672 	EXP 	Jitter_Text: autoDraw = True
+915.0672 	EXP 	Jitter_Text: autoDraw = False
+915.0672 	EXP 	Jitter_Text: autoDraw = False
+915.0672 	EXP 	Recall_Words: text = u'SPRING'
+915.0672 	EXP 	Recall_Words: autoDraw = True
+915.0672 	EXP 	Recall_Key: autoDraw = True
+916.3771 	DATA 	Keypress: 4
+916.5431 	DATA 	Keypress: t
+918.0433 	DATA 	Keypress: t
+918.0571 	EXP 	Recall_Words: autoDraw = False
+918.0739 	EXP 	Recall_Fixation: autoDraw = True
+919.5445 	DATA 	Keypress: t
+921.0445 	DATA 	Keypress: t
+921.0457 	EXP 	New trial (rep=0, index=11): {u'RAND': 0.6021975962907126, u'WN_LD': u'dark', u'NOUN': u'MOVIE', u'ASSOCIATE': u'House', u'JITTER_donotuse': 78L, u'YO_OM': u'multistory', u'MF_RC': u'commercial', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim42.bmp'}
+921.0676 	EXP 	Recall_Key: autoDraw = False
+921.0676 	EXP 	Recall_Fixation: autoDraw = False
+921.0676 	EXP 	Recall_Words: autoDraw = False
+921.0676 	EXP 	Recall_Key: autoDraw = False
+921.0676 	EXP 	Recall_Fixation: autoDraw = False
+921.0676 	EXP 	Jitter_Text: text = '+'
+921.0676 	EXP 	Jitter_Text: autoDraw = True
+921.0676 	EXP 	Jitter_Text: autoDraw = False
+921.0676 	EXP 	Jitter_Text: autoDraw = False
+921.0676 	EXP 	Recall_Words: text = u'MOVIE'
+921.0676 	EXP 	Recall_Words: autoDraw = True
+921.0676 	EXP 	Recall_Key: autoDraw = True
+922.3947 	DATA 	Keypress: 9
+922.5444 	DATA 	Keypress: t
+924.0443 	DATA 	Keypress: t
+924.0581 	EXP 	Recall_Words: autoDraw = False
+924.0745 	EXP 	Recall_Fixation: autoDraw = True
+925.5443 	DATA 	Keypress: t
+927.0455 	DATA 	Keypress: t
+927.0468 	EXP 	New trial (rep=0, index=12): {u'RAND': 0.42014625735833533, u'WN_LD': u'dark', u'NOUN': u'CAKE', u'ASSOCIATE': u'House', u'JITTER_donotuse': 59L, u'YO_OM': u'multistory', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim116.bmp'}
+927.0591 	EXP 	Recall_Key: autoDraw = False
+927.0591 	EXP 	Recall_Fixation: autoDraw = False
+927.0591 	EXP 	Recall_Words: autoDraw = False
+927.0591 	EXP 	Recall_Key: autoDraw = False
+927.0591 	EXP 	Recall_Fixation: autoDraw = False
+927.0591 	EXP 	Jitter_Text: text = '+'
+927.0591 	EXP 	Jitter_Text: autoDraw = True
+928.5456 	DATA 	Keypress: t
+928.5568 	EXP 	Jitter_Text: autoDraw = False
+928.5568 	EXP 	Jitter_Text: autoDraw = False
+928.5568 	EXP 	Recall_Words: text = u'CAKE'
+928.5568 	EXP 	Recall_Words: autoDraw = True
+928.5568 	EXP 	Recall_Key: autoDraw = True
+930.0454 	DATA 	Keypress: t
+930.2119 	DATA 	Keypress: 9
+931.5457 	DATA 	Keypress: t
+931.5595 	EXP 	Recall_Words: autoDraw = False
+931.5768 	EXP 	Recall_Fixation: autoDraw = True
+933.0461 	DATA 	Keypress: t
+934.5462 	DATA 	Keypress: t
+934.5475 	EXP 	New trial (rep=0, index=13): {u'RAND': 0.8811125431661487, u'WN_LD': u'light', u'NOUN': u'POCKET', u'ASSOCIATE': u'House', u'JITTER_donotuse': 38L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim88.bmp'}
+934.5597 	EXP 	Recall_Key: autoDraw = False
+934.5597 	EXP 	Recall_Fixation: autoDraw = False
+934.5597 	EXP 	Recall_Words: autoDraw = False
+934.5597 	EXP 	Recall_Key: autoDraw = False
+934.5597 	EXP 	Recall_Fixation: autoDraw = False
+934.5597 	EXP 	Jitter_Text: text = '+'
+934.5597 	EXP 	Jitter_Text: autoDraw = True
+936.0464 	DATA 	Keypress: t
+937.5474 	DATA 	Keypress: t
+939.0474 	DATA 	Keypress: t
+940.5473 	DATA 	Keypress: t
+940.5655 	EXP 	Jitter_Text: autoDraw = False
+940.5655 	EXP 	Jitter_Text: autoDraw = False
+940.5655 	EXP 	Recall_Words: text = u'POCKET'
+940.5655 	EXP 	Recall_Words: autoDraw = True
+940.5655 	EXP 	Recall_Key: autoDraw = True
+942.0472 	DATA 	Keypress: t
+943.5474 	DATA 	Keypress: t
+943.5610 	EXP 	Recall_Words: autoDraw = False
+943.5779 	EXP 	Recall_Fixation: autoDraw = True
+945.0472 	DATA 	Keypress: t
+945.9483 	DATA 	Keypress: 9
+946.5482 	DATA 	Keypress: t
+946.5495 	EXP 	New trial (rep=0, index=14): {u'RAND': 0.29987441017881133, u'WN_LD': u'Non White', u'NOUN': u'TEST', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 109L, u'YO_OM': u'Old', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TSFBmale50neutral.jpg'}
+946.5669 	EXP 	Recall_Key: autoDraw = False
+946.5669 	EXP 	Recall_Fixation: autoDraw = False
+946.5669 	EXP 	Recall_Words: autoDraw = False
+946.5669 	EXP 	Recall_Key: autoDraw = False
+946.5669 	EXP 	Recall_Fixation: autoDraw = False
+946.5669 	EXP 	Jitter_Text: text = '+'
+946.5669 	EXP 	Jitter_Text: autoDraw = True
+946.5669 	EXP 	Jitter_Text: autoDraw = False
+946.5669 	EXP 	Jitter_Text: autoDraw = False
+946.5669 	EXP 	Recall_Words: text = u'TEST'
+946.5669 	EXP 	Recall_Words: autoDraw = True
+946.5669 	EXP 	Recall_Key: autoDraw = True
+948.0482 	DATA 	Keypress: t
+948.6147 	DATA 	Keypress: 4
+949.5482 	DATA 	Keypress: t
+949.5618 	EXP 	Recall_Words: autoDraw = False
+949.5789 	EXP 	Recall_Fixation: autoDraw = True
+951.0482 	DATA 	Keypress: t
+952.5495 	DATA 	Keypress: t
+952.5507 	EXP 	New trial (rep=0, index=15): {u'RAND': 0.9666588644668369, u'WN_LD': u'light', u'NOUN': u'SHELL', u'ASSOCIATE': u'House', u'JITTER_donotuse': 13L, u'YO_OM': u'multistory', u'MF_RC': u'residential ', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim17.bmp'}
+952.5615 	EXP 	Recall_Key: autoDraw = False
+952.5615 	EXP 	Recall_Fixation: autoDraw = False
+952.5615 	EXP 	Recall_Words: autoDraw = False
+952.5615 	EXP 	Recall_Key: autoDraw = False
+952.5615 	EXP 	Recall_Fixation: autoDraw = False
+952.5615 	EXP 	Jitter_Text: text = '+'
+952.5615 	EXP 	Jitter_Text: autoDraw = True
+954.0489 	DATA 	Keypress: t
+955.5492 	DATA 	Keypress: t
+957.0492 	DATA 	Keypress: t
+958.5496 	DATA 	Keypress: t
+960.0501 	DATA 	Keypress: t
+961.5497 	DATA 	Keypress: t
+961.5618 	EXP 	Jitter_Text: autoDraw = False
+961.5618 	EXP 	Jitter_Text: autoDraw = False
+961.5618 	EXP 	Recall_Words: text = u'SHELL'
+961.5618 	EXP 	Recall_Words: autoDraw = True
+961.5618 	EXP 	Recall_Key: autoDraw = True
+963.0515 	DATA 	Keypress: t
+963.2840 	DATA 	Keypress: 4
+964.5501 	DATA 	Keypress: t
+964.5631 	EXP 	Recall_Words: autoDraw = False
+964.5811 	EXP 	Recall_Fixation: autoDraw = True
+966.0503 	DATA 	Keypress: t
+967.5508 	DATA 	Keypress: t
+967.5521 	EXP 	New trial (rep=0, index=16): {u'RAND': 0.5934565919150293, u'WN_LD': u'White', u'NOUN': u'SOCK', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 86L, u'YO_OM': u'Young', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/WWmale24neutral.jpg'}
+967.5644 	EXP 	Recall_Key: autoDraw = False
+967.5644 	EXP 	Recall_Fixation: autoDraw = False
+967.5644 	EXP 	Recall_Words: autoDraw = False
+967.5644 	EXP 	Recall_Key: autoDraw = False
+967.5644 	EXP 	Recall_Fixation: autoDraw = False
+967.5644 	EXP 	Jitter_Text: text = '+'
+967.5644 	EXP 	Jitter_Text: autoDraw = True
+969.0514 	DATA 	Keypress: t
+970.5517 	DATA 	Keypress: t
+970.5629 	EXP 	Jitter_Text: autoDraw = False
+970.5629 	EXP 	Jitter_Text: autoDraw = False
+970.5629 	EXP 	Recall_Words: text = u'SOCK'
+970.5629 	EXP 	Recall_Words: autoDraw = True
+970.5629 	EXP 	Recall_Key: autoDraw = True
+972.0516 	DATA 	Keypress: t
+972.0872 	DATA 	Keypress: 4
+973.5511 	DATA 	Keypress: t
+973.5659 	EXP 	Recall_Words: autoDraw = False
+973.5829 	EXP 	Recall_Fixation: autoDraw = True
+975.0520 	DATA 	Keypress: t
+976.5518 	DATA 	Keypress: t
+976.5531 	EXP 	New trial (rep=0, index=17): {u'RAND': 0.9205286429175866, u'WN_LD': u'White', u'NOUN': u'TAPE', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 61L, u'YO_OM': u'Old', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TSFWmale63-2neutral.jpg'}
+976.5653 	EXP 	Recall_Key: autoDraw = False
+976.5653 	EXP 	Recall_Fixation: autoDraw = False
+976.5653 	EXP 	Recall_Words: autoDraw = False
+976.5653 	EXP 	Recall_Key: autoDraw = False
+976.5653 	EXP 	Recall_Fixation: autoDraw = False
+976.5653 	EXP 	Jitter_Text: text = '+'
+976.5653 	EXP 	Jitter_Text: autoDraw = True
+978.0522 	DATA 	Keypress: t
+978.0633 	EXP 	Jitter_Text: autoDraw = False
+978.0633 	EXP 	Jitter_Text: autoDraw = False
+978.0633 	EXP 	Recall_Words: text = u'TAPE'
+978.0633 	EXP 	Recall_Words: autoDraw = True
+978.0633 	EXP 	Recall_Key: autoDraw = True
+979.5192 	DATA 	Keypress: 4
+979.5522 	DATA 	Keypress: t
+981.0378 	DATA 	Keypress: t
+981.0660 	EXP 	Recall_Words: autoDraw = False
+981.0834 	EXP 	Recall_Fixation: autoDraw = True
+982.5377 	DATA 	Keypress: t
+984.0379 	DATA 	Keypress: t
+984.0504 	EXP 	New trial (rep=0, index=18): {u'RAND': 0.8070216226388958, u'WN_LD': u'White', u'NOUN': u'PLANE', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 60L, u'YO_OM': u'Young', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/WWmale23-2neutral.jpg'}
+984.0660 	EXP 	Recall_Key: autoDraw = False
+984.0660 	EXP 	Recall_Fixation: autoDraw = False
+984.0660 	EXP 	Recall_Words: autoDraw = False
+984.0660 	EXP 	Recall_Key: autoDraw = False
+984.0660 	EXP 	Recall_Fixation: autoDraw = False
+984.0660 	EXP 	Jitter_Text: text = '+'
+984.0660 	EXP 	Jitter_Text: autoDraw = True
+985.5528 	DATA 	Keypress: t
+987.0379 	DATA 	Keypress: t
+988.5379 	DATA 	Keypress: t
+988.5645 	EXP 	Jitter_Text: autoDraw = False
+988.5645 	EXP 	Jitter_Text: autoDraw = False
+988.5645 	EXP 	Recall_Words: text = u'PLANE'
+988.5645 	EXP 	Recall_Words: autoDraw = True
+988.5645 	EXP 	Recall_Key: autoDraw = True
+990.0384 	DATA 	Keypress: t
+990.6046 	DATA 	Keypress: 4
+991.5378 	DATA 	Keypress: t
+991.5679 	EXP 	Recall_Words: autoDraw = False
+991.5847 	EXP 	Recall_Fixation: autoDraw = True
+993.0381 	DATA 	Keypress: t
+994.5388 	DATA 	Keypress: t
+994.5401 	EXP 	New trial (rep=0, index=19): {u'RAND': 0.597872506787722, u'WN_LD': u'White', u'NOUN': u'CARD', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 8L, u'YO_OM': u'Young', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TMWmale33neutral.jpg'}
+994.5508 	EXP 	Recall_Words: autoDraw = False
+994.5508 	EXP 	Recall_Key: autoDraw = False
+994.5508 	EXP 	Recall_Fixation: autoDraw = False
+994.5508 	EXP 	Jitter_Text: text = '+'
+994.5508 	EXP 	Jitter_Text: autoDraw = True
+996.0385 	DATA 	Keypress: t
+996.0497 	EXP 	Jitter_Text: autoDraw = False
+996.0497 	EXP 	Jitter_Text: autoDraw = False
+996.0497 	EXP 	Recall_Words: text = u'CARD'
+996.0497 	EXP 	Recall_Words: autoDraw = True
+996.0497 	EXP 	Recall_Key: autoDraw = True
+997.5391 	DATA 	Keypress: t
+998.8221 	DATA 	Keypress: 9
+999.0396 	DATA 	Keypress: t
+999.0521 	EXP 	Recall_Words: autoDraw = False
+999.0690 	EXP 	Recall_Fixation: autoDraw = True
+1000.5392 	DATA 	Keypress: t
+1002.0394 	DATA 	Keypress: t
+1002.0407 	EXP 	New trial (rep=0, index=20): {u'RAND': 0.5115425591104762, u'WN_LD': u'Non White', u'NOUN': u'WIND', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 91L, u'YO_OM': u'Young ', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/EMImale21neutral.jpg'}
+1002.0520 	EXP 	Recall_Key: autoDraw = False
+1002.0520 	EXP 	Recall_Fixation: autoDraw = False
+1002.0520 	EXP 	Recall_Words: autoDraw = False
+1002.0520 	EXP 	Recall_Key: autoDraw = False
+1002.0520 	EXP 	Recall_Fixation: autoDraw = False
+1002.0520 	EXP 	Jitter_Text: text = '+'
+1002.0520 	EXP 	Jitter_Text: autoDraw = True
+1003.5395 	DATA 	Keypress: t
+1005.0395 	DATA 	Keypress: t
+1006.5398 	DATA 	Keypress: t
+1008.0400 	DATA 	Keypress: t
+1008.0509 	EXP 	Jitter_Text: autoDraw = False
+1008.0509 	EXP 	Jitter_Text: autoDraw = False
+1008.0509 	EXP 	Recall_Words: text = u'WIND'
+1008.0509 	EXP 	Recall_Words: autoDraw = True
+1008.0509 	EXP 	Recall_Key: autoDraw = True
+1009.3227 	DATA 	Keypress: 9
+1009.5400 	DATA 	Keypress: t
+1011.0404 	DATA 	Keypress: t
+1011.0541 	EXP 	Recall_Words: autoDraw = False
+1011.0706 	EXP 	Recall_Fixation: autoDraw = True
+1012.5404 	DATA 	Keypress: t
+1014.0409 	DATA 	Keypress: t
+1014.0421 	EXP 	New trial (rep=0, index=21): {u'RAND': 0.8972437141424464, u'WN_LD': u'Non White', u'NOUN': u'CATTLE', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 65L, u'YO_OM': u'Old', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TSFBfemale62neutral.jpg'}
+1014.0545 	EXP 	Recall_Key: autoDraw = False
+1014.0545 	EXP 	Recall_Fixation: autoDraw = False
+1014.0545 	EXP 	Recall_Words: autoDraw = False
+1014.0545 	EXP 	Recall_Key: autoDraw = False
+1014.0545 	EXP 	Recall_Fixation: autoDraw = False
+1014.0545 	EXP 	Jitter_Text: text = '+'
+1014.0545 	EXP 	Jitter_Text: autoDraw = True
+1015.5410 	DATA 	Keypress: t
+1015.5526 	EXP 	Jitter_Text: autoDraw = False
+1015.5526 	EXP 	Jitter_Text: autoDraw = False
+1015.5526 	EXP 	Recall_Words: text = u'CATTLE'
+1015.5526 	EXP 	Recall_Words: autoDraw = True
+1015.5526 	EXP 	Recall_Key: autoDraw = True
+1017.0413 	DATA 	Keypress: t
+1017.5591 	DATA 	Keypress: 9
+1018.5415 	DATA 	Keypress: t
+1018.5547 	EXP 	Recall_Words: autoDraw = False
+1018.5716 	EXP 	Recall_Fixation: autoDraw = True
+1020.0419 	DATA 	Keypress: t
+1021.5422 	DATA 	Keypress: t
+1021.5435 	EXP 	New trial (rep=0, index=22): {u'RAND': 0.7994156390844329, u'WN_LD': u'White', u'NOUN': u'LIQUID', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 71L, u'YO_OM': u'Young', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/WHfemale18neutral.jpg'}
+1021.5549 	EXP 	Recall_Key: autoDraw = False
+1021.5549 	EXP 	Recall_Fixation: autoDraw = False
+1021.5549 	EXP 	Recall_Words: autoDraw = False
+1021.5549 	EXP 	Recall_Key: autoDraw = False
+1021.5549 	EXP 	Recall_Fixation: autoDraw = False
+1021.5549 	EXP 	Jitter_Text: text = '+'
+1021.5549 	EXP 	Jitter_Text: autoDraw = True
+1023.0428 	DATA 	Keypress: t
+1024.5421 	DATA 	Keypress: t
+1026.0419 	DATA 	Keypress: t
+1027.5423 	DATA 	Keypress: t
+1027.5714 	EXP 	Jitter_Text: autoDraw = False
+1027.5714 	EXP 	Jitter_Text: autoDraw = False
+1027.5714 	EXP 	Recall_Words: text = u'LIQUID'
+1027.5714 	EXP 	Recall_Words: autoDraw = True
+1027.5714 	EXP 	Recall_Key: autoDraw = True
+1029.0421 	DATA 	Keypress: t
+1030.5094 	DATA 	Keypress: 4
+1030.5424 	DATA 	Keypress: t
+1030.5562 	EXP 	Recall_Words: autoDraw = False
+1030.5732 	EXP 	Recall_Fixation: autoDraw = True
+1032.0424 	DATA 	Keypress: t
+1033.5436 	DATA 	Keypress: t
+1033.5448 	EXP 	New trial (rep=0, index=23): {u'RAND': 0.8933075353660556, u'WN_LD': u'dark', u'NOUN': u'MOON', u'ASSOCIATE': u'House', u'JITTER_donotuse': 50L, u'YO_OM': u'multistory', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim87.bmp'}
+1033.5564 	EXP 	Recall_Key: autoDraw = False
+1033.5564 	EXP 	Recall_Fixation: autoDraw = False
+1033.5564 	EXP 	Recall_Words: autoDraw = False
+1033.5564 	EXP 	Recall_Key: autoDraw = False
+1033.5564 	EXP 	Recall_Fixation: autoDraw = False
+1033.5564 	EXP 	Jitter_Text: text = '+'
+1033.5564 	EXP 	Jitter_Text: autoDraw = True
+1035.0437 	DATA 	Keypress: t
+1035.0544 	EXP 	Jitter_Text: autoDraw = False
+1035.0544 	EXP 	Jitter_Text: autoDraw = False
+1035.0544 	EXP 	Recall_Words: text = u'MOON'
+1035.0544 	EXP 	Recall_Words: autoDraw = True
+1035.0544 	EXP 	Recall_Key: autoDraw = True
+1036.3768 	DATA 	Keypress: 4
+1036.5438 	DATA 	Keypress: t
+1038.0439 	DATA 	Keypress: t
+1038.0574 	EXP 	Recall_Words: autoDraw = False
+1038.0743 	EXP 	Recall_Fixation: autoDraw = True
+1039.5441 	DATA 	Keypress: t
+1041.0439 	DATA 	Keypress: t
+1041.0451 	EXP 	New trial (rep=0, index=24): {u'RAND': 0.37848840501309, u'WN_LD': u'dark', u'NOUN': u'TENT', u'ASSOCIATE': u'House', u'JITTER_donotuse': 66L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim75.bmp'}
+1041.0560 	EXP 	Recall_Key: autoDraw = False
+1041.0560 	EXP 	Recall_Fixation: autoDraw = False
+1041.0560 	EXP 	Recall_Words: autoDraw = False
+1041.0560 	EXP 	Recall_Key: autoDraw = False
+1041.0560 	EXP 	Recall_Fixation: autoDraw = False
+1041.0560 	EXP 	Jitter_Text: text = '+'
+1041.0560 	EXP 	Jitter_Text: autoDraw = True
+1041.0560 	EXP 	Jitter_Text: autoDraw = False
+1041.0560 	EXP 	Jitter_Text: autoDraw = False
+1041.0560 	EXP 	Recall_Words: text = u'TENT'
+1041.0560 	EXP 	Recall_Words: autoDraw = True
+1041.0560 	EXP 	Recall_Key: autoDraw = True
+1042.5439 	DATA 	Keypress: t
+1042.6774 	DATA 	Keypress: 4
+1044.0441 	DATA 	Keypress: t
+1044.0585 	EXP 	Recall_Words: autoDraw = False
+1044.0751 	EXP 	Recall_Fixation: autoDraw = True
+1045.5441 	DATA 	Keypress: t
+1047.0454 	DATA 	Keypress: t
+1047.0467 	EXP 	New trial (rep=0, index=25): {u'RAND': 0.6706592090993321, u'WN_LD': u'dark', u'NOUN': u'PICTURE', u'ASSOCIATE': u'House', u'JITTER_donotuse': 67L, u'YO_OM': u'multistory', u'MF_RC': u'residential ', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim46.bmp'}
+1047.0585 	EXP 	Recall_Key: autoDraw = False
+1047.0585 	EXP 	Recall_Fixation: autoDraw = False
+1047.0585 	EXP 	Recall_Words: autoDraw = False
+1047.0585 	EXP 	Recall_Key: autoDraw = False
+1047.0585 	EXP 	Recall_Fixation: autoDraw = False
+1047.0585 	EXP 	Jitter_Text: text = '+'
+1047.0585 	EXP 	Jitter_Text: autoDraw = True
+1048.5454 	DATA 	Keypress: t
+1050.0453 	DATA 	Keypress: t
+1050.0570 	EXP 	Jitter_Text: autoDraw = False
+1050.0570 	EXP 	Jitter_Text: autoDraw = False
+1050.0570 	EXP 	Recall_Words: text = u'PICTURE'
+1050.0570 	EXP 	Recall_Words: autoDraw = True
+1050.0570 	EXP 	Recall_Key: autoDraw = True
+1051.5452 	DATA 	Keypress: t
+1051.7295 	DATA 	Keypress: 4
+1053.0451 	DATA 	Keypress: t
+1053.0595 	EXP 	Recall_Words: autoDraw = False
+1053.0763 	EXP 	Recall_Fixation: autoDraw = True
+1054.5464 	DATA 	Keypress: t
+1056.0465 	DATA 	Keypress: t
+1056.0478 	EXP 	New trial (rep=0, index=26): {u'RAND': 0.5112456199099309, u'WN_LD': u'White', u'NOUN': u'TOOL', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 52L, u'YO_OM': u'Old', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TSFWmale74neutral.jpg'}
+1056.0603 	EXP 	Recall_Key: autoDraw = False
+1056.0603 	EXP 	Recall_Fixation: autoDraw = False
+1056.0603 	EXP 	Recall_Words: autoDraw = False
+1056.0603 	EXP 	Recall_Key: autoDraw = False
+1056.0603 	EXP 	Recall_Fixation: autoDraw = False
+1056.0603 	EXP 	Jitter_Text: text = '+'
+1056.0603 	EXP 	Jitter_Text: autoDraw = True
+1057.5487 	DATA 	Keypress: t
+1059.0461 	DATA 	Keypress: t
+1059.0579 	EXP 	Jitter_Text: autoDraw = False
+1059.0579 	EXP 	Jitter_Text: autoDraw = False
+1059.0579 	EXP 	Recall_Words: text = u'TOOL'
+1059.0579 	EXP 	Recall_Words: autoDraw = True
+1059.0579 	EXP 	Recall_Key: autoDraw = True
+1060.3144 	DATA 	Keypress: 9
+1060.5473 	DATA 	Keypress: t
+1062.0472 	DATA 	Keypress: t
+1062.0606 	EXP 	Recall_Words: autoDraw = False
+1062.0774 	EXP 	Recall_Fixation: autoDraw = True
+1063.5469 	DATA 	Keypress: t
+1065.0473 	DATA 	Keypress: t
+1065.0486 	EXP 	New trial (rep=0, index=27): {u'RAND': 0.4992901905866727, u'WN_LD': u'dark', u'NOUN': u'NOVEL', u'ASSOCIATE': u'House', u'JITTER_donotuse': 44L, u'YO_OM': u'multistory', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim105.bmp'}
+1065.0613 	EXP 	Recall_Key: autoDraw = False
+1065.0613 	EXP 	Recall_Fixation: autoDraw = False
+1065.0613 	EXP 	Recall_Words: autoDraw = False
+1065.0613 	EXP 	Recall_Key: autoDraw = False
+1065.0613 	EXP 	Recall_Fixation: autoDraw = False
+1065.0613 	EXP 	Jitter_Text: text = '+'
+1065.0613 	EXP 	Jitter_Text: autoDraw = True
+1066.5478 	DATA 	Keypress: t
+1068.0481 	DATA 	Keypress: t
+1069.5482 	DATA 	Keypress: t
+1069.5649 	EXP 	Jitter_Text: autoDraw = False
+1069.5649 	EXP 	Jitter_Text: autoDraw = False
+1069.5649 	EXP 	Recall_Words: text = u'NOVEL'
+1069.5649 	EXP 	Recall_Words: autoDraw = True
+1069.5649 	EXP 	Recall_Key: autoDraw = True
+1071.0480 	DATA 	Keypress: t
+1072.5481 	DATA 	Keypress: t
+1072.5626 	EXP 	Recall_Words: autoDraw = False
+1072.5655 	DATA 	Keypress: 4
+1072.5779 	EXP 	Recall_Fixation: autoDraw = True
+1074.0488 	DATA 	Keypress: t
+1075.5493 	DATA 	Keypress: t
+1075.5506 	EXP 	New trial (rep=0, index=28): {u'RAND': 0.49369587213864874, u'WN_LD': u'light', u'NOUN': u'SHOP', u'ASSOCIATE': u'House', u'JITTER_donotuse': 31L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim80.bmp'}
+1075.5622 	EXP 	Recall_Key: autoDraw = False
+1075.5622 	EXP 	Recall_Fixation: autoDraw = False
+1075.5622 	EXP 	Recall_Words: autoDraw = False
+1075.5622 	EXP 	Recall_Key: autoDraw = False
+1075.5622 	EXP 	Recall_Fixation: autoDraw = False
+1075.5622 	EXP 	Jitter_Text: text = '+'
+1075.5622 	EXP 	Jitter_Text: autoDraw = True
+1077.0487 	DATA 	Keypress: t
+1077.0606 	EXP 	Jitter_Text: autoDraw = False
+1077.0606 	EXP 	Jitter_Text: autoDraw = False
+1077.0606 	EXP 	Recall_Words: text = u'SHOP'
+1077.0606 	EXP 	Recall_Words: autoDraw = True
+1077.0606 	EXP 	Recall_Key: autoDraw = True
+1078.2499 	DATA 	Keypress: 9
+1078.5494 	DATA 	Keypress: t
+1080.0498 	DATA 	Keypress: t
+1080.0633 	EXP 	Recall_Words: autoDraw = False
+1080.0799 	EXP 	Recall_Fixation: autoDraw = True
+1081.5497 	DATA 	Keypress: t
+1083.0500 	DATA 	Keypress: t
+1083.0513 	EXP 	New trial (rep=0, index=29): {u'RAND': 0.15135617490263198, u'WN_LD': u'Non White', u'NOUN': u'VEHICLE', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 37L, u'YO_OM': u'Young ', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/EMBfemale21-3neutral.jpg'}
+1083.0771 	EXP 	Recall_Key: autoDraw = False
+1083.0771 	EXP 	Recall_Fixation: autoDraw = False
+1083.0771 	EXP 	Recall_Words: autoDraw = False
+1083.0771 	EXP 	Recall_Key: autoDraw = False
+1083.0771 	EXP 	Recall_Fixation: autoDraw = False
+1083.0771 	EXP 	Jitter_Text: text = '+'
+1083.0771 	EXP 	Jitter_Text: autoDraw = True
+1083.0771 	EXP 	Jitter_Text: autoDraw = False
+1083.0771 	EXP 	Jitter_Text: autoDraw = False
+1083.0771 	EXP 	Recall_Words: text = u'VEHICLE'
+1083.0771 	EXP 	Recall_Words: autoDraw = True
+1083.0771 	EXP 	Recall_Key: autoDraw = True
+1084.2350 	DATA 	Keypress: 4
+1084.5499 	DATA 	Keypress: t
+1086.0502 	DATA 	Keypress: t
+1086.0639 	EXP 	Recall_Words: autoDraw = False
+1086.0821 	EXP 	Recall_Fixation: autoDraw = True
+1087.5506 	DATA 	Keypress: t
+1089.0512 	DATA 	Keypress: t
+1089.0526 	EXP 	New trial (rep=0, index=30): {u'RAND': 0.022708116584527205, u'WN_LD': u'light', u'NOUN': u'SOFA', u'ASSOCIATE': u'House', u'JITTER_donotuse': 97L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim40.bmp'}
+1089.1452 	EXP 	Recall_Key: autoDraw = False
+1089.1452 	EXP 	Recall_Fixation: autoDraw = False
+1089.1452 	EXP 	Recall_Words: autoDraw = False
+1089.1452 	EXP 	Recall_Key: autoDraw = False
+1089.1452 	EXP 	Recall_Fixation: autoDraw = False
+1089.1452 	EXP 	Jitter_Text: text = '+'
+1089.1452 	EXP 	Jitter_Text: autoDraw = True
+1089.1452 	EXP 	Jitter_Text: autoDraw = False
+1089.1452 	EXP 	Jitter_Text: autoDraw = False
+1089.1452 	EXP 	Recall_Words: text = u'SOFA'
+1089.1452 	EXP 	Recall_Words: autoDraw = True
+1089.1452 	EXP 	Recall_Key: autoDraw = True
+1090.5504 	DATA 	Keypress: t
+1090.7181 	DATA 	Keypress: 9
+1092.0513 	DATA 	Keypress: t
+1092.0641 	EXP 	Recall_Words: autoDraw = False
+1092.0818 	EXP 	Recall_Fixation: autoDraw = True
+1093.5516 	DATA 	Keypress: t
+1095.0511 	DATA 	Keypress: t
+1095.0524 	EXP 	New trial (rep=0, index=31): {u'RAND': 0.07747860873432, u'WN_LD': u'dark', u'NOUN': u'PAINT', u'ASSOCIATE': u'House', u'JITTER_donotuse': 62L, u'YO_OM': u'multistory', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim25.bmp'}
+1095.0642 	EXP 	Recall_Key: autoDraw = False
+1095.0642 	EXP 	Recall_Fixation: autoDraw = False
+1095.0642 	EXP 	Recall_Words: autoDraw = False
+1095.0642 	EXP 	Recall_Key: autoDraw = False
+1095.0642 	EXP 	Recall_Fixation: autoDraw = False
+1095.0642 	EXP 	Jitter_Text: text = '+'
+1095.0642 	EXP 	Jitter_Text: autoDraw = True
+1096.5522 	DATA 	Keypress: t
+1098.0522 	DATA 	Keypress: t
+1098.0639 	EXP 	Jitter_Text: autoDraw = False
+1098.0639 	EXP 	Jitter_Text: autoDraw = False
+1098.0639 	EXP 	Recall_Words: text = u'PAINT'
+1098.0639 	EXP 	Recall_Words: autoDraw = True
+1098.0639 	EXP 	Recall_Key: autoDraw = True
+1099.5370 	DATA 	Keypress: t
+1099.8680 	DATA 	Keypress: 9
+1101.0526 	DATA 	Keypress: t
+1101.0662 	EXP 	Recall_Words: autoDraw = False
+1101.0822 	EXP 	Recall_Fixation: autoDraw = True
+1102.5524 	DATA 	Keypress: t
+1104.0531 	DATA 	Keypress: t
+1104.0544 	EXP 	New trial (rep=0, index=32): {u'RAND': 0.3454557281828584, u'WN_LD': u'dark', u'NOUN': u'MACHINE', u'ASSOCIATE': u'House', u'JITTER_donotuse': 103L, u'YO_OM': u'multistory', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim10.bmp'}
+1104.0668 	EXP 	Recall_Key: autoDraw = False
+1104.0668 	EXP 	Recall_Fixation: autoDraw = False
+1104.0668 	EXP 	Recall_Words: autoDraw = False
+1104.0668 	EXP 	Recall_Key: autoDraw = False
+1104.0668 	EXP 	Recall_Fixation: autoDraw = False
+1104.0668 	EXP 	Jitter_Text: text = '+'
+1104.0668 	EXP 	Jitter_Text: autoDraw = True
+1105.5532 	DATA 	Keypress: t
+1105.5749 	EXP 	Jitter_Text: autoDraw = False
+1105.5749 	EXP 	Jitter_Text: autoDraw = False
+1105.5749 	EXP 	Recall_Words: text = u'MACHINE'
+1105.5749 	EXP 	Recall_Words: autoDraw = True
+1105.5749 	EXP 	Recall_Key: autoDraw = True
+1106.9535 	DATA 	Keypress: 9
+1107.0531 	DATA 	Keypress: t
+1108.5537 	DATA 	Keypress: t
+1108.5671 	EXP 	Recall_Words: autoDraw = False
+1108.5843 	EXP 	Recall_Fixation: autoDraw = True
+1110.0530 	DATA 	Keypress: t
+1111.5387 	DATA 	Keypress: t
+1111.5520 	EXP 	New trial (rep=0, index=33): {u'RAND': 0.25093014243563505, u'WN_LD': u'White', u'NOUN': u'SLEIGH', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 117L, u'YO_OM': u'Old', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TSFWfemale70-2neutral.jpg'}
+1111.5678 	EXP 	Recall_Key: autoDraw = False
+1111.5678 	EXP 	Recall_Fixation: autoDraw = False
+1111.5678 	EXP 	Recall_Words: autoDraw = False
+1111.5678 	EXP 	Recall_Key: autoDraw = False
+1111.5678 	EXP 	Recall_Fixation: autoDraw = False
+1111.5678 	EXP 	Jitter_Text: text = '+'
+1111.5678 	EXP 	Jitter_Text: autoDraw = True
+1113.0544 	DATA 	Keypress: t
+1114.5385 	DATA 	Keypress: t
+1116.0389 	DATA 	Keypress: t
+1117.5385 	DATA 	Keypress: t
+1119.0389 	DATA 	Keypress: t
+1119.0674 	EXP 	Jitter_Text: autoDraw = False
+1119.0674 	EXP 	Jitter_Text: autoDraw = False
+1119.0674 	EXP 	Recall_Words: text = u'SLEIGH'
+1119.0674 	EXP 	Recall_Words: autoDraw = True
+1119.0674 	EXP 	Recall_Key: autoDraw = True
+1120.2539 	DATA 	Keypress: 9
+1120.5390 	DATA 	Keypress: t
+1122.0396 	DATA 	Keypress: t
+1122.0685 	EXP 	Recall_Words: autoDraw = False
+1122.0862 	EXP 	Recall_Fixation: autoDraw = True
+1123.5400 	DATA 	Keypress: t
+1125.0396 	DATA 	Keypress: t
+1125.0410 	EXP 	New trial (rep=0, index=34): {u'RAND': 0.5114745995905492, u'WN_LD': u'White', u'NOUN': u'COAT', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 75L, u'YO_OM': u'Young', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/WWmale22neutral.jpg'}
+1125.0515 	EXP 	Recall_Words: autoDraw = False
+1125.0515 	EXP 	Recall_Key: autoDraw = False
+1125.0515 	EXP 	Recall_Fixation: autoDraw = False
+1125.0515 	EXP 	Jitter_Text: text = '+'
+1125.0515 	EXP 	Jitter_Text: autoDraw = True
+1126.5399 	DATA 	Keypress: t
+1128.0404 	DATA 	Keypress: t
+1128.0510 	EXP 	Jitter_Text: autoDraw = False
+1128.0510 	EXP 	Jitter_Text: autoDraw = False
+1128.0510 	EXP 	Recall_Words: text = u'COAT'
+1128.0510 	EXP 	Recall_Words: autoDraw = True
+1128.0510 	EXP 	Recall_Key: autoDraw = True
+1129.5402 	DATA 	Keypress: t
+1129.6062 	DATA 	Keypress: 4
+1131.0402 	DATA 	Keypress: t
+1131.0529 	EXP 	Recall_Words: autoDraw = False
+1131.0705 	EXP 	Recall_Fixation: autoDraw = True
+1132.5404 	DATA 	Keypress: t
+1134.0406 	DATA 	Keypress: t
+1134.0418 	EXP 	New trial (rep=0, index=35): {u'RAND': 0.35551450264596907, u'WN_LD': u'White', u'NOUN': u'STRAW', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 33L, u'YO_OM': u'Old', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TSFWmale75-3neutral.jpg'}
+1134.0535 	EXP 	Recall_Key: autoDraw = False
+1134.0535 	EXP 	Recall_Fixation: autoDraw = False
+1134.0535 	EXP 	Recall_Words: autoDraw = False
+1134.0535 	EXP 	Recall_Key: autoDraw = False
+1134.0535 	EXP 	Recall_Fixation: autoDraw = False
+1134.0535 	EXP 	Jitter_Text: text = '+'
+1134.0535 	EXP 	Jitter_Text: autoDraw = True
+1135.5408 	DATA 	Keypress: t
+1137.0410 	DATA 	Keypress: t
+1138.5413 	DATA 	Keypress: t
+1138.5521 	EXP 	Jitter_Text: autoDraw = False
+1138.5521 	EXP 	Jitter_Text: autoDraw = False
+1138.5521 	EXP 	Recall_Words: text = u'STRAW'
+1138.5521 	EXP 	Recall_Words: autoDraw = True
+1138.5521 	EXP 	Recall_Key: autoDraw = True
+1139.7428 	DATA 	Keypress: 4
+1140.0416 	DATA 	Keypress: t
+1141.5416 	DATA 	Keypress: t
+1141.5551 	EXP 	Recall_Words: autoDraw = False
+1141.5720 	EXP 	Recall_Fixation: autoDraw = True
+1143.0419 	DATA 	Keypress: t
+1144.5426 	DATA 	Keypress: t
+1144.5438 	EXP 	New trial (rep=0, index=36): {u'RAND': 0.23905240692334495, u'WN_LD': u'Non White', u'NOUN': u'CHAIN', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 113L, u'YO_OM': u'Young', u'MF_RC': u'Female', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/WAfemale22neutral.jpg'}
+1144.5542 	EXP 	Recall_Key: autoDraw = False
+1144.5542 	EXP 	Recall_Fixation: autoDraw = False
+1144.5542 	EXP 	Recall_Words: autoDraw = False
+1144.5542 	EXP 	Recall_Key: autoDraw = False
+1144.5542 	EXP 	Recall_Fixation: autoDraw = False
+1144.5542 	EXP 	Jitter_Text: text = '+'
+1144.5542 	EXP 	Jitter_Text: autoDraw = True
+1146.0433 	DATA 	Keypress: t
+1147.5436 	DATA 	Keypress: t
+1149.0426 	DATA 	Keypress: t
+1150.5429 	DATA 	Keypress: t
+1152.0430 	DATA 	Keypress: t
+1152.0543 	EXP 	Jitter_Text: autoDraw = False
+1152.0543 	EXP 	Jitter_Text: autoDraw = False
+1152.0543 	EXP 	Recall_Words: text = u'CHAIN'
+1152.0543 	EXP 	Recall_Words: autoDraw = True
+1152.0543 	EXP 	Recall_Key: autoDraw = True
+1153.4597 	DATA 	Keypress: 9
+1153.5431 	DATA 	Keypress: t
+1155.0429 	DATA 	Keypress: t
+1155.0572 	EXP 	Recall_Words: autoDraw = False
+1155.0737 	EXP 	Recall_Fixation: autoDraw = True
+1156.5437 	DATA 	Keypress: t
+1158.0432 	DATA 	Keypress: t
+1158.0444 	EXP 	New trial (rep=0, index=37): {u'RAND': 0.5601655390579153, u'WN_LD': u'light', u'NOUN': u'GIFT', u'ASSOCIATE': u'House', u'JITTER_donotuse': 94L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim5.bmp'}
+1158.0555 	EXP 	Recall_Key: autoDraw = False
+1158.0555 	EXP 	Recall_Fixation: autoDraw = False
+1158.0555 	EXP 	Recall_Words: autoDraw = False
+1158.0555 	EXP 	Recall_Key: autoDraw = False
+1158.0555 	EXP 	Recall_Fixation: autoDraw = False
+1158.0555 	EXP 	Jitter_Text: text = '+'
+1158.0555 	EXP 	Jitter_Text: autoDraw = True
+1158.0555 	EXP 	Jitter_Text: autoDraw = False
+1158.0555 	EXP 	Jitter_Text: autoDraw = False
+1158.0555 	EXP 	Recall_Words: text = u'GIFT'
+1158.0555 	EXP 	Recall_Words: autoDraw = True
+1158.0555 	EXP 	Recall_Key: autoDraw = True
+1159.5432 	DATA 	Keypress: t
+1159.8775 	DATA 	Keypress: 9
+1161.0444 	DATA 	Keypress: t
+1161.0573 	EXP 	Recall_Words: autoDraw = False
+1161.0748 	EXP 	Recall_Fixation: autoDraw = True
+1162.5443 	DATA 	Keypress: t
+1164.0444 	DATA 	Keypress: t
+1164.0458 	EXP 	New trial (rep=0, index=38): {u'RAND': 0.9184114958036297, u'WN_LD': u'White', u'NOUN': u'RADIO', u'ASSOCIATE': u'Face', u'JITTER_donotuse': 49L, u'YO_OM': u'Old', u'MF_RC': u'Male', u'recallRespCorrect': u'f', u'PATHWAY': u'Stim/Face/TSFWmale68-2neutral.jpg'}
+1164.0652 	EXP 	Recall_Key: autoDraw = False
+1164.0652 	EXP 	Recall_Fixation: autoDraw = False
+1164.0652 	EXP 	Recall_Words: autoDraw = False
+1164.0652 	EXP 	Recall_Key: autoDraw = False
+1164.0652 	EXP 	Recall_Fixation: autoDraw = False
+1164.0652 	EXP 	Jitter_Text: text = '+'
+1164.0652 	EXP 	Jitter_Text: autoDraw = True
+1164.0652 	EXP 	Jitter_Text: autoDraw = False
+1164.0652 	EXP 	Jitter_Text: autoDraw = False
+1164.0652 	EXP 	Recall_Words: text = u'RADIO'
+1164.0652 	EXP 	Recall_Words: autoDraw = True
+1164.0652 	EXP 	Recall_Key: autoDraw = True
+1165.5442 	DATA 	Keypress: t
+1165.6943 	DATA 	Keypress: 9
+1167.0442 	DATA 	Keypress: t
+1167.0584 	EXP 	Recall_Words: autoDraw = False
+1167.0755 	EXP 	Recall_Fixation: autoDraw = True
+1168.5456 	DATA 	Keypress: t
+1170.0447 	DATA 	Keypress: t
+1170.0462 	EXP 	New trial (rep=0, index=39): {u'RAND': 0.20408956986038573, u'WN_LD': u'light', u'NOUN': u'MARKET', u'ASSOCIATE': u'House', u'JITTER_donotuse': 2L, u'YO_OM': u'one story', u'MF_RC': u'residential', u'recallRespCorrect': u'e', u'PATHWAY': u'Stim/House/hstim84.bmp'}
+1170.0594 	EXP 	Recall_Key: autoDraw = False
+1170.0594 	EXP 	Recall_Fixation: autoDraw = False
+1170.0594 	EXP 	Recall_Words: autoDraw = False
+1170.0594 	EXP 	Recall_Key: autoDraw = False
+1170.0594 	EXP 	Recall_Fixation: autoDraw = False
+1170.0594 	EXP 	Jitter_Text: text = '+'
+1170.0594 	EXP 	Jitter_Text: autoDraw = True
+1171.5459 	DATA 	Keypress: t
+1173.0462 	DATA 	Keypress: t
+1173.0662 	EXP 	Jitter_Text: autoDraw = False
+1173.0662 	EXP 	Jitter_Text: autoDraw = False
+1173.0662 	EXP 	Recall_Words: text = u'MARKET'
+1173.0662 	EXP 	Recall_Words: autoDraw = True
+1173.0662 	EXP 	Recall_Key: autoDraw = True
+1174.1463 	DATA 	Keypress: 9
+1174.5460 	DATA 	Keypress: t
+1176.0462 	DATA 	Keypress: t
+1176.0599 	EXP 	Recall_Words: autoDraw = False
+1176.0776 	EXP 	Recall_Fixation: autoDraw = True
+1177.5459 	DATA 	Keypress: t
+1179.0460 	DATA 	Keypress: t
+1179.0602 	EXP 	Recall_Key: autoDraw = False
+1179.0602 	EXP 	Recall_Fixation: autoDraw = False
+1179.0602 	EXP 	Recall_Words: autoDraw = False
+1179.0602 	EXP 	Recall_Key: autoDraw = False
+1179.0602 	EXP 	Recall_Fixation: autoDraw = False
+1179.0602 	EXP 	Fixation: autoDraw = True
+1180.5478 	DATA 	Keypress: t
+1182.0474 	DATA 	Keypress: t
+1183.5471 	DATA 	Keypress: t
+1185.0489 	DATA 	Keypress: t
+1186.5469 	DATA 	Keypress: t
+1188.0480 	DATA 	Keypress: t
+1189.5478 	DATA 	Keypress: t
+1191.0477 	DATA 	Keypress: t
+1192.5478 	DATA 	Keypress: t
+1194.0487 	DATA 	Keypress: t
+1195.5494 	DATA 	Keypress: t
+1197.0488 	DATA 	Keypress: t
+1197.0630 	EXP 	Fixation: autoDraw = False
+1197.0795 	EXP 	Break: autoDraw = True
+1202.3846 	DATA 	Keypress: space
+1202.4135 	EXP 	Fixation: autoDraw = False
+1202.4135 	EXP 	Break: autoDraw = False
+1202.4135 	EXP 	text: autoDraw = True
+1204.0834 	DATA 	Keypress: space
+1204.1651 	EXP 	window1: mouseVisible = True
