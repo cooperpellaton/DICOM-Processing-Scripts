@@ -172,9 +172,14 @@ def find_atlas():
             break
     else:
         default_atlas = ("711-2B", "711-2C")
+        # output both for dual
         target_atlas = default_atlas[1]
     vals.update("target_atlas", target_atlas)
 
+# NOTES
+# with MEMPRage you get multiple echo times, so check the file and be careful!
+# skip and evict is from older scanners where older frames always used to need to be evicted at the beginning
+# Vish processing for post, do we reorder the files to be able to put them in the subfolders? This impacts ability to create the dataset for the processing.
 
 def create_defaults():
     # assemble all constants into a default struct
@@ -183,8 +188,13 @@ def create_defaults():
         "subject_id": "",
         "raw_data_directory": "",
         "target_atlas": "",
+        "structual_series" : "MP-RAGE",
+        "structural_series_1" : "T2-weighted",
         "X Dimension": 64,
         "Y Dimension": 64,
+        "skip" : 0,
+        "evict" : 0,
+        "normalization" : 1,
         "TR": 2000,
         "TR_spacing": 0
     }
@@ -196,7 +206,7 @@ def update_defaults():
 
 
 def write_out(values):
-    with open('%sid.vars' % values["subject_id"], 'w') as file:
+    with open('s%sid.vars' % values["subject_id"], 'w') as file:
         file.write(json.dumps(values))
 
 
