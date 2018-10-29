@@ -2,8 +2,15 @@ import os
 import csv
 import numpy
 import pprint
+import argparse
 
 pp = pprint.PrettyPrinter(indent=4)
+parser = argparse.ArgumentParser(
+    description='Script to process log files into event files.')
+parser.add_argument('path', metavar='p', default='.', type=string)
+parser.add_argument('# runs per experiment', metavar='r' dest='number_of_runs', default=3, 
+    help='The number of runs in each experiment of your trial (ex: 3)')
+
 
 def read_files():
     """
@@ -48,12 +55,15 @@ def count_images_per_file(input_file):
 
 
 def main():
-    file_location = "C:/Users/coope/OneDrive/Documents/Projects/Research/DICOM-Processing-Scripts/post_processing/sample_files/raw_log.log"
+    args = parser.parse_args()
+    # file_location = "C:/Users/coope/OneDrive/Documents/Projects/Research/DICOM-Processing-Scripts/post_processing/sample_files/raw_log.log"
+    number_of_runs = args.r
+    path_of_files = args.p
     file_list = read_files()
-    number_of_runs = 3
     for file in file_list:
         file_output = run_alignment(file, number_of_runs)
         write_out(fle, file_output)
+
 
 
 def run_alignment(file_location, number_of_runs):
