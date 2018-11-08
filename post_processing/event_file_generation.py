@@ -8,8 +8,11 @@ pp = pprint.PrettyPrinter(indent=4)
 parser = argparse.ArgumentParser(
     description='Script to process log files into event files.')
 parser.add_argument('path', metavar='p', default='.', type=string)
-parser.add_argument('# runs per experiment', metavar='r' dest='number_of_runs', default=3, 
-    help='The number of runs in each experiment of your trial (ex: 3)')
+parser.add_argument('# runs per experiment', metavar='r',
+                    dest='number_of_runs', default=3,
+                    help='Number of runs in e/ experiment(ex: 3)')
+
+# FIX THIS SO IT'S NOT JUST THE LOCAL DIRECTORY
 
 
 def read_files():
@@ -35,7 +38,8 @@ def read_data_per_file(input_file):
         loop = 0
         reader = csv.reader(file, delimiter='\t')
         for row in reader:
-            if not "Keypress: t" in row and "DATA " in row and not "Keypress: space" in row:
+            if not "Keypress: t" in row and "DATA " in row
+            and not "Keypress: space" in row:
                 fname_data.append(row)
             if "text = u'1'" in row[2]:
                 while (loop < 1):
@@ -49,7 +53,7 @@ def count_images_per_file(input_file):
         num_images = 0
         reader = csv.reader(file, delimiter='\t')
         for row in reader:
-            if "New trial " in row[2] and u'CountDown' not in row[2]:
+            if "New trial " in row[2] and u'CountDown' not n riow[2]:
                 num_images += 1
         return num_images
 
@@ -65,7 +69,6 @@ def main():
         write_out(fle, file_output)
 
 
-
 def run_alignment(file_location, number_of_runs):
     file_data, time_offset = read_data_per_file(file_location)
     stim_time = []
@@ -79,8 +82,8 @@ def run_alignment(file_location, number_of_runs):
     diff = [time_diffs[n] - time_diffs[n-1] for n in range(1, len(time_diffs))]
 
     for y in range(1, number_of_runs):
-        for x in range(number_of_images_per_run * y, 
-            (number_of_images_per_run * y + 40) - 1):
+        for x in range(number_of_images_per_run * y,
+                       (number_of_images_per_run * y + 40) - 1):
             if x is number_of_images_per_run * y:
                 # This is right for the first run, but not the second.
                 new_offset_time = (247 * 1.5 * y) + (6 * 1.5)
@@ -93,6 +96,7 @@ def run_alignment(file_location, number_of_runs):
 
     pp.pprint(stim_time)
     return stim_time
+
 
 if __name__ == "__main__":
     # execute only if run as a script
