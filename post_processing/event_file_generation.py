@@ -1,8 +1,10 @@
-import os
-import csv
-import numpy
-import pprint
 import argparse
+import csv
+import json
+import os
+import pprint
+
+import numpy
 
 pp = pprint.PrettyPrinter(indent=4)
 parser = argparse.ArgumentParser(
@@ -38,8 +40,7 @@ def read_data_per_file(input_file):
         loop = 0
         reader = csv.reader(file, delimiter='\t')
         for row in reader:
-            if not "Keypress: t" in row and "DATA " in row
-            and not "Keypress: space" in row:
+            if not "Keypress: t" in row and "DATA " in row and not "Keypress: space" in row:
                 fname_data.append(row)
             if "text = u'1'" in row[2]:
                 while (loop < 1):
@@ -53,20 +54,15 @@ def count_images_per_file(input_file):
         num_images = 0
         reader = csv.reader(file, delimiter='\t')
         for row in reader:
-            if "New trial " in row[2] and u'CountDown' not n riow[2]:
+            if "New trial " in row[2] and u'CountDown' not in row[2]:
                 num_images += 1
         return num_images
 
 
-def main():
-    args = parser.parse_args()
-    # file_location = "C:/Users/coope/OneDrive/Documents/Projects/Research/DICOM-Processing-Scripts/post_processing/sample_files/raw_log.log"
-    number_of_runs = args.r
-    path_of_files = args.p
-    file_list = read_files()
-    for file in file_list:
-        file_output = run_alignment(file, number_of_runs)
-        write_out(fle, file_output)
+
+def write_out(file, output):
+    with open("%s" % file+ "output", 'w') as file:
+        file.write(json.dumps(output))
 
 
 def run_alignment(file_location, number_of_runs):
@@ -96,6 +92,17 @@ def run_alignment(file_location, number_of_runs):
 
     pp.pprint(stim_time)
     return stim_time
+
+
+def main():
+    args = parser.parse_args()
+    # file_location = "C:/Users/coope/OneDrive/Documents/Projects/Research/DICOM-Processing-Scripts/post_processing/sample_files/raw_log.log"
+    number_of_runs = args.r
+    path_of_files = args.p
+    file_list = read_files()
+    for file in file_list:
+        file_output = run_alignment(file, number_of_runs)
+        write_out(fle, file_output)
 
 
 if __name__ == "__main__":
