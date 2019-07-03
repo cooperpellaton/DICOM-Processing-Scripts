@@ -8,24 +8,25 @@ import numpy
 
 pp = pprint.PrettyPrinter(indent=4)
 parser = argparse.ArgumentParser(
-    description='Script to process log files into event files.')
-parser.add_argument('path', metavar='p', default='.', type=string)
-parser.add_argument('# runs per experiment', metavar='r',
-                    dest='number_of_runs', default=3,
-                    help='Number of runs in e/ experiment(ex: 3)')
+    description="Script to process log files into event files."
+)
+parser.add_argument("path", metavar="p", default=".", type=str)
+parser.add_argument(
+    "num_runs", metavar="r", default=3, help="Number of runs in e/ experiment(ex: 3)"
+)
 
-# FIX THIS SO IT'S NOT JUST THE LOCAL DIRECTORY
+args = parser.parse_args()
 
 
-def read_files():
+def read_files(path):
     """
     Finds the suitable log files in a given directory.
-    Returns a dictionary of log files in target directory.
+    Returns a list of log files in target directory.
     """
-    file_list = {}
-    for fname in os.listdir('.'):
-        if fname.endswith('.log'):
-            file_list.insert(fname)
+    file_list = []
+    for fname in os.listdir(path):
+        if fname.endswith(".log"):
+            file_list.append(fname)
     return file_list
 
 
@@ -36,75 +37,70 @@ def read_data_per_file(input_file):
     """
     with open(input_file) as file:
         fname_data = []
-        time_offset = 0
         loop = 0
-        reader = csv.reader(file, delimiter='\t')
+        reader = csv.reader(file, delimiter="\t")
         for row in reader:
-            if not "Keypress: t" in row and "DATA " in row and not "Keypress: space" in row:
+            if (
+                not "Keypress: t" in row
+                and "DATA " in row
+                and not "Keypress: space" in row
+            ):
                 fname_data.append(row)
-            if "text = u'1'" in row[2]:
-                while (loop < 1):
-                    time_offset = float(row[0])
-                    loop += 1
-        return fname_data, time_offset
+            if "Keypress: space" in row:
+                # This is so we can realign for multiple runs.
+                fname_data.append(row)
+        return fname_data
 
 
 def count_images_per_file(input_file):
     with open(input_file) as file:
         num_images = 0
-        reader = csv.reader(file, delimiter='\t')
+        reader = csv.reader(file, delimiter="\t")
         for row in reader:
-            if "New trial " in row[2] and u'CountDown' not in row[2]:
+            if "New trial " in row[2] and u"CountDown" not in row[2]:
                 num_images += 1
         return num_images
 
 
-
 def write_out(file, output):
-    with open("%s" % file+ "output", 'w') as file:
+    with open("%s" % file + "output", "w") as file:
         file.write(json.dumps(output))
 
 
 def run_alignment(file_location, number_of_runs):
-    file_data, time_offset = read_data_per_file(file_location)
+    file_data = read_data_per_file(file_location)
+    time_offset = 0
     stim_time = []
-    for line in file_data:
-        stim_time.append([float(line[0].strip()) - time_offset, line[2]])
-
+    count = 0
     number_of_images_per_run = int(
-        count_images_per_file(file_location) / (number_of_runs))
-
-    time_diffs = [item[0] for item in stim_time]
-    diff = [time_diffs[n] - time_diffs[n-1] for n in range(1, len(time_diffs))]
-
-    for y in range(1, number_of_runs):
-        for x in range(number_of_images_per_run * y,
-                       (number_of_images_per_run * y + 40) - 1):
-            if x is number_of_images_per_run * y:
-                # This is right for the first run, but not the second.
-                new_offset_time = (247 * 1.5 * y) + (6 * 1.5)
-                stim_time[x][0] = new_offset_time
-
-            elif x is not number_of_images_per_run * y:
-                print(x)
-                print(stim_time[x - 1][0] + diff[x - 1])
-                stim_time[x][0] = stim_time[x - 1][0] + diff[x - 1]
+        count_images_per_file(file_location) / (number_of_runs)
+    )
+    for line in file_data:
+        # Trials 1, 4, 7, etc. use 'space' to signify the beginning
+        # of a new run. We take this to be time 0, or the offset
+        # and calculate all subsequent values from there.
+        if line[2] == "Keypress: space":
+            time_offset = line[0] + (3 * 1.5) + 1.5 + jitter
+        else:
+            count += 1
+            # For trials 2, 3, 5, 6, etc.
+            if count == number_of_images_per_run:
+                time_offset = line[0] + (2 * 1.5) + 1.5 + jitter
+                count = 0
+            # Append the time and keypress to the event file.
+            stim_time.append([float(line[0].strip()) - time_offset, line[2]])
 
     pp.pprint(stim_time)
     return stim_time
 
 
 def main():
-    args = parser.parse_args()
-    # file_location = "C:/Users/coope/OneDrive/Documents/Projects/Research/DICOM-Processing-Scripts/post_processing/sample_files/raw_log.log"
-    number_of_runs = args.r
-    path_of_files = args.p
-    file_list = read_files()
+    number_of_runs = int(args.num_runs)
+    file_list = read_files(args.path)
     for file in file_list:
         file_output = run_alignment(file, number_of_runs)
-        write_out(fle, file_output)
+        write_out(file, file_output)
 
 
 if __name__ == "__main__":
-    # execute only if run as a script
     main()
