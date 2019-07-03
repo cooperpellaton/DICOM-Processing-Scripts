@@ -53,6 +53,7 @@ def read_data_per_file(input_file):
 
 
 def count_images_per_file(input_file):
+    """ Count the total number of images in a log file."""
     with open(input_file) as file:
         num_images = 0
         reader = csv.reader(file, delimiter="\t")
@@ -63,8 +64,10 @@ def count_images_per_file(input_file):
 
 
 def write_out(file, output):
-    with open("%s" % file + "output", "w") as file:
-        file.write(json.dumps(output))
+    """ Write a file to disk, line by line."""
+    with open("output_%s" % file, "w") as file:
+        for line in output:
+            file.write(line)
 
 
 def run_alignment(file_location, number_of_runs):
@@ -76,19 +79,19 @@ def run_alignment(file_location, number_of_runs):
         count_images_per_file(file_location) / (number_of_runs)
     )
     for line in file_data:
-        # Trials 1, 4, 7, etc. use 'space' to signify the beginning
-        # of a new run. We take this to be time 0, or the offset
-        # and calculate all subsequent values from there.
+        """ This signifies a space betwewen trials 1 & 2, 2 & 3.
+        It is different however from the space between 3 & 4, and 6 & 7.
+        """
         if line[2] == "Keypress: space":
-            time_offset = line[0] + (3 * 1.5) + 1.5 + jitter
+            time_offset = (line[0] - stim_time[:][0]) + (2 * 1.5) + 1.5 + jitter
         else:
             count += 1
-            # For trials 2, 3, 5, 6, etc.
-            if count == number_of_images_per_run:
+            # For trials 1, 4, 7, etc.
+            if count == number_of_images_per_run * 3:
                 time_offset = line[0] + (2 * 1.5) + 1.5 + jitter
                 count = 0
             # Append the time and keypress to the event file.
-            stim_time.append([float(line[0].strip()) - time_offset, line[2]])
+            stim_time.append([float(line[0].strip()) + time_offset, line[2]])
 
     pp.pprint(stim_time)
     return stim_time
