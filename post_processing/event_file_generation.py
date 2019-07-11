@@ -63,7 +63,7 @@ def read_data_per_file(input_file):
                 if found and "Recall_Phase" in prev_line[2] and "Keypress: t" in row:
                     print("added an autotrial")
                     found = False
-                    trial_times.append(["auto", float(row[0])])
+                    trial_times.append(float(row[0]))
                 """ 
                 This finds long periods of t's (jitter) followed by a space which mark the beginning of a new trial run.
                 """
@@ -75,7 +75,7 @@ def read_data_per_file(input_file):
                 if "Keypress: t" in prev_line and "Fixation: autoDraw = False" in row:
                     print("adding a manual trial, t_count = %s" % t_count)
                     if trial_count <= 1:
-                        trial_times.append(["mech", t_count * 1.5])
+                        trial_times.append(float(t_count * 1.5))
                     found = False
                     trial_count += 1
                     t_count = 0
@@ -119,25 +119,25 @@ def run_alignment(file_location, number_of_runs):
         It is different however from the space between 3 & 4, and 6 & 7.
         """
         #print("Count: %s" % count)
+        #if len(stim_time) > 1:
+        #    print(stim_time[1])
         if "Keypress: space" in line:
             print("popping space")
             time_offset = (
-                (float(line[0]) - float(stim_time[:][0][0]))
+                float(line[0]) - stim_time[-1][0]
                 + (2 * 1.5)
                 + 1.5
-                + float(trial_times.pop(0)[1])
+                + (trial_times.pop(0))
             )
             print("New offset after space alignment: %s" % time_offset)
         else:
             # For trials 1, 4, 7, etc.
             if count == 0:
-                print("Popping at 0 count.")
-                time_offset = (2 * 1.5) + 1.5 + float(trial_times.pop(0)[1])
+                time_offset = (2 * 1.5) + 1.5 + trial_times.pop(0)
                 print("New offset after 0 alingment: %s" % time_offset)
             if count == (number_of_images_per_run * 3):
-                print("popping")
                 time_offset = (
-                    float(line[0]) + (2 * 1.5) + 1.5 + float(trial_times.pop(0)[1])
+                    float(line[0]) + (2 * 1.5) + 1.5 + trial_times.pop(0)
                 )
                 print("New Offset: %s" % time_offset)
                 count = 0
