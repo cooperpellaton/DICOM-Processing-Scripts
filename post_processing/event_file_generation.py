@@ -37,7 +37,13 @@ def read_data_per_file(input_file):
     """
     with open(input_file) as file:
         fname_data = []
+        trial_times = []
+        found = False
+        trial_count = 0
         loop = 0
+        t_count = 0
+        prev_line = None
+        space_count = 0
         reader = csv.reader(file, delimiter="\t")
         for row in reader:
             if (
@@ -46,10 +52,38 @@ def read_data_per_file(input_file):
                 and not "Keypress: space" in row
             ):
                 fname_data.append(row)
-            if "Keypress: space" in row:
+
+            if "Keypress: space" in row[2]:
                 # This is so we can realign for multiple runs.
                 fname_data.append(row)
-        return fname_data
+
+            if prev_line != None:
+                if "Created" in prev_line[2] and "Recall_Phase_Instructions" in row[2]:
+                    found = True
+                if found and "Recall_Phase" in prev_line[2] and "Keypress: t" in row:
+                    print("added an autotrial")
+                    found = False
+                    trial_times.append(["auto", float(row[0])])
+                """ 
+                This finds long periods of t's (jitter) followed by a space which mark the beginning of a new trial run.
+                """
+                if "Fixation: autoDraw = True" in prev_line and "Keypress: t" in row:
+                    found = True
+                    t_count += 1
+                if found and "Keypress: t" in prev_line and "Keypress: t" in row:
+                    t_count += 1
+                if "Keypress: t" in prev_line and "Fixation: autoDraw = False" in row:
+                    print("adding a manual trial, t_count = %s" % t_count)
+                    if trial_count <= 1:
+                        trial_times.append(["mech", t_count * 1.5])
+                    found = False
+                    trial_count += 1
+                    t_count = 0
+            prev_line = row
+        # The last trial has two spaces that follow it. Remove them.
+        del fname_data[-1]
+        del fname_data[-1]
+        return fname_data, trial_times
 
 
 def count_images_per_file(input_file):
@@ -65,35 +99,53 @@ def count_images_per_file(input_file):
 
 def write_out(file, output):
     """ Write a file to disk, line by line."""
-    with open("output_%s" % file, "w") as file:
+    out_name = file.split(".")[0]
+    with open("output_%s.out" % out_name, "w") as file:
         for line in output:
-            file.write(line)
+            file.write("%s, %s\n" % (line[0], line[1]))
 
 
 def run_alignment(file_location, number_of_runs):
-    file_data = read_data_per_file(file_location)
+    file_data, trial_times = read_data_per_file(file_location)
+    print("Trial times: %s" % trial_times)
     time_offset = 0
     stim_time = []
     count = 0
-    number_of_images_per_run = int(
-        count_images_per_file(file_location) / (number_of_runs)
+    number_of_images_per_run = count_images_per_file(file_location) / int(
+        number_of_runs
     )
     for line in file_data:
         """ This signifies a space betwewen trials 1 & 2, 2 & 3.
         It is different however from the space between 3 & 4, and 6 & 7.
         """
-        if line[2] == "Keypress: space":
-            time_offset = (line[0] - stim_time[:][0]) + (2 * 1.5) + 1.5 + jitter
+        #print("Count: %s" % count)
+        if "Keypress: space" in line:
+            print("popping space")
+            time_offset = (
+                (float(line[0]) - float(stim_time[:][0][0]))
+                + (2 * 1.5)
+                + 1.5
+                + float(trial_times.pop(0)[1])
+            )
+            print("New offset after space alignment: %s" % time_offset)
         else:
-            count += 1
             # For trials 1, 4, 7, etc.
-            if count == number_of_images_per_run * 3:
-                time_offset = line[0] + (2 * 1.5) + 1.5 + jitter
+            if count == 0:
+                print("Popping at 0 count.")
+                time_offset = (2 * 1.5) + 1.5 + float(trial_times.pop(0)[1])
+                print("New offset after 0 alingment: %s" % time_offset)
+            if count == (number_of_images_per_run * 3):
+                print("popping")
+                time_offset = (
+                    float(line[0]) + (2 * 1.5) + 1.5 + float(trial_times.pop(0)[1])
+                )
+                print("New Offset: %s" % time_offset)
                 count = 0
+            count += 1
             # Append the time and keypress to the event file.
-            stim_time.append([float(line[0].strip()) + time_offset, line[2]])
+            stim_time.append([float(line[0].strip()) - time_offset, line[2]])
 
-    pp.pprint(stim_time)
+    # pp.pprint(stim_time)
     return stim_time
 
 
